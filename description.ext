@@ -1,6 +1,7 @@
 author = "Tonic, RealLifeRPG Team & more";
 onLoadName = "[GER] RealLifeRPG v4.0";
 onLoadMission = "An RPG game mode developed by Tonic";
+loadScreen = "load.jpg";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -39,7 +40,7 @@ class RscTitles
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
-	
+
 	 class wasted {
         idd = -1;
         duration = 6;
@@ -53,14 +54,14 @@ class RscTitles
                 h = 0.75;
                 w = 0.75;
                 font = "EtelkaNarrowMediumPro";
-                sizeEx = 0.05; 
+                sizeEx = 0.05;
                 colorBackground[] = {1,1,1,0};
                 colorText[] = {1,1,1,1};
                 text = "textures\bilder\wasted.paa";
                 lineSpacing = 1;
-            }; 
-        }; 
-    }; 
+            };
+        };
+    };
 };
 
 class CfgFunctions
@@ -71,21 +72,21 @@ class CfgFunctions
 class CfgSounds
 {
 	sounds[] = {};
-	
+
 	class bestanden
     {
         name = "bestanden";
         sound[] = {"\sounds\bestanden.ogg",1.0,1};
         titles[] = {};
     };
-	
+
 	class levelUp
 	{
 		name = "levelUp";
 		sound[] = {"\sounds\levelup2.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class LSD_sound
 	{
 		name = "LSD_sound";
@@ -119,78 +120,78 @@ class CfgSounds
 		name = "Weed_sound";
 		sound[] = {"\sounds\Weed_sound.ogg", 1.0, 1};
 		titles[] = {};
-	}; 
-	
+	};
+
 	class wasted
     {
         name = "wasted";
         sound[] = {"\sounds\wasted.ogg", 1.0, 1};
         titles[] = {};
     };
-	
+
 	class alert
 	{
 		name = "alert";
 		sound[] = {"\sounds\alert.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class Mine1
 	{
-		name = "Mine1";	
+		name = "Mine1";
     	sound[] = {"\sounds\Mine1.ogg", 1.0, 1};
     	titles[] = {};
 	};
-	
+
 	class Mine2
 	{
-		name = "Mine2";	
+		name = "Mine2";
     	sound[] = {"\sounds\Mine2.ogg", 1.0, 1};
     	titles[] = {};
 	};
-	
+
 	class Mine3
 	{
-		name = "Mine3";	
+		name = "Mine3";
     	sound[] = {"\sounds\Mine3.ogg", 1.0, 1};
     	titles[] = {};
 	};
-	
+
 	class Mine4
 	{
-		name = "Mine4";	
+		name = "Mine4";
     	sound[] = {"\sounds\Mine4.ogg", 1.0, 1};
     	titles[] = {};
 	};
-	
+
 	class Mine5
 	{
-		name = "Mine5";	
+		name = "Mine5";
     	sound[] = {"\sounds\Mine5.ogg", 1.0, 1};
     	titles[] = {};
 	};
-	
+
 	 class spraycan
 	{
-    	name = "spraycan";	
+    	name = "spraycan";
     	sound[] = {"\sounds\spraycan.ogg", 1.0, 1};
     	titles[] = {};
 	};
-	
+
 	class blinker
 	{
 		name = "blinker";
 		sound[] = {"\sounds\blinker.ogg", 1.0,1};
 		titles[] = {};
 	};
-	
+
 	class taxi
 	{
 		name = "taxi";
 		sound[] = {"\sounds\taxi.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class CopIntro
 	{
 		name = "CopIntro";
@@ -221,21 +222,21 @@ class CfgSounds
 		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	 class MedSiren
 	{
 		name="MedSiren";
 		sound[] = {"\sounds\MedSiren.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class tazersound
 	{
 		name = "Tazersound";
 		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
-	
+
 	class flashbang
 	{
 		name = "flashbang";
@@ -428,46 +429,46 @@ class CfgSounds
 		sound[] = {"\sounds\news.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class hausalarm
 	{
 		name = "hausalarm";
 		sound[] = {"\sounds\hausalarm.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class empwarn
 	{
 		name = "empwarn";
 		sound[] = {"\sounds\empwarn.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class empacsound
 	{
 		name = "empacsound";
 		sound[] = {"sounds\empac.ogg", db-5, 1};
 		titles[] = {};
 	};
-	
+
 	class motorsaege
 	{
 		name = "motorsaege";
 		sound[] = {"sounds\baumefaellen.ogg", db-5, 1};
 		titles[] = {};
 	};
-	
+
 	class adacrep
 	{
 		name = "adacrep";
 		sound[] = {"sounds\adacreparatur.ogg", db-5, 1};
 		titles[] = {};
 	};
-	
+
 	class Door_Chime
     {
-        name = "Door Chime"; 
-        sound[] = {Sounds\Files_WAV\Door_Chime.wav, 1.0, 1.0}; 
+        name = "Door Chime";
+        sound[] = {Sounds\Files_WAV\Door_Chime.wav, 1.0, 1.0};
         titles[] = {};
     }
 };
@@ -483,7 +484,7 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	
+
 	class Blacklisted
 	{
 		title = "Mission Failed";
@@ -493,7 +494,7 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	
+
 	class SpyGlass
 	{
 		title = "The SpyGlass sees you";
@@ -578,7 +579,7 @@ class CfgNotifications
 		duration = 10;
 		priority = 5;
 	};
-	
+
 	class AdacMessage
 	{
 		title = "Adac Message";
