@@ -1,4 +1,6 @@
-# RL_RPG_V4_Bug-Tracker
-Just tracking some Bugs
+#Reallife RPG 4.0
 
-maybe also syncing the client mission 
+Main repository for RL RPG 4.0
+http://realliferpg.de/
+
+maybe also syncing the client mission
