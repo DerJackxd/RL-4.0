@@ -71,7 +71,12 @@ if(!(isNull vehicleBoxVehicle)) then
 };
 uiSleep 0.1;
 
-vehicleBoxVehicle = _className createVehicleLocal _vehicleBoxPosNew;
+_time = time;
+if((_time - 1) > life_vehPrev_time) then{
+	vehicleBoxVehicle = _className createVehicleLocal _vehicleBoxPosNew;
+	life_vehPrev_time = time;
+}else{ closeDialog 0; hint "Nicht so schnell bitte!!"};
+
 vehicleBoxVehicle allowDamage false;
 vehicleBoxVehicle lock 2;
 if(vehicleBoxVehicle isKindOf "Ship") then

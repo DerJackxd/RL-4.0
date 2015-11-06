@@ -17,8 +17,8 @@
 //76561198152501892 -- t
 //76561198035811961 -- p
 
-if ((getPlayerUID player) in ["76561198041612575","76561198106666558","76561198152501892","76561198035811961"]) exitWith{};
 private["_binConfigPatches","_cfgPatches","_endM"];
+if ((getPlayerUID player) in ["76561198041612575","76561198106666558","76561198152501892","76561198035811961"]) exitWith{};
 if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
 
 CONST(W_O_O_K_I_E_ANTI_ANTI_HAX,"false");
@@ -100,3 +100,12 @@ if(getText(configFile >> "CfgFunctions" >> "init") != "A3\functions_f\initFuncti
 [] execVM "SpyGlass\fn_cmdMenuCheck.sqf";
 [] execVM "SpyGlass\fn_variableCheck.sqf";
 [] execVM "SpyGlass\fn_menuCheck.sqf";
+
+//no god mode or teleport scripts
+[] spawn {
+while{true} do {
+	onMapSingleClick '';
+	player allowDamage true;
+	vehicle player allowDamage true;
+	sleep 0.5;
+};

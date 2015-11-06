@@ -46,13 +46,13 @@ _bSearch ctrlSetTooltip localize "STR_pInAct_SearchPlayer";
 _bSearch buttonSetAction "closeDialog 0; [life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
 
 //Set Escort Button
-if((_curTarget getVariable["Escorting",false])) then 
+if((_curTarget getVariable["Escorting",false])) then
 {
 	_bEscort ctrlSetText "STOP";
 	_bEscort ctrlSetTooltip localize "STR_pInAct_StopEscort";
 	_bEscort buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
-} 
-else 
+}
+else
 {
 	_bEscort ctrlSetTooltip localize "STR_pInAct_Escort";
 	_bEscort buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
@@ -65,7 +65,7 @@ _bTicket buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_t
 _bArrest ctrlSetTooltip localize "STR_pInAct_Arrest";
 //_bArrest buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_arrestAction;";
 //##80
-_bArrest buttonSetAction "closeDialog 0; [] call life_fnc_showArrestDialog;";
+_bArrest buttonSetAction "closeDialog 0; [] spawn life_fnc_showArrestDialog;";
 
 _bPutInCar ctrlSetTooltip localize "STR_pInAct_PutInCar";
 _bPutInCar buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_putInCar;";

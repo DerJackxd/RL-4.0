@@ -81,7 +81,7 @@ if(_bool) then {
 			};
 
 			if(_isgun) then {
-				if(!_ispack && _override) exitWith {}; //It was in the vest/uniform, try to close to prevent it overriding stuff... (Actual weapon and not an item)
+				//if(!_ispack && _override) exitWith {hint "Test"}; //It was in the vest/uniform, try to close to prevent it overriding stuff... (Actual weapon and not an item)
 				if(EQUAL(_item,"MineDetector")) then {
 					player addItem _item;
 				} else {

@@ -17,7 +17,6 @@ StartProgress = true;
 
 [] execVM "admintools\loop.sqf";
 [] execVM "scripts\fpsfix.sqf";
-[] execVM "Anticheat.sqf";
 
 
 MAC_fnc_switchMove = {

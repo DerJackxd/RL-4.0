@@ -2,7 +2,7 @@
 /*
 	File: fn_copInteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Replaces the mass addactions for various cop actions towards another player.
 */
@@ -41,10 +41,10 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn9 = _display displayCtrl Btn9;
 		_Btn10 = _display displayCtrl Btn10;
 		life_pInact_curTarget = _curTarget;
-		
+
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
 		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_repairDoor;";
-		
+
 		_Btn2 ctrlSetText localize "STR_pInAct_CloseOpen";
 		_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_doorAnimate;";
 		_Btn3 ctrlShow false;
@@ -59,7 +59,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		closeDialog 0;
 	};
 };
-		
+
 if(!isPlayer _curTarget && side _curTarget == civilian) exitWith {closeDialog 0;}; //Bad side check?
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
@@ -101,7 +101,7 @@ _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
 //Jail Button
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
-_Btn6 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_showArrestDialog;";
+_Btn6 buttonSetAction "closeDialog 0; [life_pInact_curTarget] spawn life_fnc_showArrestDialog;";
 
 //Put in Car
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
@@ -120,7 +120,7 @@ _Btn10 ctrlSetText localize "STR_pInAct_removeMask";
 _Btn10 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_removeMask; closeDialog 0;";
 
 //Check that you are near a place to jail them.
-if(!((player distance (getMarkerPos "jail_entrance") < 100) )) then 
+if(!((player distance (getMarkerPos "jail_entrance") < 100) )) then
 {
 	_Btn6 ctrlEnable false;
 };
