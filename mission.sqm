@@ -256,8 +256,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2022.691,4.9802971,15834.793};
-					azimut=-34.084;
+					position[]={31131.949,6.6130581,10918.067};
+					azimut=55.826313;
 					offsetY=2;
 					special="NONE";
 					id=0;
@@ -5736,7 +5736,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5444;
+		items=5446;
 		class Item0
 		{
 			position[]={4604.709,0.056397401,16991.094};
@@ -18592,7 +18592,7 @@ class Mission
 		};
 		class Item1293
 		{
-			position[]={36414.504,4.373208,13053.462};
+			position[]={36414.504,4.3732271,13052.891};
 			id=1536;
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
@@ -19062,7 +19062,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_8"",""cop"",""APD"",""Air""]];   this addAction[""Garage"",life_fnc_vehicleSpawnPos,""air"",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Polizei-Heli""];";
+			init="this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_7_1"",""cop"",""APD"",""Air""]];   this addAction[""Garage"",life_fnc_vehicleSpawnPos,""air"",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Polizei-Heli""];";
 		};
 		class Item1337
 		{
@@ -63148,10 +63148,30 @@ class Mission
 			skill=0.60000002;
 			init="this enableSimulation false;this setposASL [];this setVectorUp [0,0,1];this allowDamage false;  this addAction[""Bootsladen"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_1_1_1_1_1"",""civ"",""Billy's Boat Rentals & Ownership"",""Ship""]];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Ship"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_1_1_1_1_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Bootsladen""];";
 		};
+		class Item5444
+		{
+			position[]={31484.668,6.5188069,9642.5215};
+			azimut=270.099;
+			id=5687;
+			side="EMPTY";
+			vehicle="Land_Mattaust_ATM";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
+		};
+		class Item5445
+		{
+			position[]={31132.496,6.6130581,10924.267};
+			azimut=270.099;
+			id=5688;
+			side="EMPTY";
+			vehicle="Land_Mattaust_ATM";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
+		};
 	};
 	class Markers
 	{
-		items=538;
+		items=547;
 		class Item0
 		{
 			position[]={31009.451,2.8192575,10527.904};
@@ -63294,7 +63314,7 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={31043.027,4.4291019,10679.003};
+			position[]={31054.92,4.5441055,10681.693};
 			name="car1";
 			type="plp_mark_civ_zivilist_autohaus";
 			angle=360.01501;
@@ -63629,7 +63649,7 @@ class Mission
 		};
 		class Item62
 		{
-			position[]={31151.441,4.5135584,10594.566};
+			position[]={31150.717,4.5126729,10596.635};
 			name="civ_gar_1";
 			type="plp_mark_civ_zivilist_garage";
 			angle=1.34076;
@@ -65155,7 +65175,7 @@ class Mission
 		};
 		class Item254
 		{
-			position[]={36414.059,4.3731432,13053.232};
+			position[]={36414.059,4.3731623,13052.661};
 			name="Cop_Heli";
 			type="plp_mark_as_helicopter";
 			colorName="ColorWEST";
@@ -65238,7 +65258,7 @@ class Mission
 		};
 		class Item267
 		{
-			position[]={36422.348,4.3742309,13052.959};
+			position[]={36422.348,4.3742504,13052.388};
 			name="cop_air_1";
 			type="Empty";
 			angle=90.340828;
@@ -65609,7 +65629,7 @@ class Mission
 		};
 		class Item325
 		{
-			position[]={30737.324,21.178442,11562.05};
+			position[]={30737.932,21.178442,11561.952};
 			name="cop_air_7_1";
 			type="Empty";
 			angle=-12.096938;
@@ -66206,7 +66226,7 @@ class Mission
 		};
 		class Item408
 		{
-			position[]={36616.301,4.4137788,13074.542};
+			position[]={36616.563,4.4140034,13074.749};
 			name="civ_gar_1_2";
 			type="plp_mark_civ_zivilist_garage";
 			angle=1.34076;
@@ -66287,7 +66307,7 @@ class Mission
 		};
 		class Item420
 		{
-			position[]={38384.516,4.9228387,20187.715};
+			position[]={38385.035,4.9227934,20187.662};
 			name="civ_gar_1_2_1";
 			type="plp_mark_civ_zivilist_garage";
 			angle=1.34076;
@@ -66681,14 +66701,14 @@ class Mission
 		};
 		class Item477
 		{
-			position[]={21998.125,16.655563,25865.752};
+			position[]={21997.916,16.65667,25865.648};
 			name="atm_1_3_11_5_5_2_1_2";
 			type="plp_mark_civ_zivilist_bank";
 			angle=-1.44626;
 		};
 		class Item478
 		{
-			position[]={21982.51,16.625443,25863.98};
+			position[]={21982.92,16.627296,25863.98};
 			name="atm_1_3_11_5_5_2_1_6_2";
 			type="plp_mark_civ_zivilist_auktionshaus";
 			angle=-1.44626;
@@ -66702,7 +66722,7 @@ class Mission
 		};
 		class Item480
 		{
-			position[]={5646.3662,12.804263,18683.043};
+			position[]={5646.3662,12.804497,18683.145};
 			name="civ_gar_1_2_5_1";
 			type="plp_mark_civ_zivilist_garage";
 			angle=358.85681;
@@ -67155,6 +67175,74 @@ class Mission
 			type="loc_Quay";
 			colorName="ColorBlack";
 			angle=360.55676;
+		};
+		class Item538
+		{
+			position[]={31484.797,6.5144434,9643.0771};
+			name="atm_1_3_11_5_5_2";
+			type="plp_mark_civ_atm";
+			angle=361.26334;
+		};
+		class Item539
+		{
+			position[]={31132.625,6.6130581,10924.822};
+			name="atm_1_3_11_5_5_2_2";
+			type="plp_mark_civ_atm";
+			angle=361.26334;
+		};
+		class Item540
+		{
+			position[]={420.58014,-5.7106254e-006,40686.109};
+			name="Icons Legende";
+			text=" -------Icons Legende-------";
+			type="flag_Germany";
+		};
+		class Item541
+		{
+			position[]={434.74139,-5.5153305e-007,40212.18};
+			name="ATMI";
+			text=" ATM / Geldautomat";
+			type="plp_mark_civ_atm";
+		};
+		class Item542
+		{
+			position[]={444.32214,-2.4690846e-006,39195.297};
+			name="Gen_3_1_1_2_1_1_4_2";
+			text=" Mark";
+			type="plp_mark_civ_zivilist_markt";
+			angle=-5.0527;
+		};
+		class Item543
+		{
+			position[]={438.19797,-3.4482528e-006,39700.73};
+			name="atm_1_3_11_5_5_2_1_2_1";
+			text=" City Bank";
+			type="plp_mark_civ_zivilist_bank";
+			angle=-1.44626;
+		};
+		class Item544
+		{
+			position[]={447.87854,-4.1046278e-006,38714.453};
+			name="Gen_3_1_4_1";
+			text=" Kleidung";
+			type="plp_mark_civ_zivilist_kleidung";
+			angle=-361.508;
+		};
+		class Item545
+		{
+			position[]={453.6377,3.3729116e-006,38219.234};
+			name="atm_1_3_11_5_5_2_1_6_2_1";
+			text=" Sale";
+			type="plp_mark_civ_zivilist_auktionshaus";
+			angle=-1.44626;
+		};
+		class Item546
+		{
+			position[]={461.88904,8.930744e-007,37749.883};
+			name="Gen_1_4_1";
+			text=" Zubehör-Laden";
+			type="plp_mark_civ_zivilist_zubehoer";
+			angle=-360.35599;
 		};
 	};
 	class Sensors
