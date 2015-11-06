@@ -29,7 +29,7 @@ MAC_fnc_switchMove = {
 
 };
 
-// Tactical View disable
+// Tactical View disable, not working
 sleep 0.5;
 dokeyCheck={
 	private ["_r"] ;
