@@ -18292,7 +18292,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setVectorUp [0,0,1];this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_2"",""cop"",""APD - Melburn"",""Air""]]; this enableSimulation false;this setdir 270;this setposATL [38076.0078125,20167.746094,2.12548];this setVectorUp [0,0,1]; this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_6"",""cop"",""APD"",""Air""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Polizei-Heli""];";
+			init="this enableSimulation false;this setVectorUp [0,0,1];this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_2"",""cop"",""APD - Melburn"",""Air""]]; this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Polizei-Heli""];";
 		};
 		class Item1279
 		{
@@ -18450,13 +18450,13 @@ class Mission
 		class Item1293
 		{
 			position[]={37876.121,11.836349,20474.496};
-			azimut=331.07199;
+			azimut=336.80609;
 			offsetY=2.1254799;
 			id=1532;
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setVectorUp [0,0,1]; this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_6"",""cop"",""APD"",""Air""]];this enableSimulation false;this setdir 270;this setposATL [38076.0078125,20167.746094,2.12548];this setVectorUp [0,0,1]; this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_6"",""cop"",""APD"",""Air""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_6""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  this setVariable[""realname"",""Polizei-Heli""];";
+			init="this enableSimulation false; this allowDamage false; this setVectorUp [0,0,1]; this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_6"",""cop"",""APD"",""Air""]]; this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_6"",""cop"",""APD"",""Air""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_6""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  this setVariable[""realname"",""Polizei-Heli""];";
 		};
 		class Item1294
 		{
@@ -18703,7 +18703,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_7_1"",""cop"",""APD"",""Air""]]; this enableSimulation false;this setdir 270;this setposATL [38076.0078125,20167.746094,2.12548];this setVectorUp [0,0,1]; this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_6"",""cop"",""APD"",""Air""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_7_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Polizei-Heli""];";
+			init="this enableSimulation false;this allowDamage false; this addAction[""Hubschrauberhändler"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_6"",""cop"",""APD"",""Air""]];this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_7_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Polizei-Heli""];";
 		};
 		class Item1317
 		{
@@ -65296,7 +65296,7 @@ class Mission
 			position[]={30734.654,21.178442,11561.683};
 			name="cop_air_7_1";
 			type="Empty";
-			angle=3.96138;
+			angle=-7.4392352;
 		};
 		class Item323
 		{
