@@ -277,16 +277,16 @@ switch (_code) do {
 			}
 		};
     };
-
-	//Shift+P = Faded Sound
-	case 25:
-	{
-		if(_shift) then
+		//end key (Fade Sound)
+		case 207:
 		{
-			[] call life_fnc_fadeSound;
-			_handled = true;
+			switch (player getVariable["Earplugs",0]) do {
+				case 0: {hintSilent "Laustärke 90%"; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
+				case 10: {hintSilent "Laustärke 60%"; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
+				case 40: {hintSilent "Laustärke 30%"; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
+				case 70: {hintSilent "Laustärke Normal"; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
+			};
 		};
-	};
 
 	//Shift + v (surrender)
 	case 47:

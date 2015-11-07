@@ -2,7 +2,7 @@
 /*
 	File: fn_getDPMission.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Selects a random DP point for a delivery mission.
 	Needs to be revised.
@@ -17,7 +17,7 @@ if(str(_target) in LIFE_SETTINGS(getArray,"delivery_points")) then {
 } else {
 	_dp = LIFE_SETTINGS(getArray,"delivery_points") call BIS_fnc_selectRandom;
 };
-
+if(playerSide == civilian) then {
 life_dp_start = _target;
 
 life_delivery_in_progress = true;
@@ -41,3 +41,9 @@ player setCurrentTask life_cur_task;
 		life_dp_point = nil;
 	};
 };
+
+};
+if(playerSide != civilian) exitWith
+{
+	titleText ["Du bist kein Zivilist !", "PLAIN"];
+}
