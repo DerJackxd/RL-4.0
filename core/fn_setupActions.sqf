@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	File: fn_setupActions.sqf
-	
+
 	Description:
 	Master addAction file handler for all client-based actions.
 */
@@ -16,27 +16,27 @@ switch (playerSide) do
 		life_actions pushBack [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",
 		'!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget in ["Incapacitated","amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"] && !(cursorTarget getVariable["robbed",FALSE])' ]];
 	    //Ausweis
-        life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && cursorTarget isKindOf "Man"']];
+        life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && isPlayer cursorTarget]];
 		//##90
 		life_actions pushBack [player addAction["Ausrauben",life_fnc_robAction,"",0,false,false,"",
 		'!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && !(cursorTarget getVariable["robbed",FALSE]) && (cursorTarget getVariable["restrained",FALSE])' ]];
-		
+
 		//Speedtrap hacking
         life_actions pushBack [player addAction["<t color='#FF0000'>Daten hacken</t>",king_fnc_speedtrapHack,0,10,false,false,"",
         '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && !(_speedtrap getVariable "speedtrap_registered")' ]];
-		
+
 		//skill Heal
 		life_actions pushBack (player addAction["<t color='#FF0000'>Erste Hilfe 100%</t>",life_fnc_heal,"",99,false,false,"",
 		' vehicle player == player && (damage player) > 0.25 && skill_civ_heal && ("FirstAidKit" in (items player)) && (currentWeapon player == "")']);
 
 	};
-	
+
 	case west:
 	{
 		//Medikit self
-		life_actions pushBack [player addAction["Medikit verwenden",life_fnc_fullheal,"self",99,false,false,"",' vehicle player == player && (damage player) > 0.01 && ("Medikit" in (items player))']]; 
+		life_actions pushBack [player addAction["Medikit verwenden",life_fnc_fullheal,"self",99,false,false,"",' vehicle player == player && (damage player) > 0.01 && ("Medikit" in (items player))']];
 		//Medikit cursorTarget
-		life_actions pushBack [player addAction["Medikit verwenden",life_fnc_fullheal,"",99,false,false,"",' vehicle player == player && (damage cursorTarget) > 0.01 && ("Medikit" in (items player))']]; 
+		life_actions pushBack [player addAction["Medikit verwenden",life_fnc_fullheal,"",99,false,false,"",' vehicle player == player && (damage cursorTarget) > 0.01 && ("Medikit" in (items player))']];
 		//Strassensperre aufheben
 		life_actions pushBack [player addAction[localize "STR_ISTR_Mauer_Pack",life_fnc_packupmauer,"RoadBarrier_F",0,false,false,"",
 		'_mauer = nearestObjects[getPos player,["RoadBarrier_F"],8] select 0; !isNil "_mauer" && !isNil {(_mauer getVariable "item")} && (_mauer getVariable "mauerDown")']];
@@ -46,52 +46,52 @@ switch (playerSide) do
 		//Strassensperre Licht AUS
 		life_actions pushBack [player addAction[localize "STR_ISTR_Mauer_Licht_Aus",life_fnc_mauerLights,[cursorTarget,0],0,false,false,"",
 		'_mauer = nearestObjects[getPos player,["RoadBarrier_F"],8] select 0; !isNil "_mauer" && !isNil {(_mauer getVariable "item")} && !(_mauer getVariable "lightsOn")']];
-        //Ausweis 
+        //Ausweis
         life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && cursorTarget isKindOf "Man"']];
 		//Kegel aufheben
 		life_actions pushBack [player addAction[localize "STR_ISTR_Vehhut_Pack",life_fnc_packupvehhut,cursorTarget,0,false,false,"",
 		'_vehhut = nearestObjects[getPos player,["RoadCone_L_F"],8] select 0; !isNil "_vehhut" && !isNil {(_vehhut getVariable "item")} && (_vehhut getVariable "vehhutDown")']];
-		
+
 		//Seize Objects
 		life_actions pushBack [player addAction["<t color='#FF0000'>Gegenstände beschlagnahmen</t>",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'count(nearestObjects [player,["weaponholder"],3])>0']];
 		//##106
 		//BD MK1
-		life_actions pushBack [player addAction["<t color='#FF0000'>BD-MKI 'Fuel Killer' WARNUNG</t>",life_fnc_BirdDownWarning,"BDMK1",1,false,true,"",'!bg_time && (!(isNull (vehicle player))) && (vehicle player) isKindOf "Air" ']];		
-		
+		life_actions pushBack [player addAction["<t color='#FF0000'>BD-MKI 'Fuel Killer' WARNUNG</t>",life_fnc_BirdDownWarning,"BDMK1",1,false,true,"",'!bg_time && (!(isNull (vehicle player))) && (vehicle player) isKindOf "Air" ']];
+
 		life_actions pushBack [player addAction["<t color='#FF0000'>BD-MKI 'Fuel Killer' abfeuern</t>",life_fnc_fireBirdDown,"BDMK1",1,false,true,"",'bg_time && (!(isNull (vehicle player))) && (vehicle player) isKindOf "Air" ']];
 		//Speedtrap
         life_actions pushBack [player addAction["<t color='#FF0000'>Einschalten</t>",king_fnc_speedtrapActivate,cursorTarget,10,false,false,"",
         '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && !(_speedtrap getVariable "speedtrap_active") && !(_speedtrap getVariable "speedtrap_registered") ']];
         life_actions pushBack [player addAction["<t color='#FF0000'>Ausschalten</t>",king_fnc_speedtrapActivate,cursorTarget,10,false,false,"",
-        '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_active") && !(_speedtrap getVariable "speedtrap_registered") ']]; 
+        '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_active") && !(_speedtrap getVariable "speedtrap_registered") ']];
         life_actions pushBack [player addAction["<t color='#FF0000'>Film rausholen</t>",king_fnc_speedtrapGetPhotoList,1,10,false,false,"",
-        '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_registered") ']];       
+        '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_registered") ']];
         life_actions pushBack [player addAction["<t color='#FF0000'>Daten anschauen</t>",king_fnc_speedtrapGetPhotoList,0,10,false,false,"",
-        '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_registered") ']];       
+        '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_registered") ']];
         life_actions pushBack [player addAction["<t color='#FF0000'>Geschwindigkeit setzen</t>",king_fnc_speedtrapSetSpeedLimit,cursorTarget,10,false,false,"",
         '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_registered") ']];
         life_actions pushBack [player addAction["<t color='#FF0000'>Abbauen</t>",king_fnc_speedtrapRemove,cursorTarget,10,false,false,"",
         '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && (_speedtrap getVariable "speedtrap_registered") ']];
 	};
-	
+
 	case independent:
 	{
 		// take them organs
 		life_actions pushBack [player addAction["<t color='#00FF00'>Organ Transplantieren</t>",life_fnc_organTransplantKit,"",0,false,false,"",
 		'!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3.5 && (cursorTarget getVariable ["missingOrgan",FALSE]) && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
-		//Ausweis  
+		//Ausweis
         life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && cursorTarget isKindOf "Man"']];
 	};
-	
+
 	case east:
 	{
 		//werkzeugkasten
 		life_actions pushBack [player addAction["<t color='#FF0000'>Werkzeugkasten aufheben</t>",life_fnc_packupwkasten,"",0,false,false,"",' _wkasten = nearestObjects[getPos player,["Land_ToolTrolley_02_F"],8] select 0; !isNil "_wkasten" && !isNil {(_wkasten getVariable "item")}']];
-		
+
 		//Kegel aufheben
 		life_actions pushBack [player addAction[localize "STR_ISTR_Vehhut_Pack",life_fnc_packupvehhut,cursorTarget,0,false,false,"",
 		'_vehhut = nearestObjects[getPos player,["RoadCone_L_F"],8] select 0; !isNil "_vehhut" && !isNil {(_vehhut getVariable "item")} && (_vehhut getVariable "vehhutDown")']];
-		//Ausweis  
+		//Ausweis
         life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && cursorTarget isKindOf "Man"']];
 		//Strassensperre aufheben
 		life_actions pushBack [player addAction[localize "STR_ISTR_Mauer_Pack",life_fnc_packupmauer,"RoadBarrier_F",0,false,false,"",

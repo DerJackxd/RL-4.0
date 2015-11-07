@@ -30,7 +30,7 @@ if(EQUAL(playerSide,east)) then {
 			_progress progressSetPosition 0.01;
 			_cP = 0.01;
 			[player,"adacrep"] call life_fnc_globalSound; //Just if you have global sounds!
-			
+
 			while{true} do
 			{
 				if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
@@ -84,7 +84,7 @@ if(EQUAL(playerSide,east)) then {
 			_progress progressSetPosition 0.01;
 			_cP = 0.01;
 			[player,"adacrep"] call life_fnc_globalSound; //Just if you have global sounds!
-			
+
 			while{true} do
 			{
 				if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
@@ -116,9 +116,9 @@ if(EQUAL(playerSide,east)) then {
 }else{
 	if((_veh isKindOf "Ship") OR (_veh isKindOf "LandVehicle") OR (_veh isKindOf "Air") OR (_veh isKindOf "Car")) then
 	{
-		if(EQUAL(playerSide,west)) then 
+		if(EQUAL(playerSide,west)) then
 		{
-			if(([true,"adac_toolkit",1] call life_fnc_handleInv)) then
+			if("ToolKit" in (items player)) then
 			{
 				life_action_inUse = true;
 				_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
@@ -133,7 +133,7 @@ if(EQUAL(playerSide,east)) then {
 				_progress progressSetPosition 0.01;
 				_cP = 0.01;
 				[player,"adacrep"] call life_fnc_globalSound; //Just if you have global sounds!
-				
+
 				while{true} do
 				{
 					if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
