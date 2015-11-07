@@ -14,7 +14,7 @@ switch (_mode) do
 	case "heilen":
 		{
 			if(_medicsOnline) exitWith {hint "Es sind noch andere Ärtzte da! Ich bin aktuell zu beschäftigt"};
-			if(CASH < 35000) exitWith {hint format[localize "STR_NOTF_HS_NoCash",35000];};
+			if(CASH < 30000) exitWith {hint format[localize "STR_NOTF_HS_NoCash",35000];};
 			titleText[localize "STR_NOTF_HS_Healing","PLAIN"];
 			sleep 8;
 			if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]};
