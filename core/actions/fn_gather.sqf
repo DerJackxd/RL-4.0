@@ -2,7 +2,7 @@
 /*
 	File: fn_gather.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for gathering.
 */
@@ -21,7 +21,7 @@ life_action_gathering = true;
 	if(player distance (getMarkerPos _x) < 30) exitWith {_zone = _x;};
 } foreach _resourceZones;
 
-if(EQUAL(_zone,"")) exitWith {life_action_gathering = false;};
+if(EQUAL(_zone,"")) exitWith {life_action_gathering = false;[] call life_fnc_pickaxeUse;};
 
 //Get the resource that will be gathered from the zone name...
 switch(true) do {
@@ -73,5 +73,3 @@ if(_sum > 0) then
 life_action_gathering = false;
 _exp = round(random(_exp));
 [true,_exp] spawn life_fnc_expConfig;
-
-

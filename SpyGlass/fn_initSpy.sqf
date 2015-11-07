@@ -11,14 +11,16 @@
 
 	Will also become a standalone system which is why it's setup like this.
 */
+
 //UID_ADMIN
 //76561198041612575 -- v
 //76561198106666558 -- m
 //76561198152501892 -- t
 //76561198035811961 -- p
+//76561198092243365 -- g
 
 private["_binConfigPatches","_cfgPatches","_endM"];
-if ((getPlayerUID player) in ["76561198041612575","76561198106666558","76561198152501892","76561198035811961"]) exitWith{};
+if ((getPlayerUID player) in ["76561198041612575","76561198106666558","76561198152501892","76561198035811961","76561198092243365"]) exitWith{};
 if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
 
 CONST(W_O_O_K_I_E_ANTI_ANTI_HAX,"false");

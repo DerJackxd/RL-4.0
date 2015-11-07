@@ -2,7 +2,7 @@
 /*
 	File: fn_pickaxeUse.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for pickaxe in mining.
 */
@@ -17,14 +17,14 @@ _level = [];
 {
 	if(player distance (getMarkerPos _x) < 80) then {
 		hint "Sie koennen Gold mit dem Goldsieb, Uran mit den Handschuhen, Sand mit der Schaufel, Faulbaum mit der Motorsaege und Gluewuermchen mit dem Kaescher farmen!";
-		;_ui = "osefStatusBar" call BIS_fnc_rscLayer;
-		_ui cutRsc["osefStatusBar","PLAIN"];
 		_noPickaxe = true;
 	};
 } foreach _resourceZones;
 
 if(_noPickaxe) exitWith {};
 if(life_action_gather) exitWith {};
+
+if(life_inv_pickaxe < 1) exitWith {hint "Du benötigst eine Pickaxe für diesen Rohstoff"};
 
 switch (true) do {
 	case (player distance (getMarkerPos "lead_1") < 30): {_mine = ["copper_unrefined",2]; _exp = 60; _level = 2};

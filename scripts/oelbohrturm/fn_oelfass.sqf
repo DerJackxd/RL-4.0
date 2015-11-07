@@ -1,10 +1,7 @@
 #include <macro.h>
 /*
-	Author: Memphis
-	
-	Description:
-	Dieses Script ist von mir für den RealLifeRPG Server geschrieben 
-	verwendung auf anderen Servern ohne meine erlaubnis ist nicht gestattet!!!
+	Author: Unknown
+
 */
 private["_vendor","_upp","_ui","_progress","_pgText","_cP","_ui","_fass"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -25,13 +22,13 @@ _cP = 0.01;
 life_is_processing = true;
 
 while{true} do {
-	
+
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[[player,"AinvPknlMstpSnonWnonDnon_medic_1",true],"life_fnc_animSync",true,false] call life_fnc_MP;
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
-	
+
 	sleep  0.27;
 	_cP = _cP + 0.04;
 	_progress progressSetPosition _cP;
@@ -47,7 +44,7 @@ life_is_processing = false;
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 
-sleep 1;												
+sleep 1;
 _fass = "Land_MetalBarrel_F" createVehicle [0,0,0];
 _fass attachTo [player,[0.1,1.1,0.5]];
 _fass SVAR ["oelFass",true,true];
@@ -59,4 +56,3 @@ if(life_istazed) exitWith {};
 if(life_interrupted) exitWith {};
 if!(alive player) exitWith {};
 if((player GVAR["restrained",false])) exitWith {
-												

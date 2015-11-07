@@ -2,7 +2,7 @@
 /*
 	File: fn_handleDamage.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Handles damage, specifically for handling the 'tazer' pistol and nothing else.
 */
@@ -24,7 +24,7 @@ if(!isNull _source) then {
 				_distance = 0;
 				_isVehicle = if(vehicle player != player) then {true} else {false};
 				_isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
-				
+
 				switch(true) do {
 					case ((EQUAL(_curWep,"hgun_P07_snds_F")) && (EQUAL(_projectile,"B_9x21_Ball"))):
 					{
@@ -32,7 +32,7 @@ if(!isNull _source) then {
 						_distance = 100;
 						_impact = 30;
 					};
-					
+
 					case ((EQUAL(_curWep,"SMG_01_ACO_F")) && (EQUAL(_projectile,"B_45ACP_Ball"))):
 					{
 						_istazer = true;
@@ -40,7 +40,7 @@ if(!isNull _source) then {
 						_impact = 40;
 					};
 				};
-				
+
 				if(_unit distance _source < _distance) then {
 					if(!life_istazed && !(_unit GVAR ["restrained",false])) then {
 						if(_isVehicle && _isQuad) then {
@@ -52,17 +52,18 @@ if(!isNull _source) then {
 					};
 				};
 			};
-			
+
 			//Temp fix for super tasers on cops.
 			if(playerSide == west && side _source == west) then {
-				
+
 			};
-			
+
 			[] spawn {
 				sleep 0.2;
+				if((player getVariable "ACE_isUnconscious")) exitWith {};
 				[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
 			};
-			
+
 		};
 	};
 };
