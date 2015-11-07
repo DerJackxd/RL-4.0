@@ -72,7 +72,7 @@ if(!(isNull vehicleBoxVehicle)) then
 uiSleep 0.1;
 
 _time = time;
-if((_time - 1) > life_vehPrev_time) then{
+if((_time - 0.5) > life_vehPrev_time) then{
 	vehicleBoxVehicle = _className createVehicleLocal _vehicleBoxPosNew;
 	life_vehPrev_time = time;
 }else{ closeDialog 0; hint "Nicht so schnell bitte!!"};

@@ -2,7 +2,7 @@
 /*
 	File: fn_impoundAction.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Impounds the vehicle
 */
@@ -11,16 +11,16 @@ _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _filters = ["Car","Air","Ship","LandVehicle"];
 if(!((KINDOF_ARRAY(_vehicle,_filters)))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
-if(KINDOF_ARRAY(_vehicle,_filters)) then 
-{	
+if(KINDOF_ARRAY(_vehicle,_filters)) then
+{
 	_vehicleData = _vehicle GVAR ["vehicle_info_owners",[]];
 	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle;}; //Bad vehicle.
 	_vehicleName = FETCH_CONFIG2(getText,CONFIG_VEHICLES,(typeOf _vehicle),"displayName");
 	if(EQUAL(playerSide,west)) then
 	{
-		[[0,"STR_NOTF_BeingImpounded",true,[SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+		//[[0,"STR_NOTF_BeingImpounded",true,[SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 	}else{
-		[[0,"STR_NOTF_BeingImpoundedA",true,[SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+		//[[0,"STR_NOTF_BeingImpoundedA",true,[SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 	};
 	life_action_inUse = true;
 
@@ -54,7 +54,7 @@ if(KINDOF_ARRAY(_vehicle,_filters)) then
 		if(!(KINDOF_ARRAY(_vehicle,_filters))) exitWith {life_action_inUse = false;};
 		_type = FETCH_CONFIG2(getText,CONFIG_VEHICLES,(typeOf _vehicle),"displayName");
 		if(EQUAL(playerSide,west)) then
-		{	
+		{
 			switch (true) do {
 				case (_vehicle isKindOf "Car"): {_price = LIFE_SETTINGS(getNumber,"impound_car_cop");};
 				case (_vehicle isKindOf "Ship"): {_price = LIFE_SETTINGS(getNumber,"impound_boat_cop");};
@@ -73,7 +73,7 @@ if(KINDOF_ARRAY(_vehicle,_filters)) then
 		[[_vehicle,true,player,false],"TON_fnc_vehicleStore",false,false] call life_fnc_MP;
 		waitUntil {!life_impound_inuse};
 		hint format[localize "STR_NOTF_Impounded",_type,_price];
-		[[0,"STR_NOTF_HasImpounded",true,[profileName,SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+		//[[0,"STR_NOTF_HasImpounded",true,[profileName,SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 		ADD(BANK,_price);
 	} else {
 		hint localize "STR_NOTF_ImpoundingCancelled";

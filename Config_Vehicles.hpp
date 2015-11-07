@@ -653,6 +653,7 @@ class CarShops {
 			{ "HMMWV_M1035", 68000, "", { "life_coplevel", 4 } },
 			{ "DAR_TahoePoliceDet", 68000, "", { "life_coplevel", 4 } },
 			{ "DAR_ImpalaPoliceDet", 68000, "", { "life_coplevel", 4 } },
+			{ "Jonzie_Mini_Cooper", 68000, "", { "life_coplevel", 4 } },
 			{ "DAR_ExplorerPoliceStealth", 68000, "", { "life_coplevel", 5 } },
 			{ "DAR_DAR_02FirebirdSSVPolice", 85000, "", { "life_coplevel", 5 } },
 			//{ "I_MRAP_03_F", 85000, "", { "life_coplevel", 5 } },

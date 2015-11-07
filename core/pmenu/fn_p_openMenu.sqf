@@ -2,7 +2,7 @@
 /*
 	File: fn_p_openMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Opens the players virtual inventory menu
 */
@@ -12,7 +12,7 @@ disableSerialization;
 
 switch(playerSide) do
 {
-	case west: 
+	case west:
 	{
 		ctrlShow[2011,false];
 		ctrlShow[2040,false];
@@ -31,7 +31,7 @@ switch(playerSide) do
 		ctrlShow[60011,false];
 
 	};
-	
+
 	case civilian:
 	{
 		ctrlShow[2012,false];
@@ -48,7 +48,7 @@ switch(playerSide) do
 		ctrlShow[60006,false];
 		ctrlShow[60007,false];
 		ctrlShow[60008,false];
-		
+
 		if((license_civ_craftWeapon) OR (license_civ_craftVehicle)) then {
                 ctrlShow[2025,true];
 				ctrlShow[60004,true];
@@ -62,7 +62,7 @@ switch(playerSide) do
 			ctrlShow[60001,true];
 		};
 	};
-	
+
 	case independent:
 	{
 		ctrlShow[2012,false];
@@ -87,7 +87,7 @@ switch(playerSide) do
 		ctrlShow[60009,false];
 		ctrlShow[60011,false];
 	};
-	
+
 	case east:
 	{
 		ctrlShow[2012,false];

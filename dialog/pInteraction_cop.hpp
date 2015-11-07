@@ -11,7 +11,7 @@ class pInteraction_cop
 	idd = 37400;
 	movingEnabled = false;
 	enableSimulation = true;
-	
+
 	class controls
 	{
 		class bClose: RscPicture
@@ -54,16 +54,19 @@ class pInteraction_cop
 	        h = 0.04 * safezoneH;
 			colorBackground[] = {0,0,0,0.6};
         };
+
 		class Stehenlassen: RscButtonMenu
         {
 	        idc = 2404;
-	        text = "Stehen lassen"; //--- ToDo: Localize;
+	        text = ""; //--- ToDo: Localize;
 	        x = 0.45 * safezoneW + safezoneX;
 	        y = 0.68 * safezoneH + safezoneY;
 	        w = 0.1 * safezoneW;
 	        h = 0.04 * safezoneH;
 			colorBackground[] = {0,0,0,0.6};
         };
+
+
 		class insAuto: RscButtonMenu
         {
 	        idc = 2405;

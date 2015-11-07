@@ -3,9 +3,8 @@ if(player diarySubjectExists "rules")exitwith{};
 
 player createDiarySubject ["rlcommunity","RLRPG Community "];
 player createDiarySubject ["serverrules","Regeln"];
-player createDiarySubject ["safezones","Safe Zones"];
 player createDiarySubject ["controls","RealLifeRPG Steuerung"];
-player createDiarySubject ["thanks","Danksagung"];
+player createDiarySubject ["thanks","Credits"];
 
 
 /*  Example
@@ -19,29 +18,98 @@ player createDiarySubject ["thanks","Danksagung"];
 	];
 */
 
+// Credits
+	player createDiaryRecord ["thanks",
+		[
+			"Credits - DE",
+			"
+			Unser Dank gilt allen die auf verschiedensten wegen zu dieser Mission beigetragen haben.<br/>
+			Leider wurden im Verlauf der Erstellung dieser Mision durch unsaubere Arbeit ehemaliger Community Mitglieder Credits aus der Mission entfernt wofür wir uns hiermit entschuldiegen wollen.<br/>
+			Sollte sich jemand seines Credits beraubt fühlen bitte ich sich im Teamspeak zu melden damit wir den Autor entsprechend würdigen können.<br/>
+
+			<br/><br/>
+			Namentlich bedanken wollen wir uns bei:<br/>
+			- Aussiland http://www.ausisland.com/ <br/>
+			- Tonic, Itsyuka und vielen anderen http://www.altisliferpg.com/ <br/>
+			- Jonzie http://www.armaholic.com/page.php?id=29735 <br/>
+			- ACE Mod Team http://ace3mod.com/ <br/>
+			- DAR Mod Team http://www.armaholic.com/page.php?id=25657 <br/>
+			- AiA Team http://www.armaholic.com/page.php?id=26682 <br/>
+			- USAF Team http://www.armaholic.com/page.php?id=25512 <br/>
+			- CBA Team http://www.armaholic.com/page.php?id=18767 <br/>
+			- xCam Team http://www.armaholic.com/page.php?id=28507 <br/>
+
+
+			Viele weitere Autoren unter CBA > Credits - Addons
+			"
+		]
+	];
+
+	player createDiaryRecord ["thanks",
+		[
+			"Credits - EN",
+			"
+			We want to thank any mod/script authors that contributed to this mission in various ways.<br/>
+			We are unfortunately not able to credit all authors, because of a former member of our community that removed the credit on most files.<br/>
+			If we used your work and you want to be credited, feel free to visit our teamspeak and we will add you to the list below.<br/>
+
+			<br/><br/>
+			Many thanks to:<br/>
+			- Aussiland http://www.ausisland.com/ <br/>
+			- Tonic,Itsyuka and many more http://www.altisliferpg.com/ <br/>
+			- Jonzie http://www.armaholic.com/page.php?id=29735 <br/>
+			- ACE Mod Team http://ace3mod.com/ <br/>
+			- DAR Mod Team http://www.armaholic.com/page.php?id=25657 <br/>
+			- AiA Team http://www.armaholic.com/page.php?id=26682 <br/>
+			- USAF Team http://www.armaholic.com/page.php?id=25512 <br/>
+			- CBA Team http://www.armaholic.com/page.php?id=18767 <br/>
+			- xCam Team http://www.armaholic.com/page.php?id=28507 <br/>
+
+			All Mentions under CBA > Credits - Addons
+			"
+		]
+	];
 
 // Allgemeine Regeln
 	player createDiaryRecord ["serverrules",
 		[
-			"Regeln", 
+			"Regeln",
 			"
 			Alle Regeln findet Ihr auf der Homepage unter RealLifeRPG.de<br/><br/>
 			"
 		]
 	];
-		
-// BPC Infos
+
+		player createDiaryRecord["serverrules",
+			[
+				"Safe Zones",
+					"
+						Perth<br/><br/>
+						Sydney<br/><br/>
+						Cairns<br/><br/>
+						Melbourn<br/><br/>
+						Brisbane<br/><br/>
+						Broken Hill<br/><br/>
+						Alice Springs<br/><br/>
+						Toowoomba Hill<br/><br/>
+						Alle Poizeistationen<br/><br/>
+					"
+			]
+		];
+
+
+//Infos
 
 	player createDiaryRecord ["rlcommunity",
 		[
 			"Teamspeak",
 			"
 			Unseren Teamspeak findet ihr unter:<br/><br/>
-			Ts.RealLifeRPG.de<br/><br/>
+			ts.RealLifeRPG.de<br/><br/>
 			"
 		]
 	];
-	
+
 	player createDiaryRecord ["rlcommunity",
 		[
 			"Forum",
@@ -51,7 +119,7 @@ player createDiarySubject ["thanks","Danksagung"];
 			"
 		]
 	];
-	
+
 	player createDiaryRecord ["rlcommunity",
 		[
 			"Admins und Supporter",
@@ -59,8 +127,9 @@ player createDiarySubject ["thanks","Danksagung"];
 			Admins:<br/><br/>
 			Toshi<br/>
 			Memphis<br/>
+			vabene1111<br/>
 			 <br/><br/><br/><br/>
-				
+
 			Support Leitung:<br/><br/>
 			Nexo<br/>
 			Dr.Kleber<br/>
@@ -69,29 +138,8 @@ player createDiarySubject ["thanks","Danksagung"];
 			"
 		]
 	];
-	
-//Safezones
 
-	player createDiaryRecord["safezones",
-		[
-			"Safe Zones",
-				"
-					Perth<br/><br/>
-					Sydney<br/><br/>
-					Cairns<br/><br/>
-					Melbourn<br/><br/>
-					Brisbane<br/><br/>
-					Broken Hill<br/><br/>					
-					Alice Springs<br/><br/>
-					Toowoomba Hill<br/><br/>
-					Alle Poizeistationen<br/><br/>
-				"
-		]
-	];
-	
 // Controls Section
-
-
 	player createDiaryRecord ["controls",
 		[
 			"hilfreiche Tipps",
@@ -102,13 +150,13 @@ player createDiarySubject ["thanks","Danksagung"];
 				Rechte Maustaste: Visier (ohne Waffe)<br/>
 				W+S und S+W: Gehen/Rennen umschalten<br/>
 				2x Shift: Gehen/Rennen umschalten<br/><br/>
-				
+
 				Du bewegst dich normal, nur in Slowmotion?<br/><br/>
 				Q oder doppelt Q drücken.<br/><br/>
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["controls",
 		[
 			"Polizisten",
@@ -121,7 +169,7 @@ player createDiarySubject ["thanks","Danksagung"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["controls",
 		[
 			"Haltungen",
@@ -138,13 +186,13 @@ player createDiarySubject ["thanks","Danksagung"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["controls",
 		[
 			"Waffen",
 				"
 				Manche dieser Befehle gelten nur, wenn man standartmäßig die ARMA 3 Steuerung aktiviert hat.<br/><br/>
-				
+
 				Shift+H: Pistole/Waffe holstern<br/>
 				Strg+H: Pistole/waffe ziehen<br/>
 				Shift+G: Niederschlagen (nur mit Waffe möglich)<br/>
@@ -157,13 +205,13 @@ player createDiarySubject ["thanks","Danksagung"];
 				"
 		]
 	];
-	
+
 	player createDiaryRecord ["controls",
 		[
 			"Allgemeine Steuerung",
 				"
 				Manche dieser Befehle gelten nur, wenn man standartmäßig die ARMA 3 Steuerung aktiviert hat.<br/><br/>
-				
+
 				Y oder Z: Öffnet das Player-Menü<br/>
 				U: Öffnet/Verschließt eure Fahrzeuge/Flugzeuge<br/>
 				T: Öffnet den Kofferäum des Fahrzeugs<br/>

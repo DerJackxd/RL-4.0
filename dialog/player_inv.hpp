@@ -7,7 +7,7 @@ class playerSettings {
 	enableSimulation = true;
 
 	class controlsBackground {
-	
+
 		class life_RscTitleBackground: Life_RscText
 		{
 			idc = -1;
@@ -18,7 +18,7 @@ class playerSettings {
 			h = 0.0219973 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])","(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
-		
+
 		class MainBackground: life_RscPicture
 		{
 			idc = -1;
@@ -30,7 +30,7 @@ class playerSettings {
 			h = 0.571078 * safezoneH;
 			colorBackground[] = {0,0,0,0};
 		};
-		
+
 		class Title: Life_RscTitle
 		{
 			idc = -1;
@@ -42,7 +42,7 @@ class playerSettings {
 			h = 0.0219973 * safezoneH;
 			colorBackground[] = {0,0,0,0};
 		};
-		
+
 		class moneyStatusInfo: Life_RscStructuredText
 		{
 			idc = 2015;
@@ -54,7 +54,7 @@ class playerSettings {
 			h = 0.122999 * safezoneH;
 			colorBackground[] = {0,0,0,0.3};
 		};
-		
+
 		class PlayersName: Title
 		{
 			idc = carry_weight;
@@ -67,7 +67,7 @@ class playerSettings {
 			h = 0.0219973 * safezoneH;
 			colorBackground[] = {-1, -1, -1, -1};
 		};
-		
+
 		class ButtonSyncData : life_RscPicture {
 			idc = -1;
 			text = "textures\tablet\speichern.paa";
@@ -77,7 +77,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonCallTaxi : life_RscPicture {
 			idc = -1;
 			text = "textures\tablet\CallTaxi.paa";
@@ -87,7 +87,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonTaxiMenu : life_RscPicture {
 			idc = 60001;
 			text = "textures\tablet\TaxiMenu.paa";
@@ -97,7 +97,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonHandy : life_RscPicture {
 			idc = -1;
 			text = "textures\tablet\handy.paa";
@@ -107,7 +107,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonMarkt : life_RscPicture {
 			idc = -1;
 			text = "textures\tablet\markt.paa";
@@ -117,7 +117,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonKey : life_RscPicture {
 			idc = -1;
 			text = "textures\tablet\key.paa";
@@ -127,7 +127,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonGang : life_RscPicture {
 			idc = 60002;
 			text = "textures\tablet\gang.paa";
@@ -137,7 +137,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonAdmin : life_RscPicture {
 			idc = 60003;
 			text = "textures\tablet\admin.paa";
@@ -147,7 +147,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonCrafting : life_RscPicture {
 			idc = 60004;
 			text = "textures\tablet\Crafting.paa";
@@ -157,7 +157,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonCraftClothing : life_RscPicture {
 			idc = 60005;
 			text = "textures\tablet\Schneiderei.paa";
@@ -167,7 +167,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonSaveData : life_RscPicture {
 			idc = 60006;
 			text = "textures\tablet\speichern.paa";
@@ -177,7 +177,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonWandet : life_RscPicture {
 			idc = 60007;
 			text = "textures\tablet\wanted.paa";
@@ -187,7 +187,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonContract : life_RscPicture {
 			idc = 60008;
 			text = "textures\tablet\contract.paa";
@@ -197,7 +197,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonGov : life_RscPicture {
 			idc = 600010;
 			text = "Handy\app_wanted.paa";
@@ -207,7 +207,8 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
+		/*
 		class ButtonPaintball : life_RscPicture {
 			idc = 60011;
 			text = "textures\tablet\paintball.paa";
@@ -217,7 +218,8 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+*/
+
 		class ButtonInfo : life_RscPicture {
 			idc = 60012;
 			text = "textures\tablet\help.paa";
@@ -227,7 +229,7 @@ class playerSettings {
 			w = 0.0309328 * safezoneW;
 			h = 0.0439946 * safezoneH;
 		};
-		
+
 		class ButtonSkill : life_RscPicture {
 			idc = 60009;
 			text = "textures\tablet\skill.paa";
@@ -238,13 +240,13 @@ class playerSettings {
 			h = 0.0439946 * safezoneH;
 		};
 	};
-	
+
 	class controls {
-		
+
 		class itemHeader: Life_RscButtonMenu
 		{
 			idc = -1;
-			
+
 			text = "$STR_PM_cItems";
 			sizeEx = 0.04;
 			x = 0.572383 * safezoneW + safezoneX;
@@ -259,7 +261,7 @@ class playerSettings {
 				align = "center";
 			};
 		};
-		
+
 		class licenseHeader: Life_RscText
 		{
 			idc = -1;
@@ -273,7 +275,7 @@ class playerSettings {
 			colorBackground[] = {-1, -1, -1, -1};
 			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])",0.5};
 		};
-		
+
 		class moneySHeader: Life_RscText
 		{
 			idc = -1;
@@ -287,18 +289,18 @@ class playerSettings {
 			colorBackground[] = {-1, -1, -1, -1};
 			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])",0.5};
 		};
-		
+
 		/*class itemList: Life_RscListBox
 		{
 			idc = item_list;
 			sizeEx = 0.030;
-			
+
 			x = 0.57496 * safezoneW + safezoneX;
 			y = 0.556093 * safezoneH + safezoneY;
 			w = 0.109147 * safezoneW;
 			h = 0.163973 * safezoneH;
 		};*/
-		
+
 		class moneyEdit: Life_RscEdit
 		{
 			idc = 2018;
@@ -310,7 +312,7 @@ class playerSettings {
 			h = 0.016498 * safezoneH;
 			colorBackground[] = {0,0,0,0.4};
 		};
-		
+
 		class NearPlayers: Life_RscCombo
 		{
 			idc = 2022;
@@ -321,7 +323,7 @@ class playerSettings {
 			h = 0.0140194 * safezoneH;
 			colorBackground[] = {0,0,0,0.4};
 		};
-		
+
 		class moneyDrop: Life_RscButtonMenu
 		{
 			idc = 2001;
@@ -336,7 +338,7 @@ class playerSettings {
 			colorBackground[] = {0,0,0,0.4};
 			//colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])",0.5};
 		};
-		
+
 		class ButtonClose: Life_PictureButtonMenu
 		{
 			onButtonClick = "closeDialog 0;";
@@ -356,7 +358,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonColorEffects: Life_PictureButtonMenu
 		{
 			onButtonClick = "[] call life_fnc_colorEffects";
@@ -376,7 +378,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonSettings: Life_PictureButtonMenu
 		{
 			onButtonClick = "[] call life_fnc_settingsMenu;";
@@ -396,7 +398,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonMyGang: Life_PictureButtonMenu
 		{
 			idc = 2011;
@@ -416,7 +418,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ADACAuftraege: Life_PictureButtonMenu
 		{
 			idc = 2013;
@@ -436,7 +438,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class Licenses_Menu: Life_RscControlsGroup
 		{
 			idc = -1;
@@ -444,7 +446,7 @@ class playerSettings {
 			y = 0.380062 * safezoneH + safezoneY;
 			w = 0.108539 * safezoneW;
 			h = 0.165676 * safezoneH;
-			
+
 			class Controls
 			{
 				class Life_Licenses : Life_rscStructuredText
@@ -459,7 +461,7 @@ class playerSettings {
 				};
 			};
 		};
-		
+
 		class ButtonWandetList: Life_PictureButtonMenu
 		{
 			idc = 2012;
@@ -479,7 +481,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonKeys: Life_PictureButtonMenu
 		{
 			idc = 2013;
@@ -499,7 +501,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonCell: Life_PictureButtonMenu
 		{
 			idc = 2014;
@@ -519,7 +521,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonAdminMenu: Life_PictureButtonMenu
 		{
 			idc = 2021;
@@ -539,7 +541,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonSyncData: Life_PictureButtonMenu
 		{
 			onButtonClick = "[] call SOCK_fnc_syncData;";
@@ -559,7 +561,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonSaveGear: Life_PictureButtonMenu
 		{
 			idc = 9900;
@@ -579,7 +581,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonMarket: Life_PictureButtonMenu
 		{
 			onButtonClick = "createDialog ""life_dynmarket_prices"";";
@@ -599,7 +601,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonCraft: Life_PictureButtonMenu
 		{
 			idc = 2025;
@@ -619,7 +621,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonCraftClothing: Life_PictureButtonMenu
 		{
 			idc = 2026;
@@ -639,7 +641,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonTaxiMenu: Life_PictureButtonMenu
 		{
 			idc = 2027;
@@ -659,7 +661,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonCallTaxi: Life_PictureButtonMenu
 		{
 			onButtonClick = "closeDialog 0;[] call life_fnc_taxi_call;";
@@ -679,7 +681,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonGov: Life_PictureButtonMenu
 		{
 			idc = -1;
@@ -699,7 +701,8 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
+/*
 		class ButtonPaintball: Life_PictureButtonMenu
 		{
 			onButtonClick = "closeDialog 0; createDialog ""life_paintball_mode"";";
@@ -720,7 +723,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+*/
 		class ButtonInfo: Life_PictureButtonMenu
 		{
 			onButtonClick = "closeDialog 0; createDialog ""life_info"";";
@@ -741,7 +744,7 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 		};
-		
+
 		class ButtonSkill: Life_PictureButtonMenu
 		{
 			onButtonClick = "closeDialog 0; createDialog ""life_skillMenu"";";
