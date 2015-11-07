@@ -113,7 +113,8 @@ class Mission
 		"cl3_chopper",
 		"mm_civilengineering",
 		"ausextras",
-		"helipad_mapobject"
+		"helipad_mapobject",
+		"A3_Roads_F"
 	};
 	addOnsAuto[]=
 	{
@@ -147,8 +148,7 @@ class Mission
 		"A3_Structures_F_Furniture",
 		"A3_Structures_F_System",
 		"A3_Structures_F_Civ_Lamps",
-		"CABuildings",
-		"aia_buildings_config",
+		"A3_Roads_F",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Training",
 		"A3_Structures_F_Households_Stone_Shed",
@@ -256,8 +256,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={31131.949,6.6130581,10918.067};
-					azimut=55.826313;
+					position[]={31016.463,2.8192575,10533.229};
+					azimut=38.286446;
 					offsetY=2;
 					special="NONE";
 					id=0;
@@ -5736,7 +5736,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5446;
+		items=5451;
 		class Item0
 		{
 			position[]={4604.709,0.056397401,16991.094};
@@ -5750,7 +5750,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={4725.6055,1.20353,17792.334};
+			position[]={4722.5405,7.7817063,17792.154};
 			azimut=270;
 			offsetY=1.20353;
 			id=244;
@@ -5871,7 +5871,7 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={31183.057,0.048822399,19971.02};
+			position[]={31182.756,29.380962,19971.424};
 			azimut=8.8379002;
 			offsetY=0.048822399;
 			id=255;
@@ -61867,7 +61867,7 @@ class Mission
 		};
 		class Item5315
 		{
-			position[]={30582.344,21.178442,12565.378};
+			position[]={30782.063,21.178442,11912.008};
 			azimut=-369.71167;
 			id=5558;
 			side="EMPTY";
@@ -61877,7 +61877,7 @@ class Mission
 		};
 		class Item5316
 		{
-			position[]={30582.545,21.178442,12564.822};
+			position[]={30782.264,21.178442,11911.452};
 			azimut=-810.13702;
 			id=5559;
 			side="EMPTY";
@@ -62998,7 +62998,7 @@ class Mission
 		};
 		class Item5430
 		{
-			position[]={31327.145,48.201431,16772.447};
+			position[]={31325.283,48.201431,16771.381};
 			azimut=66.843597;
 			offsetY=1.21296;
 			id=5673;
@@ -63168,10 +63168,60 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
 		};
+		class Item5446
+		{
+			position[]={31150.344,2.5369415,5409.9087};
+			azimut=360.09894;
+			id=5689;
+			side="EMPTY";
+			vehicle="Land_Mattaust_ATM";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
+		};
+		class Item5447
+		{
+			position[]={36607.934,4.4294491,12043.686};
+			azimut=629.81372;
+			id=5690;
+			side="EMPTY";
+			vehicle="Land_Mattaust_ATM";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
+		};
+		class Item5448
+		{
+			position[]={31488.568,48.201561,16901.797};
+			azimut=384.3692;
+			id=5691;
+			side="EMPTY";
+			vehicle="Land_Mattaust_ATM";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
+		};
+		class Item5449
+		{
+			position[]={31170.947,29.380964,19976.525};
+			azimut=441.74414;
+			id=5692;
+			side="EMPTY";
+			vehicle="Land_Mattaust_ATM";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
+		};
+		class Item5450
+		{
+			position[]={4707.6655,7.7817059,17787.797};
+			azimut=359.89172;
+			id=5693;
+			side="EMPTY";
+			vehicle="Land_Mattaust_ATM";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;this setVectorUp [0,0,1]";
+		};
 	};
 	class Markers
 	{
-		items=547;
+		items=555;
 		class Item0
 		{
 			position[]={31009.451,2.8192575,10527.904};
@@ -66900,7 +66950,7 @@ class Mission
 		};
 		class Item502
 		{
-			position[]={30582.639,21.178442,12565.008};
+			position[]={30782.357,21.178442,11911.638};
 			name="civ_gar_1_1_1";
 			type="plp_mark_as_storage";
 			colorName="ColorGreen";
@@ -66908,10 +66958,10 @@ class Mission
 		};
 		class Item503
 		{
-			position[]={30615.051,21.178442,12527.852};
+			position[]={30728.283,21.178442,11959.894};
 			name="Air_1";
 			type="Empty";
-			angle=177.48685;
+			angle=-0.043231811;
 		};
 		class Item504
 		{
@@ -67244,10 +67294,69 @@ class Mission
 			type="plp_mark_civ_zivilist_zubehoer";
 			angle=-360.35599;
 		};
+		class Item547
+		{
+			position[]={31151.197,2.5366728,5408.8223};
+			name="atm_1_3_11_5_5_2_2_1";
+			type="plp_mark_civ_atm";
+			angle=720.70612;
+		};
+		class Item548
+		{
+			position[]={36608.496,4.4296255,12043.981};
+			name="atm_1_3_11_5_5_2_2_1_1";
+			type="plp_mark_civ_atm";
+			angle=1439.0824;
+		};
+		class Item549
+		{
+			position[]={31488.955,48.201565,16901.701};
+			name="atm_1_3_11_5_5_2_2_1_2";
+			type="plp_mark_civ_atm";
+			angle=717.12811;
+		};
+		class Item550
+		{
+			position[]={31171.076,29.380964,19976.15};
+			name="atm_1_3_11_5_5_2_2_1_2_1";
+			type="plp_mark_civ_atm";
+			angle=716.19672;
+		};
+		class Item551
+		{
+			position[]={4708.2476,7.7817059,17787.627};
+			name="atm_1_3_11_5_5_2_2_1_2_1_1";
+			type="plp_mark_civ_atm";
+			angle=723.22772;
+		};
+		class Item552
+		{
+			position[]={468.25653,0.022015708,37356.805};
+			name="car1_8_1";
+			text=" Car Shop";
+			type="plp_mark_civ_zivilist_autohaus";
+			angle=360.01501;
+		};
+		class Item553
+		{
+			position[]={476.50781,-0.015058586,36918.957};
+			name="lambo_1";
+			text=" Car Shop ""Marke""";
+			type="plp_mark_as_vehicle";
+			colorName="ColorWhite";
+		};
+		class Item554
+		{
+			position[]={482.45944,0.015665701,36527.324};
+			name="civ_truck_shop1_1_5_1";
+			text=" Truck / LKW Shop";
+			type="plp_mark_as_truck";
+			colorName="ColorWhite";
+		};
 	};
 	class Sensors
 	{
-		items=9;
+		items=11;
 		class Item0
 		{
 			position[]={29997.139,27.331648,17436.689};
@@ -67384,6 +67493,39 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expActiv="ziel_erreicht = true;";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={31015.211,1.0607648,10513.956};
+			a=1;
+			b=1;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="info";
+			expActiv="titleText [""Drücke nun die Windows Taste um den ATM zu Aktivieren"", ""PLAIN""];";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={31015.117,1.5686712,10515.702};
+			a=5;
+			b=5;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="info_1";
+			expActiv="hint ""Bitte beachte die neue Steuerung von ACE! Der ATM wird nun per Windows Taste Aktiviert und nicht mehr über das Scrollmenü."";";
+			expDesactiv="hint ""Bitte beachte die neue Steuerung von ACE! Der ATM wird nun per Windows Taste Aktiviert und nicht mehr über das Scrollmenü."";";
 			class Effects
 			{
 			};
