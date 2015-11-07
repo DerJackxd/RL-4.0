@@ -14,13 +14,13 @@ switch (_mode) do
 	case "heilen":
 		{
 			if(_medicsOnline) exitWith {hint "Es sind noch andere Ärtzte da! Ich bin aktuell zu beschäftigt"};
-			if(CASH < 30000) exitWith {hint format[localize "STR_NOTF_HS_NoCash",35000];};
+			if(CASH < 30000) exitWith {hint format[localize "STR_NOTF_HS_NoCash",30000];};
 			titleText[localize "STR_NOTF_HS_Healing","PLAIN"];
 			sleep 8;
 			if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]};
 			titleText[localize "STR_NOTF_HS_Healed","PLAIN"];
 			[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
-			SUB(CASH,35000);
+			SUB(CASH,30000);
 		};
 
 		case "heal_all":
