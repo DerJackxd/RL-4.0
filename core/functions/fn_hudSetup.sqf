@@ -58,7 +58,7 @@ _version ctrlSetText format["BETA: 0.%1.%2",(productVersion select 2),(productVe
 		sleep 1;
 		_counter = _counter - 1;
 
-		((uiNamespace getVariable "playerHUD") displayCtrl IDC_LIFE_UI_STATUSBAR) ctrlSetStructuredText parseText format["<t %1 size='1' font='PuristaSemibold'>FPS: %2</t> | <t color='#0075FF' size='1' font='PuristaSemibold'>Cops: %3</t> | <t color='#660080' size='1' font='PuristaSemibold'>Civs: %4</t> | <t color='#008000' size='1' font='PuristaSemibold'>Medics: %5</t> | <t color='#FF0000' size='1' font='PuristaSemibold'>Uptime: %6</t>",_fpscolour, _fps, west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits, [serverTime, "HH:MM:SS"] call BIS_fnc_secondsToString];
+		((uiNamespace getVariable "playerHUD") displayCtrl IDC_LIFE_UI_STATUSBAR) ctrlSetStructuredText parseText format["<t %1 size='1' font='PuristaSemibold'>FPS: %2</t> | <t color='#0075FF' size='1' font='PuristaSemibold'>Cops: %3</t> | <t color='#660080' size='1' font='PuristaSemibold'>Civs: %4</t> | <t color='#008000' size='1' font='PuristaSemibold'>Medics: %5</t> | <t color='#FFCF00' size='1' font='PuristaSemibold'>ADAC: %6</t> | <t color='#FF0000' size='1' font='PuristaSemibold'>Uptime: %7</t>",_fpscolour, _fps, west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits, opfor countSide playableUnits, [serverTime, "HH:MM:SS"] call BIS_fnc_secondsToString];
 
 	};
 };

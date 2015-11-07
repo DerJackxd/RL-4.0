@@ -2,7 +2,7 @@
 /*
 	File: fn_processAction.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master handling for processing an item.
 */
@@ -60,12 +60,12 @@ _itemInfo = switch (_type) do {
 	default {[];};
 };
 
-if(_chance >= 96) then 
+if(_chance >= 96) then
 {
 	switch (_type) do
 	{
 		case "cocaine": {[[3,format["<t color='#CB2525'><t size='2.5'>Info!</t><br/> <t color='#FFFFFF'>- Informant: Jemand hat gerade große Mengen Zutaten zur Kokaine herstellungen gekauft!<br/><br/>Er ist in richtung Panagia gefahren!!!</t>"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
-		case "marijuana": {[[3,format["<t color='#CB2525'><t size='2.5'>Info!</t><br/> <t color='#FFFFFF'>- Informant: Jeamd wurde mit einer großen Menge verdächtig ausehender Pflanzen gesehen!<br/><br/> Bei der Thelos-Buch im im Osten Altis!!!</t>"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
+		case "marijuana": {[[3,format["<t color='#CB2525'><t size='2.5'>Info!</t><br/> <t color='#FFFFFF'>- Informant: Jeamd wurde mit einer großen Menge verdächtig ausehender Pflanzen gesehen!!!</t>"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
 		/*case "moonshine": {[[3,format["<t color='#CB2525'><t size='2.5'>Info!</t><br/> <t color='#FFFFFF'>- Informant: Die Einwohner von Athira haben den verdacht das bei Kap Zefyris eine Illegale Distillery betrieben wird!!!</t>"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };//new
 		case "bottledshine": {[[3,format["<t color='#CB2525'><t size='2.5'>Info!</t><br/> <t color='#FFFFFF'>- Informant: Es besteht der verdacht das die Flaschenabfuellfirma illegale Geschaefte durch abfuellen von Schwarzgebrannten betreibt!!!</t>"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };//new
 		case "meth": {[[3,format["<t color='#CB2525'><t size='2.5'>Info!</t><br/> <t color='#FFFFFF'>- Informant: Die Einwohner von Delfinaki beschweren sich über Chemische Dämpfe in der naehe die zu Halluzination fuehren!!!</t>"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
@@ -151,7 +151,7 @@ while{true} do {
 	if(_cP >= 1) exitWith {};
 	if(player distance _vendor > 10) exitWith {};
 };
-	
+
 if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 //if(CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};

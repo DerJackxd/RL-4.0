@@ -194,7 +194,7 @@ class WeaponShops {
 
     //Cop Shops
     class cop_basic {
-        name = "Altis Polizeihaendler";
+        name = "Australien Polizeihaendler";
         side = "cop";
         license = "";
         level = -1;
@@ -230,7 +230,7 @@ class WeaponShops {
     };
 
     class cop_patrol {
-        name = "Altis Offizierhaendler";
+        name = "Australien Offizierhaendler";
         side = "cop";
         license = "";
         level = 2;
@@ -281,7 +281,7 @@ class WeaponShops {
     };
 
 	class cop_SEK {
-		name = "Altis SEK-Haendler";
+		name = "Australien SEK-Haendler";
 		side = "cop";
 		license = "";
 		level = 5;
@@ -339,7 +339,7 @@ class WeaponShops {
 	};
 
     class cop_sergeant {
-        name = "Altis Militaerhaendler";
+        name = "Australien Militaerhaendler";
         side = "cop";
         license = "";
         level = 7;
@@ -391,7 +391,7 @@ class WeaponShops {
     };
 
 	class cop_general {
-        name = "Altis Generalshop";
+        name = "Australien Generalshop";
         side = "cop";
         license = "";
         level = 9;

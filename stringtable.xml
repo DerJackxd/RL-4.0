@@ -6,7 +6,7 @@
 			<German>GBB Fashion Shop</German>
 		</Key>
 		<Key ID="STR_Shops_C_Police">
-			<Original>Altis Police Department Shop</Original>
+			<Original>Australia Police Department Shop</Original>
 		</Key>
 		<Key ID="STR_Shops_C_Rebel">
 			<Original>Mohammed's Jihadi Shop</Original>
@@ -54,8 +54,8 @@
 			<Original>AirSoft Outfits</Original>
 		</Key>
 		<Key ID="STR_Shops_Market">
-			<Original>Altis Market</Original>
-			<German>Altis Markt</German>
+			<Original>Australia Market</Original>
+			<German>Australien Markt</German>
 			<Italian>Mercato</Italian>
 			<French>Marché</French>
 		</Key>
@@ -120,8 +120,8 @@
 			<French>Acheteur de Verre</French>
 		</Key>
 		<Key ID="STR_Shops_Minerals">
-			<Original>Altis Industrial Trader</Original>
-			<German>Altis Industriehandel</German>
+			<Original>Australia Industrial Trader</Original>
+			<German>Australien Industriehandel</German>
 			<Italian>Vendita materiali industriali</Italian>
 			<French>Acheteur Industriel</French>
 		</Key>
@@ -666,11 +666,11 @@
 	</Package>
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
-			<Original>Altis Mobile</Original>
- 			<German>Altis Mobilfunk</German>
-			<French>Altis mobile</French>
-			<Italian>Cellulare Altis</Italian>
-			<Portuguese>Altis Mobile</Portuguese>
+			<Original>Australia Mobile</Original>
+ 			<German>Australien Mobilfunk</German>
+			<French>Australia mobile</French>
+			<Italian>Cellulare Australia</Italian>
+			<Portuguese>Australia Mobile</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_TextToSend">
 			<Original>Message To Send:</Original>
@@ -854,26 +854,26 @@
 			<Original>Disband Gang</Original>
 			<German>Gang auflösen</German>
 			<French>Dissoudre Gang</French>
-			<Italian>Sciogli Gang</Italian>		
+			<Italian>Sciogli Gang</Italian>
 			<Portuguese>Desfazer Gangue</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_Invitation">
 			<Original>Gang Invitation</Original>
-			<German>Gang Einladung</German>	
+			<German>Gang Einladung</German>
 			<French>Invitation de Gang</French>
 			<Italian>Invito Gang</Italian>
 			<Portuguese>Convite para Gangue</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_Transfer">
 			<Original>Transfer Gang Leadership</Original>
-			<German>Gangleitung übertragen</German>	
+			<German>Gangleitung übertragen</German>
 			<French>Transfert du commandement du Gang</French>
 			<Italian>Trasferisci Comando</Italian>
 			<Portuguese>Transferir Liderança</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_UpgradeMax">
 			<Original>Upgrade Maximum Allowed Gang Members</Original>
-			<German>Maximale Anzahl an Gang Mitgliedern erhöhen</German>	
+			<German>Maximale Anzahl an Gang Mitgliedern erhöhen</German>
 			<French>Augmentation du nombre de membre acceptés</French>
 			<Italian>Aumenta numero massimo membri della Gang</Italian>
 			<Portuguese>Atualizar limite máximo de membros</Portuguese>
@@ -882,21 +882,21 @@
 	<Package name="Gang_Notification">
 		<Key ID="STR_GNOTF_CreateGang">
 			<Original>You must create a gang first before capturing it!</Original>
-			<German>Du musst erst in einer Gang sein, um einzunehmen zu können!</German>	
+			<German>Du musst erst in einer Gang sein, um einzunehmen zu können!</German>
 			<French>Vous devez créer un gang avant de le capturer!</French>
 			<Italian>Devi creare una gang prima di catturarla!</Italian>
 			<Portuguese>Você precisa criar uma gangue antes de tentar capturar esse esconderijo!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_Controlled">
 			<Original>Your gang already has control over this hideout!</Original>
-			<German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>	
+			<German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>
 			<French>Votre bande a déjà le contrôle de cette cachette!</French>
 			<Italian>La tua Gang ha già il controllo di questo Covo</Italian>
 			<Portuguese>Sua gangue já tem controle sobre esse esconderijo!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_Captured">
 			<Original>Only one person shall capture at once!</Original>
-			<German>Nur eine Person kann das Versteck einnehmen!</German>	
+			<German>Nur eine Person kann das Versteck einnehmen!</German>
 			<French>Une seule personne doit capturer à la fois!</French>
 			<Italian>Può conquistare solo una persona alla volta!</Italian>
 			<Portuguese>Somente uma pessoa pode capturar!</Portuguese>
@@ -945,7 +945,7 @@
 		</Key>
 		<Key ID="STR_GNOTF_IncorrectChar">
 			<Original>You have invalid characters in your gang name. It can only consist of Numbers and letters with an underscore</Original>
-			<German>Du hast ein ungültiges Zeichen in deinem Gang Namen. Der Name darf nur aus Zahlen und Buchstaben sowie einem Unterstrich bestehen</German>	
+			<German>Du hast ein ungültiges Zeichen in deinem Gang Namen. Der Name darf nur aus Zahlen und Buchstaben sowie einem Unterstrich bestehen</German>
 			<French>Vous avez des caractères non valides dans le nom de votre gang. Il ne peut être constitué de chiffres amd lettres avec un trait de soulignement</French>
 			<Italian>Hai inserito caratteri non validi nel nome della Gang. Puoi inserire solo numeri e lettere con un underscore</Italian>
 			<Portuguese>O nome da sua gangue tem caracteres inválidos. O nome so pode conter caracteres e números separados por sublinhado</Portuguese>
@@ -1166,12 +1166,12 @@
 			<Original>Vehicle Garage</Original>
 			<German>Fahrzeug Garage</German>
 			<French>Garage Vehicule</French>
-			<Italian>Garage Veicoli</Italian>			
+			<Italian>Garage Veicoli</Italian>
 			<Portuguese>Garagem de Veículos</Portuguese>
 		</Key>
 		<Key ID="STR_Garage_GetVehicle">
 			<Original>Get Vehicle</Original>
-			<German>Ausparken</German>	
+			<German>Ausparken</German>
 			<French>Récupérer</French>
 			<Italian>Ritira Veicolo</Italian>
 			<Portuguese>Pegar Veiculo</Portuguese>
@@ -1200,8 +1200,8 @@
 		<Key ID="STR_Garage_NoVehicles">
 			<Original>No vehicles found in garage.</Original>
 			<German>Keine Fahrzeuge in der Garage gefunden.</German>
-			<French>Aucuns Vehicules.</French>	
-			<Italian>Non hai veicoli nel Garage.</Italian>			
+			<French>Aucuns Vehicules.</French>
+			<Italian>Non hai veicoli nel Garage.</Italian>
 			<Portuguese>Nenhum veiculo encontrado na garagem.</Portuguese>
 		</Key>
 		<Key ID="STR_Garage_CashError">
@@ -1269,14 +1269,14 @@
 		</Key>
 		<Key ID="STR_Garage_Store_Server">
 			<Original>The server is trying to store the vehicle...</Original>
-			<German>Der Server versucht, das Fahrzeug zu speichern...</German>	
+			<German>Der Server versucht, das Fahrzeug zu speichern...</German>
 			<French>Le serveur tente de stocker le véhicule ...</French>
 			<Italian>Il server cercando di depositare il veicolo...</Italian>
 			<Portuguese>O servidor está guardando o veiculo...</Portuguese>
 		</Key>
 		<Key ID="STR_Garage_Selection_Error">
 			<Original>The selection had a error...</Original>
-			<German>Die Auswahl hat einen Fehler...</German>	
+			<German>Die Auswahl hat einen Fehler...</German>
 			<French>La selection à une erreur...</French>
 			<Italian>La selezione ha avuto un errore...</Italian>
 			<Portuguese>Erro ao selecionar....</Portuguese>
@@ -1464,7 +1464,7 @@
 			<Original>Player Tags</Original>
 			<German>Spielernamen</German>
 			<French>Tags Joueurs</French>
-			<Italian>Tag Giocatore</Italian>			
+			<Italian>Tag Giocatore</Italian>
 			<Portuguese>Tags de Jogadores</Portuguese>
 		</Key>
 		<Key ID="STR_SM_TagsON">
@@ -1498,8 +1498,8 @@
 		<Key ID="STR_SM_SCON">
 			<Original>Sidechat ON</Original>
 			<German>Sidechat AN</German>
-			<French>Sidechat ON</French>	
-			<Italian>Chat fazione ON</Italian>			
+			<French>Sidechat ON</French>
+			<Italian>Chat fazione ON</Italian>
 			<Portuguese>Sidechat ON</Portuguese>
 		</Key>
 	</Package>
@@ -1515,7 +1515,7 @@
 			<Original>Your Inventory</Original>
 			<German>Eigenes Inventar</German>
 			<French>Ton Inventaire</French>
-			<Italian>Inventario Personale</Italian>	
+			<Italian>Inventario Personale</Italian>
 			<Portuguese>Seu Inventário</Portuguese>
 		</Key>
 		<Key ID="STR_VS_BuyItem">
@@ -1605,7 +1605,7 @@
 			<Original>Take</Original>
 			<German>Nehmen</German>
 			<French>Récupérer</French>
-			<Italian>Prendi</Italian>		
+			<Italian>Prendi</Italian>
 			<Portuguese>Pegar</Portuguese>
 		</Key>
 		<Key ID="STR_Trunk_Store">
@@ -1693,7 +1693,7 @@
 			<Original>Ornate</Original>
 			<German>Ornate</German>
 			<French>Ornate</French>
-			<Italian>Orata</Italian>			
+			<Italian>Orata</Italian>
 			<Portuguese>Ornamentado</Portuguese>
 		</Key>
 		<Key ID="STR_ANIM_Mackerel">
@@ -1779,7 +1779,7 @@
 			<Original>You bought a %1 for $%2</Original>
 			<German>Du hast einen %1 für $%2 gekauft</German>
 			<French>Tu as acheté cet élément : %1 pour %2$</French>
-			<Italian>Hai comprato un %1 per €%2</Italian>		
+			<Italian>Hai comprato un %1 per €%2</Italian>
 			<Portuguese>Você comprou %1 por R$%2</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_Arrested_1">
@@ -1884,7 +1884,7 @@
 			<Original>You failed to deliver the package because you died.</Original>
 			<German>Du hast es nicht geschafft, das Paket abzuliefern, da du gestorben bist.</German>
 			<French>Vous avez omis de livrer le colis car vous êtes morts.</French>
-			<Italian>Compra Oggetto</Italian>			
+			<Italian>Compra Oggetto</Italian>
 			<Portuguese>Você falhou na tarefa de entrega pois você morreu.</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_HS_NoCash">
@@ -2458,8 +2458,8 @@
 			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
 		</Key>
 		<Key ID="STR_Civ_LicenseRemoveSpeed">
-			<Original>You have been revoked due to many points in Altis-points register your licenses for trucks u. Car!</Original>
-			<German>Dir wurde wegen zu vielen Punken im Altis-Punkteregister deine Führerscheine für LKW u. Auto entzogen!</German>
+			<Original>You have been revoked due to many points in Australia-points register your licenses for trucks u. Car!</Original>
+			<German>Dir wurde wegen zu vielen Punken im Australien-Punkteregister deine Führerscheine für LKW u. Auto entzogen!</German>
 		</Key>
 		<Key ID="STR_Civ_RobFail">
 			<Original>They didn't have any cash...</Original>
@@ -2567,7 +2567,7 @@
 			<French>%1 a mis une contravention de $%2 à %3</French>
 			<Italian>%1 ha dato una multa di €%2 a %3</Italian>
 			<Portuguese>%1 deu uma multa de R$%2 para %3</Portuguese>
-		</Key>	
+		</Key>
 		<Key ID="STR_Cop_Ticket_NotEnough">
 			<Original>You don't have enough money in your bank account or on you to pay the ticket.</Original>
 			<German>Du hast nicht genug Geld auf deinem Bankkonto, um den Strafzettel bezahlen zu können.</German>
@@ -3144,7 +3144,7 @@
 			<Portuguese>O dono da casa não está online, você não pode vasculhar a casa!</Portuguese>
 		</Key>
 		<Key ID="STR_House_Raid_DoorUnlocked">
-			<Original>The door is already unlocked!</Original>			
+			<Original>The door is already unlocked!</Original>
 			<German>Die Tür ist bereits offen!</German>
 			<French>La porte est déjà débloqué!</French>
 			<Italian>La porta è già sbloccata!</Italian>
@@ -3719,7 +3719,7 @@
 			<French>Filet de Mulet</French>
 			<Italian>Carne di Triglia</Italian>
 			<Portuguese>Peixe Mullet</Portuguese>
-		</Key> 
+		</Key>
 		<Key ID="STR_Item_MulletFried">
 			<Original>Fried Mullet</Original>
 			<German>Frittierte Meeräsche</German>
@@ -5796,8 +5796,8 @@
 		<Key ID="STR_ISTR_Pick_MineVeh">
 			<Original>You can't mine from inside a car!</Original>
 			<German>Du kannst nicht in deinem Auto abbauen!</German>
-			<French>Vous ne pouvez pas miner à l'intérieur d'une voiture!</French>	
-			<Italian>Non puoi piazzare mine da dentro un veicolo!</Italian>			
+			<French>Vous ne pouvez pas miner à l'intérieur d'une voiture!</French>
+			<Italian>Non puoi piazzare mine da dentro un veicolo!</Italian>
 			<Portuguese>Você não pode minerar de dentro do carro!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Pick_Success">
@@ -6436,8 +6436,8 @@
 		<Key ID="STR_vInAct_PushBoat">
 			<Original>Push Boat</Original>
 			<German>Boot schieben</German>
-			<French>Pousser bateau</French>	
-			<Italian>Spingi Barca</Italian>			
+			<French>Pousser bateau</French>
+			<Italian>Spingi Barca</Italian>
 			<Portuguese>Empurar Barco</Portuguese>
 		</Key>
 		<Key ID="STR_vInAct_ADACRepair">
@@ -6988,7 +6988,7 @@
 			<Original>You will receive your next paycheck in %1 minutes</Original>
 			<German>Du erhältst deinen nächsten Gehaltsscheck in %1 Minuten</German>
 			<French>Vous recevrez votre prochain chèque de paie dans %1 minutes</French>
-			<Italian>Riceverai il tuo prossimo stipendio in %1 minuti</Italian>		
+			<Italian>Riceverai il tuo prossimo stipendio in %1 minuti</Italian>
 			<Portuguese>Você vai receber seu próximo pagamento em %1 minutos</Portuguese>
 		</Key>
 		<Key ID="STR_FSM_MissedPay">
@@ -7011,14 +7011,14 @@
 			<Original>Drop Fishing Net</Original>
 			<German>Fischernetz auswerfen</German>
 			<French>Drop Fishing Net</French>
-			<Italian>Drop Fishing Net</Italian>		
+			<Italian>Drop Fishing Net</Italian>
 			<Portuguese>Jogar Rede de Pesca</Portuguese>
 		</Key>
 		<Key ID="STR_pAct_RobPerson">
 			<Original>Rob Person</Original>
 			<German>Person ausrauben</German>
 			<French>Rob Person</French>
-			<Italian>Rob Person</Italian>		
+			<Italian>Rob Person</Italian>
 			<Portuguese>Roubar Jogador</Portuguese>
 		</Key>
 	</Package>
@@ -7027,273 +7027,273 @@
 			<Original>Vehicular Manslaughter</Original>
 			<German>Menschen ueberfahren</German>
 			<French>Vehicular Manslaughter</French>
-			<Italian>Vehicular Manslaughter</Italian>		
+			<Italian>Vehicular Manslaughter</Italian>
 			<Portuguese>Vehicular Manslaughter</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_187">
 			<Original>Manslaughter</Original>
 			<German>Mord</German>
 			<French>Manslaughter</French>
-			<Italian>Manslaughter</Italian>		
+			<Italian>Manslaughter</Italian>
 			<Portuguese>Manslaughter</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_901">
 			<Original>Escaping Jail</Original>
 			<German>Gefaengnis ausbruch</German>
 			<French>Escaping Jail</French>
-			<Italian>Escaping Jail</Italian>		
+			<Italian>Escaping Jail</Italian>
 			<Portuguese>Escaping Jail</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_215">
 			<Original>Attempted Auto Theft</Original>
 			<German>Versuchter Autodiebstahl</German>
 			<French>Attempted Auto Theft</French>
-			<Italian>Attempted Auto Theft</Italian>		
+			<Italian>Attempted Auto Theft</Italian>
 			<Portuguese>Attempted Auto Theft</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_213">
 			<Original>Use of illegal explosives</Original>
 			<German>Benutzen von Sprengstoff</German>
 			<French>Use of illegal explosives</French>
-			<Italian>Use of illegal explosives</Italian>		
+			<Italian>Use of illegal explosives</Italian>
 			<Portuguese>Use of illegal explosives</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_211">
 			<Original>Robbery</Original>
 			<German>Spieler ausgeraubt</German>
 			<French>Robbery</French>
-			<Italian>Robbery</Italian>		
+			<Italian>Robbery</Italian>
 			<Portuguese>Robbery</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_207">
 			<Original>Kidnapping</Original>
 			<German>Kidnapping</German>
 			<French>Kidnapping</French>
-			<Italian>Kidnapping</Italian>		
+			<Italian>Kidnapping</Italian>
 			<Portuguese>Kidnapping</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_207A">
 			<Original>Attempted Kidnapping</Original>
 			<German>Versuchtes Kidnapping</German>
 			<French>Attempted Kidnapping</French>
-			<Italian>Attempted Kidnapping</Italian>		
+			<Italian>Attempted Kidnapping</Italian>
 			<Portuguese>Attempted Kidnapping</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_390">
 			<Original>Public Intoxication</Original>
 			<German>Trunkenheit in der Oeffentlichkeit</German>
 			<French>Public Intoxication</French>
-			<Italian>Public Intoxication</Italian>		
+			<Italian>Public Intoxication</Italian>
 			<Portuguese>Public Intoxication</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_487">
 			<Original>Grand Theft</Original>
 			<German>Diebstahl (hoher Sachschaden)</German>
 			<French>Grand Theft</French>
-			<Italian>Grand Theft</Italian>		
+			<Italian>Grand Theft</Italian>
 			<Portuguese>Grand Theft</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_488">
 			<Original>Petty Theft</Original>
 			<German>Diebstahl (Geringer Sachschaden)</German>
 			<French>Petty Theft</French>
-			<Italian>Petty Theft</Italian>		
+			<Italian>Petty Theft</Italian>
 			<Portuguese>Petty Theft</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_480">
 			<Original>Hit and run</Original>
 			<German>Fahrerflucht</German>
 			<French>Hit and run</French>
-			<Italian>Hit and run</Italian>		
+			<Italian>Hit and run</Italian>
 			<Portuguese>Hit and run</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_481">
 			<Original>Drug Possession</Original>
 			<German>Drogenbesitz (kleine Mengen)</German>
 			<French>Drug Possession</French>
-			<Italian>Drug Possession</Italian>		
+			<Italian>Drug Possession</Italian>
 			<Portuguese>Drug Possession</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_482">
 			<Original>Intent to distribute</Original>
 			<German>Drogenbesitz (große Mengen)</German>
 			<French>Intent to distribute</French>
-			<Italian>Intent to distribute</Italian>		
+			<Italian>Intent to distribute</Italian>
 			<Portuguese>Intent to distribute</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_483">
 			<Original>Drug Trafficking</Original>
 			<German>Drogenhandel</German>
 			<French>Drug Trafficking</French>
-			<Italian>Drug Trafficking</Italian>		
+			<Italian>Drug Trafficking</Italian>
 			<Portuguese>Drug Trafficking</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_459">
 			<Original>Burglary</Original>
 			<German>Bankueberfall</German>
 			<French>Burglary</French>
-			<Italian>Burglary</Italian>		
+			<Italian>Burglary</Italian>
 			<Portuguese>Burglary</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_666">
 			<Original>Tax Evasion</Original>
 			<German>Tax Evasion</German>
 			<French>Tax Evasion</French>
-			<Italian>Tax Evasion</Italian>		
+			<Italian>Tax Evasion</Italian>
 			<Portuguese>Tax Evasion</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_667">
 			<Original>Terrorism</Original>
 			<German>Terrorism</German>
 			<French>Terrorism</French>
-			<Italian>Terrorism</Italian>		
+			<Italian>Terrorism</Italian>
 			<Portuguese>Terrorism</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_668">
 			<Original>Unlicensed Hunting</Original>
 			<German>Unlicensed Hunting</German>
 			<French>Unlicensed Hunting</French>
-			<Italian>Unlicensed Hunting</Italian>		
+			<Italian>Unlicensed Hunting</Italian>
 			<Portuguese>Unlicensed Hunting</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_919">
 			<Original>Organ Theft</Original>
 			<German>Organhandel</German>
 			<French>Organ Theft</French>
-			<Italian>Organ Theft</Italian>		
+			<Italian>Organ Theft</Italian>
 			<Portuguese>Organ Theft</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_919A">
 			<Original>Attempted Organ Theft</Original>
 			<German>Attempted Organ Theft</German>
 			<French>Attempted Organ Theft</French>
-			<Italian>Attempted Organ Theft</Italian>		
+			<Italian>Attempted Organ Theft</Italian>
 			<Portuguese>Attempted Organ Theft</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_261">
 			<Original>robbery</Original>
 			<German>Raub</German>
 			<French>robbery</French>
-			<Italian>robbery</Italian>		
+			<Italian>robbery</Italian>
 			<Portuguese>robbery</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_261A">
 			<Original>attempted robbery</Original>
 			<German>Versuchter Raub</German>
 			<French>attempted robbery</French>
-			<Italian>attempted robbery</Italian>		
+			<Italian>attempted robbery</Italian>
 			<Portuguese>attempted robbery</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_411A">
 			<Original>gas station robbery</Original>
 			<German>Tankstellenraub</German>
 			<French>gas station robbery</French>
-			<Italian>gas station robbery</Italian>		
+			<Italian>gas station robbery</Italian>
 			<Portuguese>gas station robbery</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_46A">
 			<Original>Attempted robbery gas station</Original>
 			<German>Versuchter Tankstellenraub</German>
 			<French>Attempted robbery gas station</French>
-			<Italian>Attempted robbery gas station</Italian>		
+			<Italian>Attempted robbery gas station</Italian>
 			<Portuguese>Attempted robbery gas station</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_42A">
 			<Original>gambling</Original>
 			<German>Glueksspiel</German>
 			<French>gambling</French>
-			<Italian>gambling</Italian>		
+			<Italian>gambling</Italian>
 			<Portuguese>gambling</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_43A">
 			<Original>chopped radar</Original>
 			<German>Radar gehackt</German>
 			<French>chopped radar</French>
-			<Italian>chopped radar</Italian>		
+			<Italian>chopped radar</Italian>
 			<Portuguese>chopped radar</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_460">
 			<Original>house burglary</Original>
 			<German>Hauseinbruch</German>
 			<French>house burglary</French>
-			<Italian>house burglary</Italian>		
+			<Italian>house burglary</Italian>
 			<Portuguese>house burglary</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_800">
 			<Original>torture</Original>
 			<German>Foltern</German>
 			<French>torture</French>
-			<Italian>torture</Italian>		
+			<Italian>torture</Italian>
 			<Portuguese>torture</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_902">
 			<Original>Prison Escaping Help</Original>
 			<German>Gefaengnis fluchthilfe</German>
 			<French>Prison Escaping Help</French>
-			<Italian>Prison Escaping Help</Italian>		
+			<Italian>Prison Escaping Help</Italian>
 			<Portuguese>Prison Escaping Help</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_903">
 			<Original>Prison Escaping Help attempt</Original>
 			<German>Gefaengnis fluchthilfe versucht</German>
 			<French>Prison Escaping Help attempt</French>
-			<Italian>Prison Escaping Help attempt</Italian>		
+			<Italian>Prison Escaping Help attempt</Italian>
 			<Portuguese>Prison Escaping Help attempt</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_customtype">
 			<Original>speed</Original>
 			<German>Geschwindigkeit</German>
 			<French>speed</French>
-			<Italian>speed</Italian>		
+			<Italian>speed</Italian>
 			<Portuguese>speed</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_weapon">
 			<Original>Illegal possession of firearms weapons</Original>
 			<German>Waffenbesitz Illegaler Waffen</German>
 			<French>Illegal possession of firearms weapons</French>
-			<Italian>Illegal possession of firearms weapons</Italian>		
+			<Italian>Illegal possession of firearms weapons</Italian>
 			<Portuguese>Illegal possession of firearms weapons</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_policeitems">
 			<Original>Possession of police property</Original>
 			<German>Besitz von Polizeieigentum</German>
 			<French>Possession of police property</French>
-			<Italian>Possession of police property</Italian>		
+			<Italian>Possession of police property</Italian>
 			<Portuguese>Possession of police property</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_120H">
 			<Original>Vehicle licenses were revoked</Original>
 			<German>Fahrzeuglizenzen wurden entzogen</German>
 			<French>Licences de véhicules ont été révoqués</French>
-			<Italian>Licenze di veicoli sono state revocate</Italian>		
+			<Italian>Licenze di veicoli sono state revocate</Italian>
 			<Portuguese>Licenças de veículos foram revogadas</Portuguese>
 		 </Key>
 		 <Key ID="STR_Crime_120FS">
 			<Original>Searched Raser</Original>
 			<German>Gesuchter Raser</German>
 			<French>recherchés Raser</French>
-			<Italian>Ricerca Raser</Italian>		
+			<Italian>Ricerca Raser</Italian>
 			<Portuguese>procurado Raser</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_120S">
 			<Original>Fines / administrative detention</Original>
 			<German>Bussgeld/Ordnungshaft</German>
-			<French>Amendes / la détention administrative</French>			
-			<Italian>Multe / detenzione amministrativa</Italian>		
+			<French>Amendes / la détention administrative</French>
+			<Italian>Multe / detenzione amministrativa</Italian>
 			<Portuguese>Detenção Fine / administrativo</Portuguese>
 		 </Key>
 		 <Key ID="STR_Crime_120FSWL">
 			<Original>Criminally sought Raser</Original>
 			<German>Strafrechtlich gesuchter Raser</German>
 			<French>Pénalement cherché Raser</French>
-			<Italian>Criminally cercato Raser</Italian>		
+			<Italian>Criminally cercato Raser</Italian>
 			<Portuguese>Criminalmente procurado Raser</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_240">
             <Original>ATM robbery</Original>
             <German>Geldautomaten Raub</German>
             <French>Vol ATM</French>
-            <Italian>Bancomat rapina</Italian>        
+            <Italian>Bancomat rapina</Italian>
             <Portuguese>ATM roubo</Portuguese>
         </Key>
 
@@ -7301,336 +7301,336 @@
 			<Original>Driving without a car license</Original>
 			<German>Fahren ohne Fuehrerschein/B</German>
 			<French>Driving without a car license</French>
-			<Italian>Driving without a car license</Italian>		
+			<Italian>Driving without a car license</Italian>
 			<Portuguese>Driving without a car license</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_2">
 			<Original>Driving without truck License</Original>
 			<German>Fahren ohne Fuehrerschein/C</German>
 			<French>Driving without truck License</French>
-			<Italian>Driving without truck License</Italian>		
+			<Italian>Driving without truck License</Italian>
 			<Portuguese>Driving without truck License</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_3">
 			<Original>Driving without lights</Original>
 			<German>Fahren ohne Licht</German>
 			<French>Driving without lights</French>
-			<Italian>Driving without lights</Italian>		
+			<Italian>Driving without lights</Italian>
 			<Portuguese>Driving without lights</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_4">
 			<Original>Driving on the wrong side of the road</Original>
 			<German>Fahren auf falscher Strassenseite</German>
 			<French>Driving on the wrong side of the road</French>
-			<Italian>Driving on the wrong side of the road</Italian>		
+			<Italian>Driving on the wrong side of the road</Italian>
 			<Portuguese>Driving on the wrong side of the road</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_5">
 			<Original>Dangerous driving</Original>
 			<German>Gefährliche Fahrweise</German>
 			<French>Dangerous driving</French>
-			<Italian>Dangerous driving</Italian>		
+			<Italian>Dangerous driving</Italian>
 			<Portuguese>Dangerous driving</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_6">
 			<Original>Landing in a no-fly zone</Original>
 			<German>Landen in einer Flugverbotszone</German>
 			<French>Landing in a no-fly zone</French>
-			<Italian>Landing in a no-fly zone</Italian>		
+			<Italian>Landing in a no-fly zone</Italian>
 			<Portuguese>Landing in a no-fly zone</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_7">
 			<Original>Driving illegal vehicles</Original>
 			<German>Fahren von illegalen Fahrzeugen</German>
 			<French>Driving illegal vehicles</French>
-			<Italian>Driving illegal vehicles</Italian>		
+			<Italian>Driving illegal vehicles</Italian>
 			<Portuguese>Driving illegal vehicles</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_8">
 			<Original>For accidents / hit and run after accident</Original>
 			<German>Unfallverursacher/Fahrerflucht nach Unfall</German>
 			<French>For accidents / hit and run after accident</French>
-			<Italian>For accidents / hit and run after accident</Italian>		
+			<Italian>For accidents / hit and run after accident</Italian>
 			<Portuguese>For accidents / hit and run after accident</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_9">
 			<Original>Hit and Run</Original>
 			<German>Fahrerflucht</German>
 			<French>Hit and Run</French>
-			<Italian>Hit and Run</Italian>		
+			<Italian>Hit and Run</Italian>
 			<Portuguese>Hit and Run</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_10">
 			<Original>Drivers run from the police</Original>
 			<German>Fahrerflucht vor der Polizei</German>
 			<French>Drivers run from the police</French>
-			<Italian>Drivers run from the police</Italian>		
+			<Italian>Drivers run from the police</Italian>
 			<Portuguese>Drivers run from the police</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_11">
 			<Original>Driving over a civilian</Original>
 			<German>Überfahren eines Zivilisten</German>
 			<French>Driving over a civilian</French>
-			<Italian>Driving over a civilian</Italian>		
+			<Italian>Driving over a civilian</Italian>
 			<Portuguese>Driving over a civiliane</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_12">
 			<Original>To stop at a police</Original>
 			<German>Ueberfahren eines Polizisten</German>
 			<French>To stop at a police</French>
-			<Italian>To stop at a police</Italian>		
+			<Italian>To stop at a police</Italian>
 			<Portuguese>To stop at a police</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_13">
 			<Original>Manslaughter of civilians</Original>
 			<German>Fahrlaessige Toetung eines Zivilisten</German>
 			<French>Manslaughter of civilians</French>
-			<Italian>Manslaughter of civilians</Italian>		
+			<Italian>Manslaughter of civilians</Italian>
 			<Portuguese>Manslaughter of civilians</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_14">
 			<Original>Manslaughter of an official</Original>
 			<German>Fahrlaessige Toetung eines Beamten</German>
 			<French>Manslaughter of an official</French>
-			<Italian>Manslaughter of an official</Italian>		
+			<Italian>Manslaughter of an official</Italian>
 			<Portuguese>Manslaughter of an official</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_15">
 			<Original>Civil disorder</Original>
 			<German>Widerstand gegen die Staatsgewalt</German>
 			<French>Civil disorder</French>
-			<Italian>Civil disorder</Italian>		
+			<Italian>Civil disorder</Italian>
 			<Portuguese>Civil disorder</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_16">
 			<Original>insulting an official</Original>
 			<German>Beamtenbeleidigung</German>
 			<French>insulting an official</French>
-			<Italian>insulting an official</Italian>		
+			<Italian>insulting an official</Italian>
 			<Portuguese>insulting an official</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_17">
 			<Original>Assaulting a police officer</Original>
 			<German>Belaestigung eines Polizisten</German>
 			<French>Assaulting a police officer</French>
-			<Italian>Assaulting a police officer</Italian>		
+			<Italian>Assaulting a police officer</Italian>
 			<Portuguese>Assaulting a police officer</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_18">
 			<Original>Fire / injure an official</Original>
 			<German>Beschuss/Verletzen eines Beamten</German>
 			<French>Fire / injure an official</French>
-			<Italian>Fire / injure an official</Italian>		
+			<Italian>Fire / injure an official</Italian>
 			<Portuguese>Fire / injure an official</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_19">
 			<Original>Possession of arms without license</Original>
 			<German>Waffenbesitz ohne Lizenz</German>
 			<French>Possession of arms without license</French>
-			<Italian>Possession of arms without license</Italian>		
+			<Italian>Possession of arms without license</Italian>
 			<Portuguese>Possession of arms without license</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_20">
 			<Original>With gez.Waffe by city</Original>
 			<German>Mit gez.Waffe durch Stadt</German>
 			<French>With gez.Waffe by city</French>
-			<Italian>With gez.Waffe by city</Italian>		
+			<Italian>With gez.Waffe by city</Italian>
 			<Portuguese>With gez.Waffe by city</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_21">
 			<Original>Possession of a prohibited weapon</Original>
 			<German>Besitz einer verbotenen Waffe</German>
 			<French>Possession of a prohibited weapon</French>
-			<Italian>Possession of a prohibited weapon</Italian>		
+			<Italian>Possession of a prohibited weapon</Italian>
 			<Portuguese>Possession of a prohibited weapon</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_22">
 			<Original>Firearms within city</Original>
 			<German>Schusswaffengebrauch innerhalb Stadt</German>
 			<French>Firearms within city</French>
-			<Italian>Firearms within city</Italian>		
+			<Italian>Firearms within city</Italian>
 			<Portuguese>Firearms within city</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_23">
 			<Original>hostages</Original>
 			<German>Geiselnahme</German>
 			<French>hostages</French>
-			<Italian>hostages</Italian>		
+			<Italian>hostages</Italian>
 			<Portuguese>hostages</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_24">
 			<Original>Attack on persons / vehicles</Original>
 			<German>Ueberfall auf Personen/Fahrzeuge</German>
 			<French>Attack on persons / vehicles</French>
-			<Italian>Attack on persons / vehicles</Italian>		
+			<Italian>Attack on persons / vehicles</Italian>
 			<Portuguese>Attack on persons / vehicles</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_25">
 			<Original>bank robbery</Original>
 			<German>Bankraub</German>
 			<French>bank robbery</French>
-			<Italian>bank robbery</Italian>		
+			<Italian>bank robbery</Italian>
 			<Portuguese>bank robbery</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_26">
 			<Original>Flying / floating below 150m above sea level. city</Original>
 			<German>Fliegen/Schweben unterhalb 150m ue.Stadt</German>
 			<French>Flying / floating below 150m above sea level. city</French>
-			<Italian>Flying / floating below 150m above sea level. city</Italian>		
+			<Italian>Flying / floating below 150m above sea level. city</Italian>
 			<Portuguese>Flying / floating below 150m above sea level. city</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_27">
 			<Original>Flying without flying license</Original>
 			<German>Fliegen ohne Fluglizenz</German>
 			<French>Flying without flying license</French>
-			<Italian>Flying without flying license</Italian>		
+			<Italian>Flying without flying license</Italian>
 			<Portuguese>Flying without flying license</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_28">
 			<Original>Alcohol / drug driving</Original>
 			<German>Alkohol/Drogen am Steuer</German>
 			<French>Alcohol / drug driving</French>
-			<Italian>Alcohol / drug driving</Italian>		
+			<Italian>Alcohol / drug driving</Italian>
 			<Portuguese>Alcohol / drug driving</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_29">
 			<Original>Attack by rebels</Original>
 			<German>Angriff durch Rebellen</German>
 			<French>Attack by rebels</French>
-			<Italian>Attack by rebels</Italian>		
+			<Italian>Attack by rebels</Italian>
 			<Portuguese>Attack by rebels</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_30">
 			<Original>Attack / Siege of capitals</Original>
 			<German>Angriff/Belagerung von Hauptstaedten</German>
 			<French>Attack / Siege of capitals</French>
-			<Italian>Attack / Siege of capitals</Italian>		
+			<Italian>Attack / Siege of capitals</Italian>
 			<Portuguese>Attack / Siege of capitals</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_31">
 			<Original>Landing without permission</Original>
 			<German>Landen ohne Genehmigung</German>
 			<French>Landing without permission</French>
-			<Italian>Landing without permission</Italian>		
+			<Italian>Landing without permission</Italian>
 			<Portuguese>Landing without permission</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_32">
 			<Original>Permanent horn</Original>
 			<German>Dauerhaftes Hupen</German>
 			<French>Permanent horn</French>
-			<Italian>Permanent horn</Italian>		
+			<Italian>Permanent horn</Italian>
 			<Portuguese>Permanent horn</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_33">
 			<Original>reached Punkelimit</Original>
 			<German>Punkelimit erreicht</German>
 			<French>reached Punkelimit</French>
-			<Italian>reached Punkelimit</Italian>		
+			<Italian>reached Punkelimit</Italian>
 			<Portuguese>reached Punkelimit</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_34">
 			<Original>murder</Original>
 			<German>Mord</German>
 			<French>murder</French>
-			<Italian>murder</Italian>		
+			<Italian>murder</Italian>
 			<Portuguese>murder</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_35">
 			<Original>insurrection</Original>
 			<German>Aufstand</German>
 			<French>insurrection</French>
-			<Italian>insurrection</Italian>		
+			<Italian>insurrection</Italian>
 			<Portuguese>insurrection</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_36">
 			<Original>Illegal roadblocks</Original>
 			<German>Illegale Strassensperren</German>
 			<French>Illegal roadblocks</French>
-			<Italian>Illegal roadblocks</Italian>		
+			<Italian>Illegal roadblocks</Italian>
 			<Portuguese>Attack / Siege of capitals</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_37">
 			<Original>Theft civilian vehicles</Original>
 			<German>Diebstahl Zivilfahrzeuge</German>
 			<French>Theft civilian vehicles</French>
-			<Italian>Theft civilian vehicles</Italian>		
+			<Italian>Theft civilian vehicles</Italian>
 			<Portuguese>Theft civilian vehicles</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_38">
 			<Original>Theft official vehicles</Original>
 			<German>Diebstahl Beamtenfahrzeuge</German>
 			<French>Theft official vehicles</French>
-			<Italian>Theft official vehicles</Italian>		
+			<Italian>Theft official vehicles</Italian>
 			<Portuguese>Theft official vehicles</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_39">
 			<Original>outbreak JVA</Original>
 			<German>Ausbruch JVA</German>
 			<French>outbreak JVA</French>
-			<Italian>outbreak JVA</Italian>		
+			<Italian>outbreak JVA</Italian>
 			<Portuguese>outbreak JVA</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_40">
 			<Original>organ trafficking</Original>
 			<German>Organhandel</German>
 			<French>organ trafficking</French>
-			<Italian>organ trafficking</Italian>		
+			<Italian>organ trafficking</Italian>
 			<Portuguese>organ trafficking</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_41">
 			<Original>Parking false</Original>
 			<German>Falschparken</German>
 			<French>Parking false</French>
-			<Italian>Parking false</Italian>		
+			<Italian>Parking false</Italian>
 			<Portuguese>Parking false</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_42">
 			<Original>pollution</Original>
 			<German>Umweltverschmutzung</German>
 			<French>pollution</French>
-			<Italian>pollution</Italian>		
+			<Italian>pollution</Italian>
 			<Portuguese>pollution</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_43">
 			<Original>Vermummung in cities</Original>
 			<German>Vermummung in Staedten</German>
 			<French>Vermummung in cities</French>
-			<Italian>Vermummung in cities</Italian>		
+			<Italian>Vermummung in cities</Italian>
 			<Portuguese>Vermummung in cities</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_44">
 			<Original>Theft</Original>
 			<German>Diebstahl</German>
 			<French>Vol</French>
-			<Italian>Furto</Italian>		
+			<Italian>Furto</Italian>
 			<Portuguese>Roubo</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_45">
 			<Original>Mayhem</Original>
 			<German>Koerperverletzung</German>
 			<French>Grabuge</French>
-			<Italian>Lesione permanente</Italian>		
+			<Italian>Lesione permanente</Italian>
 			<Portuguese>Mutilação</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_46">
 			<Original>Attempted robbery gas station</Original>
 			<German>Versuchter Tankstellenraub</German>
 			<French>Tentative de station d'essence de vol qualifié</French>
-			<Italian>Tentativo rapina distributore di benzina</Italian>		
+			<Italian>Tentativo rapina distributore di benzina</Italian>
 			<Portuguese>Tentativa de assalto a posto de gasolina</Portuguese>
 		</Key>
 		<Key ID="STR_Crime_47">
 			<Original>Grievous bodily harm</Original>
 			<German>Gefaehrliche Koerperverletzung</German>
 			<French>Lésions corporelles graves</French>
-			<Italian>Lesioni personali gravi</Italian>		
+			<Italian>Lesioni personali gravi</Italian>
 			<Portuguese>Ofensas corporais graves</Portuguese>
  		</Key>
 		<Key ID="STR_Crime_48">
             <Original>Attempted ATM theft</Original>
             <German>Versuchter Geldautomatenraub</German>
             <French>Tentative de vol ATM</French>
-            <Italian>Furti ATM Tentativo</Italian>        
+            <Italian>Furti ATM Tentativo</Italian>
             <Portuguese>Roubo de ATM tentativa</Portuguese>
         </Key>
 	</Package>
@@ -7658,7 +7658,7 @@
 			<Portuguese>Detach the Pod</Portuguese>
 			<Russian>Detach the Pod</Russian>
 			<Spanish>Detach the Pod</Spanish>
-		</Key>	
+		</Key>
 		<Key ID="STR_XENO_Larguer">
 			<Original>Drop the Pod</Original>
 			<English>Drop the Pod</English>
@@ -7670,7 +7670,7 @@
 			<Portuguese>Drop the Pod</Portuguese>
 			<Russian>Drop the Pod</Russian>
 			<Spanish>Drop the Pod</Spanish>
-		</Key>		
+		</Key>
 		<Key ID="STR_AGM_XENO_Taru_Pod_Mod">
 			<Original>Pod >></Original>
 			<English>Pod >></English>
@@ -7682,7 +7682,7 @@
 			<Portuguese>Pod >></Portuguese>
 			<Russian>Pod >></Russian>
 			<Spanish>Pod >></Spanish>
-		</Key>	
+		</Key>
 		<Key ID="STR_AGM_XENO_Arrimer">
 			<Original>Attach</Original>
 			<English>Attach</English>
@@ -7694,7 +7694,7 @@
 			<Portuguese>Attach</Portuguese>
 			<Russian>Attach</Russian>
 			<Spanish>Attach</Spanish>
-		</Key>	
+		</Key>
 		<Key ID="STR_AGM_XENO_Desarrimer">
 			<Original>Detach</Original>
 			<English>Detach</English>
@@ -7706,7 +7706,7 @@
 			<Portuguese>Detach</Portuguese>
 			<Russian>Detach</Russian>
 			<Spanish>Detach</Spanish>
-		</Key>	
+		</Key>
 		<Key ID="STR_AGM_XENO_Larguer">
 			<Original>Drop</Original>
 			<English>Drop</English>
