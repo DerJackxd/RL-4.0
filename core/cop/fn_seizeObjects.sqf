@@ -1,6 +1,6 @@
 /*
 	File: fn_seizeWeapon.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 

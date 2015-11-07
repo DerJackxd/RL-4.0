@@ -1,6 +1,6 @@
 /*
 	File: fn_airDropWait.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	AirDrop event wait time!

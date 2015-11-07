@@ -1,5 +1,5 @@
 /*
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Find a string within a string (case insensitive)

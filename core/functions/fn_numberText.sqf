@@ -1,5 +1,5 @@
 /*
-	Author: Memphis
+	Author: Unknown
 
 	Description:
 	Convert a number into string (avoiding scientific notation)

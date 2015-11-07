@@ -1,6 +1,6 @@
 /*
 	File: fn_sirenLights.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Lets play a game! Can you guess what it does? I have faith in you, if you can't

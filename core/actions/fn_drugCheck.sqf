@@ -1,6 +1,6 @@
 /*
 	File: fn_drunkenCheck.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Checks if Civ used Drug.

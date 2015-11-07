@@ -1,6 +1,6 @@
 /*
 	File: fn_fuelTank.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Fill fuelcan at a gas station
@@ -18,7 +18,7 @@ hint "Kanister auffuellen kostet ($600)";
 
 if( life_cash < 600 && life_atmcash < 600) exitWith 
 {	
-	hint parseText "<t color='#ff0000'>Du hast nicht das nötige Geld ($600)</t>";
+	hint parseText "<t color='#ff0000'>Du hast nicht das nï¿½tige Geld ($600)</t>";
 };
 
 _error = false;
@@ -54,7 +54,7 @@ if(_tanke) then
 			//leeren Kanister entfernen
 			if(([false,"fuelE",1] call life_fnc_handleInv)) then
 			{
-				//vollen Kanister einfügen
+				//vollen Kanister einfï¿½gen
 				if(([true,"fuelF",1] call life_fnc_handleInv)) then
 				{
 					hint "Der Kaninster ist voll.";

@@ -1,6 +1,6 @@
  /*
 	File: fn_hooker
-	Author: Memphis
+	Author: Unknown
 	Version: 0.2
 	
 	Notice:

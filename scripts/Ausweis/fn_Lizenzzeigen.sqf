@@ -1,5 +1,5 @@
 #include <macro.h>
-//Author: Memphis
+//Author: Unknown
 if(isServer)exitWith{};
 private["_ziel", "_rang", "_marke", "_org", "_message"];
 

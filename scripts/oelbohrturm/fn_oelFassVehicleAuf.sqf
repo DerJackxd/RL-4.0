@@ -1,11 +1,11 @@
 #include <macro.h>
 /*
 	File: fn_oelfassVehicleAuf.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
-	Dieses Script ist von mir für den RealLifeRPG Server geschrieben 
-	verwendung auf anderen Servern ohne meine erlaubnis ist nicht gestattet!!!
+	 
+	The Author of this File was removed. Please inform us if you are the Author so we can add you credits
 */
 private["_vehicle","_unit","_uid","_nearVehicle","_fass"];
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;

@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	File: fn_progressWaitUntilFinished.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Progressbar mit diversen Abbruchbedingungen

@@ -1,5 +1,5 @@
 /*
-	Author: Memphis
+	Author: Unknown
 
 	Description:
 	Send function for remote execution (and executes locally if conditions are met)

@@ -1,6 +1,6 @@
 /*
 	File: fn_dealer.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Dealer verkaufs aufruf mit Warnung und Polizei info!

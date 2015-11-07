@@ -1,10 +1,10 @@
 #include <macro.h>
 /*
 	File: fn_openVehicle.sqf
-	Author: Memphis
+	Author: Unknown
 	Description:
-	Dieses Script ist von mir für den RealLifeRPG Server geschrieben 
-	verwendung auf anderen Servern ohne meine erlaubnis ist nicht gestattet!!!
+	 
+	The Author of this File was removed. Please inform us if you are the Author so we can add you credits
 */
 private["_curTarget","_ui","_progressBar","_titleText","_cP"];
 

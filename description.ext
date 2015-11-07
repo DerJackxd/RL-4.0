@@ -6,11 +6,10 @@ joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
 disabledAI = true;
-disableChannels[]={0,1,2};
+disableChannels[]={0,1,2,3,4,6};
 enableDebugConsole = 1;
 respawnDialog = 0;
-forceRotorLibSimulation = 1;
-//loadScreen = "textures\bilder\loadScreen.jpg";
+forceRotorLibSimulation = 0;
 
 class Header
 {
@@ -30,7 +29,6 @@ corpseRemovalMaxTime = 1200;
 SPY_Enable = true;
 
 #include "Config_Spyglass.hpp"
-
 #include "dialog\MasterHandler.h"
 #include "dialog\agb.hpp"
 #include "Config_Master.hpp"
@@ -263,7 +261,7 @@ class CfgSounds
 	};
   class PhotoSound
 	{
-		name=PhotoSound";
+		name="PhotoSound";
 		sound[] = {"\sounds\photosound.ogg", 1.0, 1};
 		titles[] = {0, " "};
 	};

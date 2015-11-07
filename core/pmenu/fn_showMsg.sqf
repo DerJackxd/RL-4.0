@@ -2,7 +2,7 @@
 /*
 
 	file: fn_showMsg.sqf
-	Author: Memphis
+	Author: Unknown
 
 */
 private["_index","_data"];

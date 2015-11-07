@@ -2,7 +2,7 @@
 /*
 	File: fn_actionKeyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Master action key handler, handles requests for picking up various items and
 	interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
@@ -59,11 +59,11 @@ _animalTypes = ["Salema_F","Ornate_random_F","Mackerel_F","Tuna_F","Mullet_F","C
 if(_curTarget isKindOf "Man" && {!alive _curTarget} && {!(typeOf _curTarget in _animalTypes)} && {playerSide in [west,independent,civilian]}) exitWith {
 	//Hotfix code by ins0
 	if(((playerSide == blufor && {(EQUAL(LIFE_SETTINGS(getNumber,"revive_cops"),1))}) || playerSide == independent) && {"Medikit" in (items player)}) then {
-		[_curTarget] call life_fnc_revivePlayer;
+	//	[_curTarget] call life_fnc_revivePlayer;
 	}else{
 		if((EQUAL(playerSide,civilian)) && skill_civ_heal && skill_civ_heal1) then
 		{
-			[_curTarget] call life_fnc_revivePlayer;
+		//	[_curTarget] call life_fnc_revivePlayer; not needed since ACE
 		};
 	};
 };
@@ -77,7 +77,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 			hint "Es wird bereits ein Dialig angezeigt.";
 		};
 	};
-	   
+
 	if(EQUAL(playerSide,civilian)) then {
 		if((_curTarget GVAR ["restrained",false]) && !dialog && license_civ_rebel) then {
 			[_curTarget] call life_fnc_pInteraction_adac;
@@ -87,7 +87,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 			hint "Benutze die Shift+R, um den Spieler zu fesseln.";
 		};
 	};
-	   
+
 	if(EQUAL(playerSide,east)) then {
 		if(!dialog) then {
 			[_curTarget] call life_fnc_pInteraction_civ;
@@ -107,12 +107,12 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 } else {
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money","_list"];
-	
+
 	_list = ["landVehicle","Ship","Air"];
 	_isVehicle = if(KINDOF_ARRAY(_curTarget,_list)) then {true} else {false};
 	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F"];
 	_money = "Land_Money_F";
-	
+
 	//It's a vehicle! open the vehicle interaction key!
 	if(_isVehicle) then {
 		if(!dialog) then {

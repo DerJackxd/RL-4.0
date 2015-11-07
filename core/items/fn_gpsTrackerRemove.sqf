@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	File: fn_gpsTrackerRemove.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	remove GPS from vehicle 

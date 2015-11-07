@@ -16,7 +16,7 @@ switch (playerSide) do
 		life_actions pushBack [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",
 		'!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget in ["Incapacitated","amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"] && !(cursorTarget getVariable["robbed",FALSE])' ]];
 	    //Ausweis
-        life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && isPlayer cursorTarget]];
+        life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_Lizenzzeigen,"",1,false,true,"",'!isNull cursorTarget && isPlayer cursorTarget']];
 		//##90
 		life_actions pushBack [player addAction["Ausrauben",life_fnc_robAction,"",0,false,false,"",
 		'!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && !(cursorTarget getVariable["robbed",FALSE]) && (cursorTarget getVariable["restrained",FALSE])' ]];
@@ -26,9 +26,10 @@ switch (playerSide) do
         '_speedtrap = nearestObjects[getPos player,["Land_Runway_PAPI_4"],8] select 0; !isNil "_speedtrap" && !(_speedtrap getVariable "speedtrap_registered")' ]];
 
 		//skill Heal
+		/*
 		life_actions pushBack (player addAction["<t color='#FF0000'>Erste Hilfe 100%</t>",life_fnc_heal,"",99,false,false,"",
 		' vehicle player == player && (damage player) > 0.25 && skill_civ_heal && ("FirstAidKit" in (items player)) && (currentWeapon player == "")']);
-
+*/
 	};
 
 	case west:

@@ -1,6 +1,6 @@
 /*
 	File: fn_slingloadActivate.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	slingLoad activate for cops or adac

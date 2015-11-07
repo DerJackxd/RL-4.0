@@ -1,5 +1,5 @@
 /*
-	Author: Memphis
+	Author: Unknown
 */
 private["_spawnPos","_dir","_type"];
 _type = [_this,1,"",[""]] call BIS_fnc_param;
