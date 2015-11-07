@@ -2,24 +2,39 @@
 /*
 	File: fn_healHospital.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Doesn't matter, will be revised later.
 */
 _mode = SEL(_this,3);
-switch (_mode) do 
+
+_medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0;
+switch (_mode) do
 {
 	case "heilen":
-		{	
-			if(CASH < 100) exitWith {hint format[localize "STR_NOTF_HS_NoCash",100];};
+		{
+			if(_medicsOnline) exitWith {hint "Es sind noch andere Ärtzte da! Ich bin aktuell zu beschäftigt"};
+			if(CASH < 35000) exitWith {hint format[localize "STR_NOTF_HS_NoCash",35000];};
 			titleText[localize "STR_NOTF_HS_Healing","PLAIN"];
 			sleep 8;
 			if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]};
 			titleText[localize "STR_NOTF_HS_Healed","PLAIN"];
-			player setdamage 0;
-			SUB(CASH,100);
+			[player,player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;
+			SUB(CASH,35000);
 		};
-	
+
+		case "heal_all":
+			{
+				if(_medicsOnline) exitWith {hint "Es sind noch andere Ärtzte da! Ich bin aktuell zu beschäftigt"};
+				if(CASH < 75000) exitWith {hint format[localize "STR_NOTF_HS_NoCash",75000];};
+				titleText["Heile alle Spieler","PLAIN"];
+				sleep 8;
+				if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]};
+				titleText["Alle Spieler im Umkreis von 10 Metern wurden geheilt!","PLAIN"];
+				{[_x,_x] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;}forEach (player nearEntities ["Man", 10]);
+				SUB(CASH,75000);
+			};
+
 	case "checken":
 		{
 			if(life_checked == 1) exitWith { hint format[localize  "STR_NOTF_HS_Checkup"]; };
@@ -42,23 +57,23 @@ switch (_mode) do
 			{
 					hint format [localize "STR_NOTF_HS_DiagnosisChlamyd",name player];
 					life_checked = 1;
-			};	
+			};
 			if(life_sex_ill == 4) then
-			{	
+			{
 					hint format [localize "STR_NOTF_HS_DiagnosisHerpes",name player];
 					life_checked = 1;
 			};
 			if(life_sex_ill == 5) then
-			{	
+			{
 				    hint format [localize "STR_NOTF_HS_DiagnosisHep",name player];
 					life_checked = 1;
 			};
 			if(life_sex_ill == 6) then
-			{		
+			{
 					hint format [localize "STR_NOTF_HS_DiagnosisSyph",name player];
 					life_checked = 1;
 			};
-		};		
+		};
 	case "behandeln":
         {
 			if(life_checked == 0) exitWith { hint format[localize "STR_NOTF_HS_Check"]; };
@@ -105,7 +120,7 @@ switch (_mode) do
 					player setDamage 0;
 					life_sex_ill = 0;
 					life_checked = 0;
-			};		
+			};
 			if(life_sex_ill == 5) then
 			{
 					if(CASH < 1000) exitWith { hint format[localize "STR_NOTF_HS_Sexill"];};
@@ -127,7 +142,7 @@ switch (_mode) do
 					player setDamage 0;
 					life_sex_ill = 0;
 					life_checked = 0;
-			};		
-				
-		};	
+			};
+
+		};
 };
