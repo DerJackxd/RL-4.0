@@ -1,6 +1,6 @@
 /*
 	File: fn_removeMaske.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	remove Maske

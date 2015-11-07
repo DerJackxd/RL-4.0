@@ -1,9 +1,9 @@
 /*
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
-	Dieses Script ist von mir für den RealLifeRPG Server geschrieben 
-	verwendung auf anderen Servern ohne meine erlaubnis ist nicht gestattet!!!
+	 
+	The Author of this File was removed. Please inform us if you are the Author so we can add you credits
 */
 _type = [_this,0,0,[0]] call BIS_fnc_param;
 _civ = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;

@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
     File: fn_sellCargo.sqf
-    Author: Memphis
+    Author: Unknown
 
     Description:
     

@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	File: fn_gpsTracker.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	marker vehicle per GPS

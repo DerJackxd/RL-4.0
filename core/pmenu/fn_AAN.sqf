@@ -1,6 +1,6 @@
 //#include <macro.h>
 /*
-Author: Memphis
+Author: Unknown
 
 Description: Sends AAN News to the player
 

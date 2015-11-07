@@ -1,6 +1,6 @@
 /*
 	File: fn_airSoftWeaponRemove.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	remove AirSoft Weapon 

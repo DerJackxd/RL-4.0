@@ -1,6 +1,6 @@
 /*
 	File: fn_airDropEnd.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	AirDrop event end time!

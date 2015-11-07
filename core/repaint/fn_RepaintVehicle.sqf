@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 File: fn_RepaintVehicle.sqf
-Author: Memphis
+Author: Unknown
 
 Description: Does the active repaint man....read the title!
 */
@@ -58,7 +58,7 @@ closeDialog 0;
 			5 cutText ["","PLAIN"];
 			player playActionNow "stop";
 			if(life_interrupted) exitWith {life_interrupted = false; titleText["Cancelled","PLAIN"]; life_action_inUse = false;};
-			if(player != vehicle player) exitWith {titleText["Du musst aus dem Fahrzeug aussteigen, um es lackieren zu können!","PLAIN"];};
+			if(player != vehicle player) exitWith {titleText["Du musst aus dem Fahrzeug aussteigen, um es lackieren zu kï¿½nnen!","PLAIN"];};
 
 		
 			SUB(CASH,_basePrice);
@@ -119,7 +119,7 @@ closeDialog 0;
 			5 cutText ["","PLAIN"];
 			player playActionNow "stop";
 			if(life_interrupted) exitWith {life_interrupted = false; titleText["Cancelled","PLAIN"]; life_action_inUse = false;};
-			if(player != vehicle player) exitWith {titleText["Du musst aus dem Fahrzeug aussteigen, um es lackieren zu können!","PLAIN"];};
+			if(player != vehicle player) exitWith {titleText["Du musst aus dem Fahrzeug aussteigen, um es lackieren zu kï¿½nnen!","PLAIN"];};
 
 		
 			SUB(CASH,_basePrice);

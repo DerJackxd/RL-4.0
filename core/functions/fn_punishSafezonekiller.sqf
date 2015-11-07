@@ -1,6 +1,6 @@
 /*
 	File: fn_punishSafezonekiller.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Punish the Safezonekiller

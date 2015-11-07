@@ -1,11 +1,11 @@
 #include <macro.h>
 /*
 	File: fn_damageCheck.sqf
-	Author: Memphis
-	
+	Author: Unknown
+
 	Description:
-	Dieses Script ist von mir für den RealLifeRPG Server geschrieben 
-	verwendung auf anderen Servern ohne meine erlaubnis ist nicht gestattet!!!
+	
+	The Author of this File was removed. Please inform us if you are the Author so we can add you credits
 */
 
 _veh = cursorTarget;
@@ -32,11 +32,11 @@ if(_veh isKindOf "Car") then
 	_fText = "";
 	_wText = "";
 	_dText = "";
-	
+
 	if(_motor > 0.5) then
 	{
-		_mText = format["Motorschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
-		ADD(life_adac_ticket,3500);	
+		_mText = format["Motorschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
+		ADD(life_adac_ticket,3500);
 	}else{
 		if(_motor > 0) then
 		{
@@ -46,10 +46,10 @@ if(_veh isKindOf "Car") then
 			_mText = format["Motorschaden: <t color='#45ff2f'>OK</t><br/>"];
 		};
 	};
-	
+
 	if(_fuel > 0.5) then
 	{
-		_fText = format["Tankschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
+		_fText = format["Tankschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
 		ADD(life_adac_ticket,2000);
 	}else{
 		if(_fuel > 0) then
@@ -60,34 +60,34 @@ if(_veh isKindOf "Car") then
 			_fText = format["Tankschaden: <t color='#45ff2f'>OK</t><br/>"];
 		};
 	};
-	
+
 	if(_WheelLF > 0) then
 	{
-		ADD(_wheel,1);	
+		ADD(_wheel,1);
 		ADD(life_adac_ticket,500);
 	};
-	   
+
 	if(_WheelLF2 > 0) then
 	{
-		ADD(_wheel,1);	
+		ADD(_wheel,1);
 		ADD(life_adac_ticket,500);
 	};
-	
+
 	if(_WheelRF > 0) then
 	{
-		ADD(_wheel,1);	
-		ADD(life_adac_ticket,500);
-	};   
-	  
-	if(_WheelRF2 > 0) then
-	{
-		ADD(_wheel,1);	
+		ADD(_wheel,1);
 		ADD(life_adac_ticket,500);
 	};
-	   
+
+	if(_WheelRF2 > 0) then
+	{
+		ADD(_wheel,1);
+		ADD(life_adac_ticket,500);
+	};
+
 	if(_damage > 0.5) then
 	{
-		_dText = format["Karoserieschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
+		_dText = format["Karoserieschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
 		ADD(life_adac_ticket,3000);
 	}else{
 		if(_damage > 0) then
@@ -98,12 +98,12 @@ if(_veh isKindOf "Car") then
 			_dText = format["Karoserieschaden: <t color='#45ff2f'>OK</t><br/>"];
 		};
 	};
-	
+
 	_wText = format["Beschaedigte Reifen: %1",_wheel];
 	_rText = format["<br/><br/>Rechnungsbetrag: %1",life_adac_ticket];
 	_text = _mText + _fText + _dText + _wText + _rText;
 	hintSilent parseText _text;
-	
+
 };
 
 if(_veh isKindOf "Air") then
@@ -113,11 +113,11 @@ if(_veh isKindOf "Air") then
 	_fText = "";
 	_hiText = "";
 	_dText = "";
-	
+
 	if(_HMotor > 0.5) then
 	{
-		_hText = format["Rotorschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
-		ADD(life_adac_ticket,4500);	
+		_hText = format["Rotorschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
+		ADD(life_adac_ticket,4500);
 	}else{
 		if(_HMotor > 0) then
 		{
@@ -127,11 +127,11 @@ if(_veh isKindOf "Air") then
 			_hText = format["Rotorschaden: <t color='#45ff2f'>OK</t><br/>"];
 		};
 	};
-	
+
 	if(_VMotor > 0.5) then
 	{
-		_vText = format["Heckrotorschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
-		ADD(life_adac_ticket,35000);	
+		_vText = format["Heckrotorschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
+		ADD(life_adac_ticket,35000);
 	}else{
 		if(_VMotor > 0) then
 		{
@@ -141,10 +141,10 @@ if(_veh isKindOf "Air") then
 			_vText = format["Heckrotorschaden: <t color='#45ff2f'>OK</t><br/>"];
 		};
 	};
-	
+
 	if(_fuel > 0.5) then
 	{
-		_fText = format["Tankschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
+		_fText = format["Tankschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
 		ADD(life_adac_ticket,4000);
 	}else{
 		if(_fuel > 0) then
@@ -158,7 +158,7 @@ if(_veh isKindOf "Air") then
 
 	if(_HitGear > 0.5) then
 	{
-		_hiText = format["Fahrwerk: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
+		_hiText = format["Fahrwerk: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
 		ADD(life_adac_ticket,5000);
 	}else{
 		if(_HitGear > 0) then
@@ -169,10 +169,10 @@ if(_veh isKindOf "Air") then
 			_hiText = format["Fahrwerk: <t color='#45ff2f'>OK</t><br/>"];
 		};
 	};
-	   
+
 	if(_damage > 0.5) then
 	{
-		_dText = format["Fahrzeugschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];	
+		_dText = format["Fahrzeugschaden: <t color='#ff2f45'>Stark Beschädigt</t><br/>"];
 		ADD(life_adac_ticket,5000);
 	}else{
 		if(_damage > 0) then
@@ -183,13 +183,12 @@ if(_veh isKindOf "Air") then
 			_dText = format["Fahrzeugschaden: <t color='#45ff2f'>OK</t><br/>"];
 		};
 	};
-	
+
 	_wText = format["Beschaedigte Reifen: %1",_wheel];
 	_rText = format["<br/><br/>Rechnungsbetrag: %1",life_adac_ticket];
 	_text = _hText + _vText + _fText + _dText + _hiText + _rText;
 	hintSilent parseText _text;
-	
+
 };
 
 _veh SVAR["AdacCheck",true,true];
-

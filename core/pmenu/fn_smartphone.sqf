@@ -2,7 +2,7 @@
 /*
 
 	file: fn_smartphone.sqf
-	Author: Memphis
+	Author: Unknown
 	
 */
 private["_display","_units","_type","_data","_rowData","_msg"];

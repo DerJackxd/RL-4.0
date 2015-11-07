@@ -2,7 +2,7 @@
 /*
 	File: fn_revivePlayer.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Starts the revive process on the player.
 */
@@ -10,6 +10,8 @@ private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","
 _target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _target) exitWith {}; //DAFUQ?@!%$!R?EFFD?TGSF?HBS?DHBFNFD?YHDGN?D?FJH
 if(life_skill_heal1) exitWith {hintSilent "Die Zeit bis zum naechsten Wiederbelebungsversuch ist noch nicht abgelaufen!"};
+
+if(true) exitWith {hint "Es ist Tot und du kannst nichts mehr machen";};
 
 _revivable = _target GVAR ["Revive",FALSE];
 if(_revivable) exitWith {};
@@ -39,7 +41,7 @@ while {true} do {
 		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
-	
+
 	sleep .15;
 	_cP = _cP + .01;
 	_progressBar progressSetPosition _cP;
@@ -76,7 +78,7 @@ if(playerSide in [west,independent]) then
 
 	sleep .6;
 	player reveal _target;
-	
+
 }else{
 	if((EQUAL(playerSide,civilian)) && skill_civ_heal && skill_civ_heal1) then
 	{
@@ -89,16 +91,16 @@ if(playerSide in [west,independent]) then
 			[[profileName],"life_fnc_revived",_target,FALSE] call life_fnc_MP;
 			//titleText[format[localize "STR_Medic_RevivePayReceive",_targetName,[LIFE_SETTINGS(getNumber,"revive_fee")] call life_fnc_numberText],"PLAIN"];
 			hintSilent "Ihr Wiederbelebungsversuch war erfolgreich, Sie können in 5min einen neuen Wiederbelebungs versuchen starten!";
-			
+
 			sleep .6;
 			player reveal _target;
-			
+
 			uiSleep (5*60);
 			life_skill_heal1 = false;
 		}else{
 			life_skill_heal1 = true;
 			hintSilent "Ihr Wiederbelebungsversuch is fehlgeschalgen, Sie können es in 5min nochmal versuchen!";
-			
+
 			uiSleep (5*60);
 			life_skill_heal1 = false;
 		};

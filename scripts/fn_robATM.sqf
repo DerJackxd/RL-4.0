@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
     File: fn_robATM.sqf
-    Author: Memphis
+    Author: Unknown
     
     Description:
     ATM / Geldautomat ausrauben

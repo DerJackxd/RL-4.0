@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	File:fn_radarCam.sqf
-	author: Memphis
+	Author: Unknown
 	Flash/Basic premise idea from preller, trigger function from shems and Yuka for the waitUntil <3
 	Runs cams on map for speeders, if speed too many times diff shit happens
 */

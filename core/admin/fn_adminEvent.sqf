@@ -1,6 +1,6 @@
 /*
 	File: fn_adminEvent.sqf
-	Author: Memphis
+	Author: Unknown
 	
 	Description:
 	Evnt Script!

@@ -2,7 +2,7 @@
 /*
 	
 	file: fn_newMsg.sqf
-	Author: Memphis
+	Author: Unknown
 	
 */
 
@@ -32,7 +32,7 @@ switch(_type) do
 	//normal message
 	case 1:
 	{
-		if(isNUll life_smartphoneTarget) exitWith {hint format["Keine Person ausgwählt!"];};
+		if(isNUll life_smartphoneTarget) exitWith {hint format["Keine Person ausgwï¿½hlt!"];};
 		ctrlShow[88885, false];
 		if(_msg == "") exitWith {hint "Sie muessen eine Nachrich eingeben!";ctrlShow[88885, true];};
 		[[life_smartphoneTarget,_msg,player,0],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -43,7 +43,7 @@ switch(_type) do
 	//copmessage
 	case 2:
 	{
-		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es später nochmal."];};
+		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es spï¿½ter nochmal."];};
 		ctrlShow[888895,false];
 		if(_msg == "") exitWith {hint "Sie muessen eine Nachrich eingeben!";ctrlShow[888895,true];};
 		[[ObjNull,_msg,player,1],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -66,7 +66,7 @@ switch(_type) do
 	//emsrequest
 	case 4:
 	{
-		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es später nochmal."];};
+		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es spï¿½ter nochmal."];};
 		ctrlShow[888899,false];
 		if(_msg == "") exitWith {hint "Sie muessen eine Nachrich eingeben!";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,3],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -78,7 +78,7 @@ switch(_type) do
 	case 5:
 	{
 		if((call life_adminlevel) < 1) exitWith {hint "Sie sind kein Admin!";};
-		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgwählt!"];};
+		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgwï¿½hlt!"];};
 		if(_msg == "") exitWith {hint "Sie muessen eine Nachrich eingeben!";};
 		[[life_smartphoneTarget,_msg,player,4],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Adminnachricht gesendet an: %1 - Nachricht: %2",name life_smartphoneTarget,_msg];
@@ -124,7 +124,7 @@ switch(_type) do
 	//adac
 	case 9:
 	{
-		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein ADAC-Mitarbeiter im Dienst. Bitte probiere es später nochmal."];};
+		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein ADAC-Mitarbeiter im Dienst. Bitte probiere es spï¿½ter nochmal."];};
 		ctrlShow[888900,false];
 		if(_msg == "") exitWith {hint "Sie muessen eine Nachrich eingeben!";ctrlShow[888900,true];};
 		[[ObjNull,_msg,player,7,_pos],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -132,10 +132,10 @@ switch(_type) do
 		ctrlShow[888900,true];
 		closeDialog 887890;
 	};
-	//Aufträege
+	//Auftrï¿½ege
 	case 10:
 	{	
-		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein ADAC-Mitarbeiter im Dienst. Bitte probiere es später nochmal."];};
+		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein ADAC-Mitarbeiter im Dienst. Bitte probiere es spï¿½ter nochmal."];};
 		ctrlShow[889991,false];
 		if(_msg == "") exitWith {hint "Sie muessen eine Nachrich eingeben!";ctrlShow[889991,true];};
 		[[0,name player],"life_fnc_aufRequest",east,FALSE] spawn life_fnc_MP;
@@ -148,7 +148,7 @@ switch(_type) do
 	case 11:
 	{
 		if((call life_adaclevel) < 1) exitWith {hint "Sie sind kein ADAC-Mitglied!";};
-		if(isNull life_aufTarget) exitWith {hint format["Keine Auftrag ausgwählt!"];};
+		if(isNull life_aufTarget) exitWith {hint format["Keine Auftrag ausgwï¿½hlt!"];};
 		if(_msg == "") exitWith {hint "Sie muessen eine Nachrich eingeben!";};
 		[[life_aufTarget,_msg,player,8],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Auftragsnachricht gesendet an: %1 - Nachricht: %2",name life_aufTarget,_msg];

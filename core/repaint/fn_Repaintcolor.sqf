@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 File: fn_Repaintcolor.sqf
-Author: Memphis
+Author: Unknown
 
 Description: Opens the display to recolor the vehicle
 

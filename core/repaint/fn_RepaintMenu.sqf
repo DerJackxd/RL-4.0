@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 File: fn_RepaintMenu.sqf
-Author: Memphis
+Author: Unknown
 
 Description: What could it do bro?!
 
