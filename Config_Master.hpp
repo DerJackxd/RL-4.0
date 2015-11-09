@@ -474,8 +474,8 @@ class VirtualItems {
     VITEMMACRO(o_heli_light_02_unarmed, "STR_Item_PO_30_Orca", "o_heli_light_02_unarmed", 70, -1, -1, false, -1, "icons\orca.paa", -1)
 
     //Baukästen Jet
-    VITEMMACRO(o_plane_cas_02, "STR_Item_TO_199_Neophron", "o_plane_cas_02", 80, -1, -1, false, -1, "icons\neophron.paa", -1)
-    VITEMMACRO(i_plane_fighter_03, "STR_Item_A_143_Buzzard", "i_plane_fighter_03", 80, -1, -1, false, -1, "icons\buzzard.paa", -1)
+  //  VITEMMACRO(o_plane_cas_02, "STR_Item_TO_199_Neophron", "o_plane_cas_02", 80, -1, -1, false, -1, "icons\neophron.paa", -1)
+  //  VITEMMACRO(i_plane_fighter_03, "STR_Item_A_143_Buzzard", "i_plane_fighter_03", 80, -1, -1, false, -1, "icons\buzzard.paa", -1)
 
     //Kaufteile für Crafting Vehicle
     VITEMMACRO(craft_motor_a, "STR_Item_Fahrzeugmotor", "craft_motor_a", 5, 400000, 200000, false, -1, "icons\fmotor.paa", -1)

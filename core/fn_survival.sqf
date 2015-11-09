@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	All survival? things merged into one thread.
 */
@@ -26,7 +26,7 @@ _fnc_food =  {
 		};
 	};
 };
-	
+
 _fnc_water = {
 	if(life_thirst < 2) then {player setDamage 1; hint localize "STR_NOTF_DrinkMSG_Death";}
 	else
@@ -59,7 +59,7 @@ _fnc_battery =
 			SUB(life_battery,5);
 			[] call life_fnc_hudUpdate;
 			if(life_battery < 2) then {hint "Dein Akku ist leer.";};
-			switch(life_battery) do 
+			switch(life_battery) do
 			{
 				case 30: {hint "Akku hat noch 30%.";};
 				case 20: {hint "Akku hat noch 20%.";};
@@ -83,7 +83,7 @@ while {true} do {
 	if((time - _waterTime) > 600) then {[] call _fnc_water; _waterTime = time;};
 	if((time - _foodTime) > 850) then {[] call _fnc_food; _foodTime = time;};
 	if((time - _batteryTime) > 610) then {[] call _fnc_battery; _batteryTime = time;};
-	
+
 	/* Adjustment of carrying capacity based on backpack changes */
 	if(EQUAL(backpack player,"")) then {
 		life_maxWeight = life_maxWeightT;
@@ -94,7 +94,7 @@ while {true} do {
 			life_maxWeight = life_maxWeightT + (round(FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,_bp,"maximumload") / 4));
 		};
 	};
-	
+
 	/*  */
 	if(player getVariable "ACE_isUnconscious" && !life_unconscious) then {
 		_action = [
@@ -105,31 +105,35 @@ while {true} do {
 		] call BIS_fnc_guiMessage;
 
 		life_corpse = player;
-		if(!isNil "_action" && {_action}) then {[] call life_fnc_requestMedic;};
-		life_unconscious = true;
-		
-		_medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0;
-		if(!_medicsOnline) then {
-			_action = [
-			format["Kein Notarzt hat auf deine Nachricht geantwortet. Wenn ein Spieler dich findet kann er dich in einn Krankenhaus bringen und dort von einem Artzt (NPC) behandeln lassen."],
-			"Niemand da",
-			"Ok"
-		] call BIS_fnc_guiMessage;
+		if(!isNil "_action" && {_action}) then {
+
+			[] call life_fnc_requestMedic;
+
+			_medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0;
+			if(!_medicsOnline) then {
+				_action = [
+				format["Kein Notarzt hat auf deine Nachricht geantwortet. Wenn ein Spieler dich findet kann er dich in einn Krankenhaus bringen und dort von einem Artzt (NPC) behandeln lassen."],
+				"Niemand da",
+				"Ok"
+			] call BIS_fnc_guiMessage;
+			};
+
 		};
-		
+		life_unconscious = true;
+
 	};
-	
+
 	if(!(player getVariable "ACE_isUnconscious") && life_unconscious) then {
 		life_unconscious = false;
 	};
-	
-	
+
+
 	/* Check if the player's state changed? */
 	if(vehicle player != _lastState OR {!alive player}) then {
 		[] call life_fnc_updateViewDistance;
 		_lastState = vehicle player;
 	};
-	
+
 	/* Check if the weight has changed and the player is carrying to much */
 	if(life_carryWeight > life_maxWeight && {!isForcedWalk player}) then {
 		player forceWalk true;
@@ -140,7 +144,7 @@ while {true} do {
 			player forceWalk false;
 		};
 	};
-	
+
 	/* Travelling distance to decrease thirst/hunger which is captured every second so the distance is actually greater then 650 */
 	if(!alive player) then {_walkDis = 0;} else {
 		_curPos = visiblePosition player;
@@ -158,7 +162,7 @@ while {true} do {
 		_lastPos = (SEL(_lastPos,0)) + (SEL(_lastPos,1));
 	};
 	uiSleep 1;
-	
+
 	if(player getVariable "missingOrgan") then
 	{
 		life_max_health = .50;
@@ -174,29 +178,29 @@ while {true} do {
 		"dynamicBlur" ppEffectEnable false;
 		life_max_health = 1;
 	};
-	
+
 	if(life_inv_carCharger > 0) then
 	{
-		if((!(EQUAL(life_battery,100))) && (vehicle player != player) && (isEngineOn vehicle player)) then 
-		{ 
+		if((!(EQUAL(life_battery,100))) && (vehicle player != player) && (isEngineOn vehicle player)) then
+		{
 			hintSilent "Ihr Handyakku wird nun geladen";
 			_loadBattery = 0;
-			while{true} do 
+			while{true} do
 			{	if(EQUAL(_loadBattery,72)) then
 				{
-					ADD(life_battery,5); 
+					ADD(life_battery,5);
 					[] call life_fnc_hudUpdate;
 					_loadBattery = 0;
 				};
 				if(EQUAL(life_battery,100)) exitWith {hintSilent "Ihr Handyakku ist nun vollstaending geladen!"};
 				if(!(vehicle player != player)) exitWith {hintSilent "Sie haben das Farhzeug verlassen, ihr Handyakku wird nicht mehr geladen!"};
-				if(!(isEngineOn vehicle player)) exitWith {hintSilent "Sie haben den Motor ausgeschaltet, ihr Handyakku wird nicht mehr geladen!"};  
+				if(!(isEngineOn vehicle player)) exitWith {hintSilent "Sie haben den Motor ausgeschaltet, ihr Handyakku wird nicht mehr geladen!"};
 				uiSleep 5;
 				ADD(_loadBattery,1);
 			};
 		};
 	};
-	
+
 	if ((player distance (getMarkerPos "Warm_Marker") < 250) && (player getVariable["Revive",TRUE])) then // 250 was the toxic area change
 	{
 		if(uniform player == "U_C_Scientist") then // you will be safe when you get this uniform
@@ -213,7 +217,7 @@ while {true} do {
 			sleep 5;
 		};
 	};
-	
+
 	if(player distance (getMarkerPos "safezone_kavalla") < 30) then
 	{
 		if(EQUAL(LEVEL,0) && life_firstSpawn) then
@@ -221,7 +225,7 @@ while {true} do {
 			[true,1500] spawn life_fnc_expConfig;
 		};
 	};
-	
+
 	if(life_drug > 0) then {
 		while {true} do
 		{
@@ -235,12 +239,12 @@ while {true} do {
 			};
 		};
 	};
-	
+
 	if (life_drink > 0) then
 	{
 		waitUntil {(life_drink > 0)};
 		while{(life_drink > 0)} do {
-		
+
 			if(life_drink > 0.08) then {
 				"radialBlur" ppEffectEnable true;
 				"radialBlur" ppEffectAdjust[0.08, 0,0.35,0.37];
@@ -255,19 +259,19 @@ while {true} do {
 				life_drink = life_drink - 0.02;
 			};
 		};
-		
+
 		"radialBlur" ppEffectAdjust  [0,0,0,0];
 		"radialBlur" ppEffectCommit 5;
 		"radialBlur" ppEffectEnable false;
 		life_thirst = 0;
-		
+
 	};
-	
+
 	{
 		_vehicle = vehicle player;
 		_heli = typeOf _vehicle;
 		if(EQUAL(_heli,"O_Heli_Transport_04_F") && (_vehicle distance (getMarkerPos "ADAC_Container") < 20)) then
-		{	
+		{
 			sleep 2;
 			while {(_vehicle distance (getMarkerPos "ADAC_Container") < 20) && (player distance (getMarkerPos "ADAC_Container") < 20)} do
 			{
@@ -307,7 +311,7 @@ while {true} do {
 			};
 		};
 	};
-	
+
 	if(player distance (getMarkerPos "Remove_Container") < 20) then
 	{
 		_container = "Land_Pod_Heli_Transport_04_repair_F";
@@ -325,10 +329,10 @@ while {true} do {
 				{
 					if((round(_timeUp - time)) > 0) then {
 					_countDown = [(_timeUp - time),"MM:SS"] call BIS_fnc_secondsToString;
-	
+
 					hintSilent parseText format["Container wird eingelagert in<br/>%1",_countDown];
 					};
-		
+
 					if((round(_timeUp - time)) == 0) exitWith {hint ""};
 					sleep 0.1;
 				};
@@ -352,7 +356,7 @@ while {true} do {
 			if(player distance (getMarkerPos "Remove_Container") > 20) exitWith {hint ""};
 		};
 	};
-	
+
 	/*if((EQUAL(typeOf vehicle player),"Land_Pod_Heli_Transport_04_medevac_F") && ((vehicle player) distance (getMarkerPos "Medic_Container") < 20)) then
 	{
 		_vehicle = vehicle player;
@@ -361,19 +365,19 @@ while {true} do {
 		_marker = getMarkerPos "Medic_Container";
 		_time = (1*60);
 		_timeUp = time + _time;
-			
+
 		while{true} do
 		{
 			if((round(_timeUp - time)) > 0) then {
 			_countDown = [(_timeUp - time),"MM:SS"] call BIS_fnc_secondsToString;
-	
+
 			hintSilent parseText format["Mediccontainer wird bereitgestellt in<br/>%1",_countDown];
 			};
-		
+
 			if((round(_timeUp - time)) == 0) exitWith {hint ""};
 			sleep 0.1;
 		};
-			
+
 		if((_heli isEqualTo "O_Heli_Transport_04_F") && (playerSide isEqualTo independent)) then
 		{
 			_adac = _container createVehicle _marker;
@@ -430,6 +434,3 @@ while {true} do {
 
 	};
 };
-	
-	
-	

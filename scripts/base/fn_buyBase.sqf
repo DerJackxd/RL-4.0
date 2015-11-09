@@ -20,7 +20,7 @@ _groupOwner = (group player)  getVariable "gang_owner";
 if(!(EQUAL(_uid,_groupOwner))) exitWith {hintSilent "Sie sind nicht der GangLeader"};
 if(!license_civ_gang) exitWith {hint localize "STR_House_License1"};
 if(count life_base >= 1) exitWith {hint "Eure Gang besitz schon eine Base";};
-if (!isNil{_house getVariable "base_owner"}) then 
+if (!isNil{_house getVariable "base_owner"}) then
 {
 	if(!(EQUAL(_grouOwner,((_house getVariable "base_owner") select 0)))) exitWith {hint "Diese base gehört nicht zu deiner gang"};
 };
@@ -28,7 +28,7 @@ closeDialog 0;
 
 _houseCfg = [M_CONFIG(getNumber,"Houses",typeOf(_house),"price"),M_CONFIG(getNumber,"Houses",typeOf(_house),"maxStorage")];
 if(count _houseCfg == 0) exitWith {};
-	
+
 _action = [
 	format[localize "STR_House_BuyMSG",
 	[(_houseCfg select 0)] call life_fnc_numberText,
@@ -36,13 +36,14 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	
-	if (isNil{_house getVariable "base_owner"}) then 
+
+	if (isNil{_house getVariable "base_owner"}) then
 	{
 		if(_gFund < (_houseCfg select 0)) exitWith {hint format [localize "STR_House_NotEnough"]};
 		[[_uid,_house,_grp],"TON_fnc_addBase",false,false] spawn life_fnc_MP;
-		_gFund = _gFund - (_houseCfg select 0);
+		SUB(_gFund,(_houseCfg select 0));
 		(group player) setVariable ["gang_bank",_gFund,true];
+		[[1,grpPlayer],"TON_fnc_updateGang",false,false] call life_fnc_MP;
 		_house setVariable["base_owner",[_uid,profileName],true];
 		_house setVariable["members",[_grpMembers],true];
 		_house setVariable["locked",true,true];
@@ -67,7 +68,7 @@ if(_action) then {
 		hint" Glückwunsch du hast eine Clanbase erworben.Diese wird nun errichtet und steht Dir nach dem Server Restart zur Verfügung.";
 	}else{
 		_position = call compile format["%1",life_base select 0];
-		
+
 		[[_uid,_house,_grp],"TON_fnc_addBase2",false,false] spawn life_fnc_MP;
 		life_vehicles pushBack _house;
 		life_base pushBack [str(getPosATL _house),[]];
@@ -85,5 +86,5 @@ if(_action) then {
 		_markerText setMarkerType "mil_Warning";
 		hint" Glückwunsch du hast eine Clanbase erworben.Diese wird nun errichtet und steht Dir nach dem Server Restart zur Verfügung.";
 	};
-	
+
 };

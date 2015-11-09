@@ -788,6 +788,7 @@ switch (_code) do {
 					if(EQUAL(_locked,2)) then {
 						if(local _veh) then {
 							_veh lock 0;
+							/*
 							_veh animateDoor ["door_back_R",1];
 							_veh animateDoor ["door_back_L",1];
 							_veh animateDoor ['door_R',1];
@@ -799,12 +800,14 @@ switch (_code) do {
 							_veh animateDoor ['Door_RF',1];
 							_veh animateDoor ['Door_LB',1];
 							_veh animateDoor ['Door_RB',1];
+							*/
 							if(_vehicle in _container) then
 								{
 									_veh enableRopeAttach true;
 								};
 						} else {
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] call life_fnc_MP;
+							/*
 							_veh animateDoor ["door_back_R",1];
 							_veh animateDoor ["door_back_L",1];
 							_veh animateDoor ['door_R',1];
@@ -816,6 +819,7 @@ switch (_code) do {
 							_veh animateDoor ['Door_RF',1];
 							_veh animateDoor ['Door_LB',1];
 							_veh animateDoor ['Door_RB',1];
+							*/
 							if(_vehicle in _container) then
 							{
 								_veh enableRopeAttach true;

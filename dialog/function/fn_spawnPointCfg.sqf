@@ -24,12 +24,12 @@ switch (_side) do
 			["cop_spawn_4","Cairns","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_5","Alice Springs","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_6","Perth","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-            ["cop_spawn_7","Broken Hill","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-            ["cop_spawn_8","Toowoomba Hill","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-            ["cop_spawn_9","Staatsgefängnis","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-            ["cop_spawn_10","Sondereinsatzkommando","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-            ["cop_spawn_11","Küstenwache","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-            ["cop_spawn_12","Air HQ Alice Springs","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+      ["cop_spawn_7","Broken Hill","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+      ["cop_spawn_8","Toowoomba Hill","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+      ["cop_spawn_9","Staatsgefängnis","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+      ["cop_spawn_10","Sondereinsatzkommando","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+      ["cop_spawn_11","Küstenwache","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+      ["cop_spawn_12","Air HQ Alice Springs","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_13","Air HQ Victoria","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};

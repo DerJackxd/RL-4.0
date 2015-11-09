@@ -21,7 +21,7 @@ life_action_gathering = true;
 	if(player distance (getMarkerPos _x) < 30) exitWith {_zone = _x;};
 } foreach _resourceZones;
 
-if(EQUAL(_zone,"")) exitWith {life_action_gathering = false;[] call life_fnc_pickaxeUse;};
+if(EQUAL(_zone,"")) exitWith {life_action_gathering = false;};
 
 //Get the resource that will be gathered from the zone name...
 switch(true) do {
