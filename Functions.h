@@ -28,7 +28,7 @@ class Spyglass
 class Life_Client_Core
 {
 	tag = "life";
-	
+
 	class Master_Directory
 	{
 		file = "core";
@@ -44,7 +44,7 @@ class Life_Client_Core
 		class initZeus {};
 		class autoSave {};
 	};
-	
+
 	class Admin
 	{
 		file = "core\admin";
@@ -53,12 +53,12 @@ class Life_Client_Core
 		class adminid {};
 		class admingetID {};
 		class adminMenu {};
-		class adminQuery {};	
+		class adminQuery {};
 		class adminMenu_Extended {};
 		class adminQuery_Extended {};
 		class adminInstaHealth {};
 		class adminESP {};
-        class adminRepairBuild {};
+    class adminRepairBuild {};
 		class adminDebugCon {};
 		class adminMarkers {};
 		class adminEvent {};
@@ -67,7 +67,7 @@ class Life_Client_Core
 		//class adminFunBreak {};
 		//class adminFunBreakPlayer {};
 	};
-	
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -92,7 +92,7 @@ class Life_Client_Core
 		class therapieaction {};
 		class therapie {};
 	};
-	
+
 	class Actions
 	{
 		file = "core\actions";
@@ -154,7 +154,7 @@ class Life_Client_Core
 		class useHeroin {};
 		class suechtig {};
 	};
-	
+
 	class Housing
 	{
 		file = "core\housing";
@@ -175,7 +175,7 @@ class Life_Client_Core
 		class lockHouse {};
 		class garageRefund {};
 	};
-	
+
 	class Config
 	{
 		file = "core\config";
@@ -216,7 +216,7 @@ class Life_Client_Core
 		class showMsg {};
 		class smartphone {};
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
@@ -274,7 +274,7 @@ class Life_Client_Core
 		class vehicleSpawnPos {};
 		class ampel {};
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -289,7 +289,7 @@ class Life_Client_Core
 		class say3D {};
 		class soundOelPumpe {};
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -311,7 +311,7 @@ class Life_Client_Core
 		class waterChargeTimer {};
 		class freezePlayer {};
 	};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -328,7 +328,7 @@ class Life_Client_Core
 		class addVehicle2Chain {};
 		class updateVehTrunk {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
@@ -372,7 +372,7 @@ class Life_Client_Core
 		class removeLicensesCop {};
 		class createRemoveLicesnsesDialog {};
 	};
-	
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -387,7 +387,7 @@ class Life_Client_Core
 		class lockGang {};
 		class unlockGang {};
 	};
-	
+
 	class PermGangs
 	{
 		file = "core\permgangs";
@@ -405,7 +405,7 @@ class Life_Client_Core
 		class gangDisbanded {};
 		class gangMarkers {};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -432,7 +432,7 @@ class Life_Client_Core
 		class sellLicense {};
 		class vehicleShopColorLBChange {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -465,7 +465,7 @@ class Life_Client_Core
 		class kescherUse {};
 		class motorsaegeUse {};
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";
@@ -498,7 +498,7 @@ class Life_Client_Core
 		class impoundMenuAbschlepp {};
 		class unimpoundAbschlepp {};
 	};
-	
+
 	class breakout
 	{
 		file = "scripts\breakout";
@@ -506,11 +506,11 @@ class Life_Client_Core
 		class prisionbreak {};
 		class progressBaren {};
 	};
-	
+
 	class Special
 	{
 		file = "scripts\special";
-		
+
 		class openEmpMenu {};
 		class isEmpOperator {};
 		class scanVehicles {};
@@ -519,17 +519,17 @@ class Life_Client_Core
 		class vehicleWarned {};
 		class vehicleEmpd {};
 	};
-	
+
 	class Birddown
 	{
 		file = "scripts\birddown";
-		
+
 		class fireBirdDown {};
 		class birdDownShot {};
 		class bdVehicleWarned {};
 		class birdDownWarning {};
 	};
-	
+
 	class Ausweis
     {
         file = "scripts\Ausweis";
@@ -537,16 +537,16 @@ class Life_Client_Core
         class Lizenzsehen {};
         class Lizenzzeigen {};
     };
-    
+
 	class anstrich
 	{
 		file = "core\repaint";
-		
+
 		class RepaintMenu;
 		class Repaintcolor;
-		class RepaintVehicle;		
+		class RepaintVehicle;
 	};
-	
+
 	class Taxi
 	{
 		file = "scripts\taxi";
@@ -565,7 +565,7 @@ class Life_Client_Core
 		class finishRide {};
 		class openTaxiMenu {};
 	};
-	
+
 	class wk
 	{
 		file = "scripts\wk";
@@ -574,7 +574,7 @@ class Life_Client_Core
 		class wkMedic {};
 		class wkADAC {};
 	};
-	
+
 	class blinker
 	{
 		file = "scripts\blinker";
@@ -583,14 +583,14 @@ class Life_Client_Core
 		class BlinkerRechts {};
 		class WarnBlinker {};
 	};
-	
+
 	class airdrop
 	{
 		file = "scripts\airDrop";
 		class airDropWait {};
 		class airDropEnd {};
 	};
-	
+
 	class Infotafel
 	{
 		file = "scripts\infotafel";
@@ -601,7 +601,7 @@ class Life_Client_Core
 		class bild4 {};
 		class bild5 {};
 	};
-	
+
 	class Oelbohrturm
 	{
 		file = "scripts\oelbohrturm";
@@ -614,7 +614,7 @@ class Life_Client_Core
 		class oelFassVehicleAb {};
 		class oelFassRemove {};
 	};
-	
+
 	class ADAC
 	{
 		file = "core\ADAC";
@@ -635,11 +635,11 @@ class Life_Client_Core
 		class damageCheck {};
 		class wkasten {};
 		class packupWkasten {};
-		
+
 		//class adacRepaintMenu {};
 		//class adacRepaintVehicle {};
 	};
-	
+
 	class DynMarket
 	{
 		file = "core\DynMarket";
@@ -651,7 +651,7 @@ class Life_Client_Core
 		class DYNMARKET_getPrice {};
 		class addsubstract {};
 	};
-	
+
 	class wette
 	{
 		file = "scripts\wetten";
@@ -661,7 +661,7 @@ class Life_Client_Core
 		class betShowQuotes {};
 		class betDraw {};
 	};
-	
+
 	class Auktionshaus
     {
     	file = "scripts\Auktionshaus";
@@ -674,7 +674,7 @@ class Life_Client_Core
     	class CAH_fetchDetails {};
     	class CAH_loggedIn {};
     };
-	
+
 	class Scripts
 	{
 		file = "scripts";
@@ -684,7 +684,7 @@ class Life_Client_Core
 		class radarCam {};
 		class robATM {};
 	};
-	
+
 	class Goverment
     {
     	file = "scripts\Goverment";
@@ -699,21 +699,21 @@ class Life_Client_Core
     	class changeTaxes {};
     	class hideGovAcMenu {};
     };
-	
+
 	class base
 	{
 		file = "scripts\base";
 		class buyBase {};
-		class getBasePositions {};		
-		class initBase {};	
-		class vehicleBase {};	
+		class getBasePositions {};
+		class initBase {};
+		class vehicleBase {};
 		class placeObject {};
 		class repairBase {};
 		class removeBaseObj {};
 		class baseShopAdd {};
 		class baseVehicleShop {};
 	};
-	
+
 	class paintball
 	{
 		file = "scripts\paintball";
@@ -721,7 +721,7 @@ class Life_Client_Core
 		class ryn_message {};
 		class paintballDialog {};
 	};
-	
+
 	class CopPlaceables
 	{
 		file = "core\cop\placeables";
@@ -732,7 +732,7 @@ class Life_Client_Core
 		class placeableCancel {};
 		class placeablesPlaceComplete {};
 	};
-	
+
 	class skillsystem
 	{
 		file = "scripts\skillsystem";
@@ -758,7 +758,7 @@ class Life_Client_Core
 class King_Client_Core
 {
    tag = "king";
-		
+
 	class Speedtrap
 	{
 		file = "core\king\speedtrap";
@@ -773,7 +773,7 @@ class King_Client_Core
         class setSpeedtrapLimit {};
         class speedtrapHack {};
 	};
-	
+
 	class Fuelchanger
 	{
 		file = "core\king\fuelchanger";
@@ -783,7 +783,7 @@ class King_Client_Core
         class cleanFuelStation {};
 		class fuelPipe {};
 	};
-			
+
 	class Gambling
     {
         file = "core\king\gambling";
@@ -795,7 +795,7 @@ class King_Client_Core
         class gamblingSetJackpotVariable {};
         class gamblingWonJackpot {};
     };
-	
+
 	class JailWork
 	{
 		file = "core\king\jailWork";

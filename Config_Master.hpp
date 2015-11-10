@@ -682,7 +682,7 @@ class VirtualShops {
 
     class cop_gear {
         name = "STR_Shops_CopGear";
-        items[] = {"debitcard","gpstracker","adac_toolkit","fuelFull","battery", "carCharger", "repairkit","firstaidkit","bd_mk1_bleachweapon","bd_mk1_ammo","troll_taschentuch","troll_nuckel","troll_bitering","troll_money","defusekit","speedtrap","laptop","organttk","kidney"};
+        items[] = {"debitcard","gpstracker","adac_toolkit","fuelFull","battery", "carCharger", "repairkit","firstaidkit","bd_mk1_bleachweapon","bd_mk1_ammo","troll_taschentuch","troll_nuckel","troll_bitering","troll_money","defusekit","speedtrap","laptop"};
     };
 
     class adac {

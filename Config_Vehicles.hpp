@@ -640,7 +640,6 @@ class CarShops {
 			{ "DAR_TahoePolice", 25000, "", { "life_coplevel", 2 } },
 			{ "DAR_ChargerPoliceState", 25000, "", { "life_coplevel", 2 } },
 			{ "DAR_ExplorerPolice", 25000, "", { "life_coplevel", 2 } },
-			//{ "DAR_ImpalaPolice", 35000, "", { "life_coplevel", 3 } },
 			{ "DAR_TaurusPolice", 35000, "", { "life_coplevel", 3 } },
 			{ "cl3_transitpatrol", 45000, "", { "life_coplevel", 4 } },
 			{ "cl3_escalade_patrolwb", 55000, "", { "life_coplevel", 4 } },
@@ -651,9 +650,8 @@ class CarShops {
 			{ "DAR_TahoePoliceDet", 68000, "", { "life_coplevel", 4 } },
 			{ "DAR_ImpalaPoliceDet", 68000, "", { "life_coplevel", 4 } },
 			{ "Jonzie_Mini_Cooper", 68000, "", { "life_coplevel", 4 } },
-			{ "DAR_ExplorerPoliceStealth", 68000, "", { "life_coplevel", 5 } },
+			{ "DAR_ExplorerPoliceStealth", 68000, "", { "life_coplevel", 4 } },
 			{ "DAR_DAR_02FirebirdSSVPolice", 85000, "", { "life_coplevel", 5 } },
-			//{ "I_MRAP_03_F", 85000, "", { "life_coplevel", 5 } },
 			{ "cl3_reventon_clpd", 198000, "", { "life_coplevel", 6 } }
 		};
 	};
@@ -699,7 +697,8 @@ class CarShops {
 			{ "O_Heli_Transport_04_F", 200000, "cAir", { "life_coplevel", 4 } },
 			{ "O_Heli_Transport_04_bench_F", 200000, "cAir", { "life_coplevel", 4 } },
 			{ "B_Heli_Transport_03_unarmed_F", 200000, "cAir", { "life_coplevel", 5 } },
-			{ "EC635_Unarmed", 200000, "cAir", { "life_coplevel", 5 } }
+			{ "EC635_Unarmed", 200000, "cAir", { "life_coplevel", 5 } },
+			{ "USAF_CV22", 200000, "cAir", { "life_coplevel", 5 } }
 		};
 	};
 

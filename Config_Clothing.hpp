@@ -211,7 +211,7 @@ class Clothing {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
 			{ "B_Bergen_blk", "Polizeirucksack", 2500, { "", "", -1 } },
 			{ "B_UAV_01_backpack_F", "", 20000, { "", "", -1 } },
-			{ "ACE_TacticalLadder_Pack", "SEK-Rucksack", 2500, { "life_coplevel", "SCALAR", 3} },	
+			{ "ACE_TacticalLadder_Pack", "Tragbare Leiter", 2500, { "life_coplevel", "SCALAR", 3} },	
 			{ "B_Bergen_sgg", "SEK-Rucksack", 2500, { "life_coplevel", "SCALAR", 4} },
 			{ "B_Kitbag_cbr", "", 4500, { "life_coplevel", "SCALAR", 6 } },
 			{ "B_FieldPack_blk", "", 1500, { "life_coplevel", "SCALAR", 6 } }
