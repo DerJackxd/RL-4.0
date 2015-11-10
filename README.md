@@ -3,4 +3,4 @@
 Main repository for RL RPG 4.0
 http://realliferpg.de/
 
-maybe also syncing the client mission
+If you want a feature: open an issue or make a pull request
