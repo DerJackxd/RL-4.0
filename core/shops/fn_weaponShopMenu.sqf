@@ -2,7 +2,7 @@
 /*
 	File: fn_weaponShopMenu.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Something
 */
@@ -24,10 +24,10 @@ if(_exit) exitWith {};
 _flag = switch(playerSide) do {case west: {"cop"}; case independent: {"med"}; case east:{"adac"}; default {"civ"};};
 if(!(EQUAL(_flag,_shopSide))) exitWith {};
 if(!(EQUAL(_level,-1))) then {
-    _flag = switch(playerSide) do {case west: {(_level <= (FETCH_CONST(life_copLevel)))}; case civilian: {(_level <= LEVEL)}; case independent: {(_level <= (FETCH_CONST(life_medicLevel)))}; case east: {(_level <= (FETCH_CONST(life_adacLevel)))}; default {true};};
+    _flag = switch(playerSide) do {case west: {(_level <= (FETCH_CONST(life_coplevel)))}; case civilian: {(_level <= LEVEL)}; case independent: {(_level <= (FETCH_CONST(life_medicLevel)))}; case east: {(_level <= (FETCH_CONST(life_adacLevel)))}; default {true};};
     if(!_flag) then {_exit2 = true;};
 };
-	
+
 if(_exit2) exitWith {hint _message;};
 
 uiNamespace setVariable ["Weapon_Shop",SEL(_this,3)];

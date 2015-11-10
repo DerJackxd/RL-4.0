@@ -94,7 +94,6 @@ class CarShops {
 			{ "cl3_taurus_cardinal", 95000, "driver" },
 			{ "cl3_taurus_camo", 120000, "driver" },
 			{ "cl3_taurus_camo_urban", 120000, "driver" },
-			{ "A3L_F350Black", 225000, "driver" },
 			{ "Mrshounka_raptor2_noir", 285000, "driver" },
 			{ "Mrshounka_raptor2_bleufonce", 285000, "driver" },
 			{ "Mrshounka_raptor2_rouge", 285000, "driver" },
@@ -543,7 +542,6 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 1500, "", { "life_adaclevel", 2 } },
 			{ "C_Offroad_01_F", 5000, "", { "life_adaclevel", 2 } },
-			{ "A3L_Towtruck", 54000, "", { "life_adaclevel", 2 } },
 			{ "B_Truck_01_mover_F", 58000, "", { "life_adaclevel", 3 } },
 			{ "Jonzie_Forklift", 32500, "", { "life_adaclevel", 4 } },
 			{ "C_SUV_01_F", 43000, "", { "life_adaclevel", 4 } }
@@ -570,8 +568,7 @@ class CarShops {
 			{ "cl3_dodge_charger_emt", 80000, "", { "life_medlevel", 5 } },
 			{ "cl3_suv_emt_FD", 25000, "", { "life_medlevel", 5 } },
 			{ "cl3_escalade_fd", 35000, "", { "life_medlevel", 5 } },
-			{ "cl3_fire_rescue_red", 45000, "", { "life_medlevel", 5 } },
-			{ "a3l_laddertruck", 55000, "", { "life_medlevel", 5 } }
+			{ "cl3_fire_rescue_red", 45000, "", { "life_medlevel", 5 } }
 		};
 	};
 
@@ -1250,51 +1247,6 @@ class CfgVehicles {
 		garageSell[] = { 15000, 0, 0, 0 };
         insurance = 48500;
         chopShop = 15000;
-        textures[] = { };
-	};
-
-	class A3L_F350Black {
-        vItemSpace = 86;
-        storageFee[] = { 4800, 0, 0, 0 };
-		garageSell[] = { 55000, 0, 0, 0 };
-        insurance = 112500;
-        chopShop = 55000;
-        textures[] = { };
-	};
-
-	class A3L_F350White {
-        vItemSpace = 86;
-        storageFee[] = { 4800, 0, 0, 0 };
-		garageSell[] = { 55000, 0, 0, 0 };
-        insurance = 112500;
-        chopShop = 55000;
-        textures[] = { };
-	};
-
-	class A3L_F350Blue {
-        vItemSpace = 86;
-        storageFee[] = { 4800, 0, 0, 0 };
-		garageSell[] = { 55000, 0, 0, 0 };
-        insurance = 112500;
-        chopShop = 55000;
-        textures[] = { };
-	};
-
-	class A3L_F350Mex {
-        vItemSpace = 86;
-        storageFee[] = { 4800, 0, 0, 0 };
-		garageSell[] = { 55000, 0, 0, 0 };
-        insurance = 112500;
-        chopShop = 55000;
-        textures[] = { };
-	};
-
-	class A3L_F350Red {
-        vItemSpace = 86;
-        storageFee[] = { 4800, 0, 0, 0 };
-		garageSell[] = { 55000, 0, 0, 0 };
-        insurance = 112500;
-        chopShop = 55000;
         textures[] = { };
 	};
 
@@ -3747,14 +3699,6 @@ class CfgVehicles {
 		textures[] = { };
 	};
 
-	class a3l_laddertruck : Default {
-		vItemSpace = 280;
-		storageFee[] = { 0, 0, 3000, 0 };
-		garageSell[] = { 0, 0, 10000, 0 };
-		chopShop = 7500;
-		textures[] = { };
-	};
-
 	class DAR_M1152 : Default {
 		vItemSpace = 65;
 		storageFee[] = { 0, 0, 0, 3000 };
@@ -3773,13 +3717,6 @@ class CfgVehicles {
 		vItemSpace = 55;
 		storageFee[] = { 0, 0, 3000, 0 };
 		garageSell[] = { 0, 0, 10000, 0 };
-		chopShop = 7500;
-	};
-
-	class A3L_Towtruck : Default {
-		vItemSpace = 65;
-		storageFee[] = { 0, 0, 0, 3000 };
-		garageSell[] = { 0, 0, 0, 10000 };
 		chopShop = 7500;
 	};
 

@@ -117,7 +117,7 @@ class Clothing {
 			{ "TRYK_Beard_BK4", "", 50, { "life_level", "SCALAR", 2 } },
 			{ "TRYK_Beard4", "", 50, { "life_level", "SCALAR", 2 } },
 			{ "TRYK_Beard_BW4", "", 50, { "life_level", "SCALAR", 2 } },
-			{ "TRYK_Beard_Gr4", "", 50, { "life_level", "SCALAR", 2 } },	
+			{ "TRYK_Beard_Gr4", "", 50, { "life_level", "SCALAR", 2 } },
 			{ "G_Lady_Mirror", "", 100, { "life_level", "SCALAR", 2 } },
 			{ "G_Lady_Dark", "", 100, { "life_level", "SCALAR", 2 } },
 			{ "G_Lady_Blue", "", 100, { "life_level", "SCALAR", 2 } },
@@ -171,7 +171,7 @@ class Clothing {
 			{ "H_Cap_brn_SPECOPS", "", 50, { "life_coplevel", "SCALAR", 6 } },
 			{ "H_MilCap_mcamo", "", 300, { "life_coplevel", "SCALAR", 6 } },
 			{ "H_Watchcap_blk", "", 300, { "life_coplevel", "SCALAR", 6 } },
-			{ "H_HelmetB_light_grass", "", 300, { "life_coplevel", "SCALAR", 6 } },	
+			{ "H_HelmetB_light_grass", "", 300, { "life_coplevel", "SCALAR", 6 } },
 			{ "H_HelmetB_camo", "", 300, { "life_coplevel", "SCALAR", 6 } },
 			{ "H_Booniehat_mcamo", "", 300, { "life_coplevel", "SCALAR", 6 } }
 		};
@@ -211,6 +211,7 @@ class Clothing {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
 			{ "B_Bergen_blk", "Polizeirucksack", 2500, { "", "", -1 } },
 			{ "B_UAV_01_backpack_F", "", 20000, { "", "", -1 } },
+			{ "ACE_TacticalLadder_Pack", "SEK-Rucksack", 2500, { "life_coplevel", "SCALAR", 3} },	
 			{ "B_Bergen_sgg", "SEK-Rucksack", 2500, { "life_coplevel", "SCALAR", 4} },
 			{ "B_Kitbag_cbr", "", 4500, { "life_coplevel", "SCALAR", 6 } },
 			{ "B_FieldPack_blk", "", 1500, { "life_coplevel", "SCALAR", 6 } }
@@ -274,7 +275,7 @@ class Clothing {
 			{ "H_Shemag_tan", "", 5000, { "life_level", "SCALAR", 6 } },
 			{ "H_Shemag_olive", "", 5000, { "life_level", "SCALAR", 6 } },
 			{ "H_ShemagOpen_khk", "", 5000, { "life_level", "SCALAR", 6 } },
-			{ "H_Shemag_olive_hs", "", 5200, { "life_level", "SCALAR", 6 } },	
+			{ "H_Shemag_olive_hs", "", 5200, { "life_level", "SCALAR", 6 } },
 			{ "TRYK_H_Booniehat_CC", "", 5200, { "life_level", "SCALAR", 6 } },
 			{ "TRYK_H_Booniehat_MARPAT_Desert", "", 5200, { "life_level", "SCALAR", 6 } },
 			{ "TRYK_R_CAP_BLK", "", 5200, { "life_level", "SCALAR", 6 } },
@@ -308,7 +309,7 @@ class Clothing {
 			{ "G_Lowprofile", "", 100, { "life_level", "SCALAR", 4 } },
 			{ "G_Combat", "", 100, { "life_level", "SCALAR", 4 } },
 			{ "G_Balaclava_oli", "", 1000, { "life_level", "SCALAR", 5 } }
-			
+
 		};
 
 		vests[] = {
@@ -380,24 +381,24 @@ class Clothing {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } }
 		};
 	};
-	
+
 	class med {
 		title = "STR_Shop_C_Med";
 		license = "";
 		side = "med";
-		
+
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_I_HeliPilotCoveralls", "Sanitäter Uniform", 850, { "", "", -1} },
 			{ "U_Rangemaster", "Notarzt Uniform", 1000, { "life_mediclevel", "SCALAR", 1} }
 		};
-		
+
 		headgear[] = {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
 			{ "H_Cap_red", "Sanitäter-Cap (Rot)", 150, { "", "", -1} },
 			{ "H_Cap_blk", "Sanitäter-Cap (Schwarz)", 150, { "", "" , -1} }
 		};
-		
+
 		goggles[] = {
 			{ "NONE", "Remove Glasses", 0, { "", "", -1 } },
 			{ "G_Shades_Black", "", 25, { "", "", -1 } },
@@ -414,33 +415,33 @@ class Clothing {
 			{ "G_Lowprofile", "", 100, { "", "", -1 } },
 			{ "G_Combat", "", 100, { "", "", -1 } }
 		};
-		
+
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } }
 		};
-		
+
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
 			{ "B_Bergen_blk", "Sanitäterrucksack", 2500, { "", "", -1} },
 			{ "B_Bergen_sgg", "Notarztrucksack", 2500, { "life_mediclevel", "SCALAR", 1} }
 		};
 	};
-	
+
 	class adac {
 		title = "STR_Shop_C_ADAC";
 		license = "";
 		side = "adac";
-		
+
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_OG_Guerilla2_3", "ADAC Uniform", 850, { "", "", -1} }
 		};
-		
+
 		headgear[] = {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
 			{ "H_Cap_blk", "ADAC-Cap (Schwarz)", 150, {"", "", -1} }
 		};
-		
+
 		goggles[] = {
 			{ "NONE", "Remove Glasses", 0, { "", "", -1 } },
 			{ "G_Shades_Black", "", 25, { "", "", -1 } },
@@ -457,22 +458,22 @@ class Clothing {
 			{ "G_Lowprofile", "", 100, { "", "", -1 } },
 			{ "G_Combat", "", 100, { "", "", -1 } }
 		};
-		
+
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } }
 		};
-		
+
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
 			{ "B_Bergen_blk", "ADAC-Rrucksack", 2500, { "", "", -1} }
 		};
 	};
-	
+
 	class airSoft {
 		title = "STR_Shop_C_AirSoft";
 		license = "";
 		side = "civ";
-			
+
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_I_Protagonist_VR", "VR Independent", 0, { "", "", -1} },
@@ -497,7 +498,7 @@ class Clothing {
 			{ "Paintball_Uniform_Hex_Camo_01_I", "VR Independent", 0, { "", "", -1} },
 			{ "Paintball_Uniform_blue_01_I", "VR Independent", 0, { "", "", -1} }
 		};
-			
+
 		headgear[] = {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
 			{ "H_Bandanna_camo", "Camo Bandanna", 125, { "", "", -1 } },
@@ -526,9 +527,9 @@ class Clothing {
 			{ "Paintball_Mask_04", "", 555, { "", "", -1 } },
 			{ "Paintball_Mask_05", "", 555, { "", "", -1 } },
 			{ "Paintball_Mask_06", "", 555, { "", "", -1 } }
-			
+
 		};
-			
+
 		goggles[] = {
 			{ "NONE", "Remove Glasses", 0, { "", "", -1 } },
 			{ "G_Shades_Black", "", 25, { "", "", -1 } },
@@ -545,11 +546,11 @@ class Clothing {
 			{ "G_Lowprofile", "", 100, { "", "", -1 } },
 			{ "G_Combat", "", 100, { "", "", -1 } }
 		};
-			
+
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } }
 		};
-		
+
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } }
 		};
