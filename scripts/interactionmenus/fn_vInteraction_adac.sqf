@@ -35,9 +35,9 @@ _Btn1 = _display displayCtrl 2412;
 life_vInact_curTarget = _curTarget;
 
 _Btn2 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_damageCheck;";
-		
+
 _Btn3 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_adacRepairTruck;";
-		
+
 _Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 
 _Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
@@ -57,7 +57,19 @@ _Btn10 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundActionAbsc
 
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
-if(!((player distance (getMarkerPos "Remove_Container") < 30) OR  (player distance (getMarkerPos "adac_spawn_2") < 30) or (player distance (getMarkerPos "adac_spawn_3") < 30))) then 
+if(side player == independent) then {
+	_Btn2 ctrlEnable false;
+	_Btn3 ctrlEnable false;
+	_Btn4 ctrlEnable false;
+	_Btn5 ctrlEnable false;
+	_Btn11 ctrlEnable false;
+	_Btn10 ctrlEnable false;
+	_Btn9 ctrlEnable false;
+};
+
+
+
+if(!((player distance (getMarkerPos "Remove_Container") < 30) OR  (player distance (getMarkerPos "adac_spawn_2") < 30) or (player distance (getMarkerPos "adac_spawn_3") < 30))) then
 {
 	_Btn5 ctrlEnable false;
 }else {

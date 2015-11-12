@@ -9,7 +9,9 @@ IL_Veh_Array = [];
 
 sleep (random 30);
 
-_null = [Player] execVM "scripts\IgiLoad\IgiLoad.sqf";
+cutText [Format ["IgiLoad init Player: %1", Player],"PLAIN",2];
+
+_null = [Player] execVM "IgiLoad\IgiLoad.sqf";
 waitUntil {scriptDone _null};
 
 sleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
@@ -18,20 +20,15 @@ sleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
 	if ((typeOf _x) in (IL_Supported_Vehicles_All)) then
 	{
 		IL_Veh_Array = IL_Veh_Array + [_x];
-		_null = [_x] execVM "scripts\IgiLoad\IgiLoad.sqf";
+		_null = [_x] execVM "IgiLoad\IgiLoad.sqf";
 		waitUntil {scriptDone _null};
 	};
 } forEach (vehicles);
 
-hint composeText [ "ADAC geladen, viel spaß bei der Arbeit! =)"];
-
-//hintC "ADAC geladen du kannst nun deine Arbeit verrichten :D";
-//cutText ["IgiLoad loaded. Have fun :)","PLAIN",2];
-
-while {true} do 
+while {true} do
 {
 	sleep (IL_Check_Veh_Min + (random (IL_Check_Veh_Max - IL_Check_Veh_Min)));
-	
+
 	//Delete vehicles from "IL_Veh_Array" if not in "vehicles"
 	{
 		if !(_x in vehicles) then
@@ -43,7 +40,7 @@ while {true} do
 		if (((typeOf _x) in (IL_Supported_Vehicles_All)) && !(_x in IL_Veh_Array)) then
 		{
 			IL_Veh_Array = IL_Veh_Array + [_x];
-			_null = [_x] execVM "scripts\IgiLoad\IgiLoad.sqf";
+			_null = [_x] execVM "IgiLoad\IgiLoad.sqf";
 			waitUntil {scriptDone _null};
 		};
 	} forEach (vehicles);

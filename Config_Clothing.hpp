@@ -160,7 +160,13 @@ class Clothing {
 			{ "U_O_Wetsuit", "", 2000, {"life_coplevel", "SCALAR", 1} },
 			{ "U_B_SpecopsUniform_sgg", "SEK Uniform", 550, { "life_coplevel", "SCALAR", 4 } },
 			{ "U_B_CombatUniform_mcam", "Kampfanzug (Tropen)", 1000, { "life_coplevel", "SCALAR", 6 } },
-			{ "U_B_GhillieSuit", "Ghillie-Anzug (Tropen)", 1000, { "life_coplevel", "SCALAR", 6 } }
+			{ "U_B_GhillieSuit", "Ghillie-Anzug (Tropen)", 1000, { "life_coplevel", "SCALAR", 6 } },
+			{ "TRYK_U_B_wh_tan_Rollup_CombatUniform", "", 100, { "life_coplevel", "SCALAR", 4 } },
+			{ "U_C_Poor_1", "", 100, { "life_coplevel", "SCALAR", 4 } },
+			{ "U_OrestesBody", "", 100, { "life_coplevel", "SCALAR", 4 } },
+			{ "TRYK_U_B_Denim_T_WH", "", 100, { "life_coplevel", "SCALAR", 4 } },
+			{ "TRYK_shirts_DENIM_od", "", 100, { "life_coplevel", "SCALAR", 4 } },
+			{ "U_C_Poloshirt_tricolour", "", 100, { "life_coplevel", "SCALAR", 4 } }
 		};
 
 		headgear[] = {
@@ -211,7 +217,7 @@ class Clothing {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
 			{ "B_Bergen_blk", "Polizeirucksack", 2500, { "", "", -1 } },
 			{ "B_UAV_01_backpack_F", "", 20000, { "", "", -1 } },
-			{ "ACE_TacticalLadder_Pack", "Tragbare Leiter", 2500, { "life_coplevel", "SCALAR", 3} },	
+			{ "ACE_TacticalLadder_Pack", "Tragbare Leiter", 2500, { "life_coplevel", "SCALAR", 3} },
 			{ "B_Bergen_sgg", "SEK-Rucksack", 2500, { "life_coplevel", "SCALAR", 4} },
 			{ "B_Kitbag_cbr", "", 4500, { "life_coplevel", "SCALAR", 6 } },
 			{ "B_FieldPack_blk", "", 1500, { "life_coplevel", "SCALAR", 6 } }

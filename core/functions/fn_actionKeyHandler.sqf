@@ -118,7 +118,8 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		if(!dialog) then {
         switch(playerSide)do{
             case east:{[_curTarget] call life_fnc_vInteraction_adac;};
-		    case west:{[_curTarget] call life_fnc_vInteraction_cop;};
+						case independent:{[_curTarget] call life_fnc_vInteraction_adac;};
+		    		case west:{[_curTarget] call life_fnc_vInteraction_cop;};
             default {[_curTarget] call life_fnc_vInteraction_civ;};
             };
         };

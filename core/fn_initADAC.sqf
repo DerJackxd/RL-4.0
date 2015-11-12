@@ -2,16 +2,13 @@
 /*
 	File: fn_initADAC.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	ADAC Initialization file.
 */
 private["_end"];
 player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
-
-_igiload = execVM "scripts\IgiLoad\IgiLoadInit.sqf";
-[] execVM "scripts\=BTC=_Logistic\=BTC=_Logistic_Init.sqf";
 
 if((FETCH_CONST(life_adaclevel)) < 1) exitWith {
 	["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
@@ -33,3 +30,4 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 [] call life_fnc_updateClothing;
 [] execVM "scripts\autoTexture.sqf";
 [] spawn life_fnc_placeablesInit;
+_igiload = execVM "IgiLoad\IgiLoadInit.sqf";

@@ -9,7 +9,6 @@ enableEnvironment true;
 setTerrainGrid 50;
 StartProgress = true;
 
-[] execVM "scripts\fastrope.sqf";
 [] execVM "scripts\teargasm.sqf";
 [] execVM "scripts\teargasp.sqf";
 [] execVM "scripts\teargasGLm.sqf";

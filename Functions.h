@@ -507,6 +507,14 @@ class Life_Client_Core
 		class progressBaren {};
 	};
 
+/*
+	class igiload
+	{
+		file = "scripts\IgiLoad";
+		class igiInit {};
+		class igiLoad {};
+	};
+*/
 	class Special
 	{
 		file = "scripts\special";

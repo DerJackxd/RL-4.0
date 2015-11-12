@@ -27,8 +27,6 @@ class Mission
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Structures_F_Heli_Items_Electronics",
 		"xCam_EU",
-		"A3L_EMTMain",
-		"A3L_EMTMain_Bottom",
 		"A3_Structures_F_EPC_Items_Electronics",
 		"A3_Structures_F_Furniture",
 		"A3_Structures_F_System",
@@ -140,8 +138,6 @@ class Mission
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Structures_F_Heli_Items_Electronics",
 		"xCam_EU",
-		"A3L_EMTMain",
-		"A3L_EMTMain_Bottom",
 		"A3_Structures_F_EPC_Items_Electronics",
 		"A3_Structures_F_Furniture",
 		"A3_Structures_F_System",
@@ -6197,7 +6193,7 @@ class Mission
 			azimut=-179.62102;
 			id=295;
 			side="EMPTY";
-			vehicle="A3L_EMTMain";
+			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
 		};
 		class Item56
@@ -6206,7 +6202,7 @@ class Mission
 			azimut=-179.62102;
 			id=296;
 			side="EMPTY";
-			vehicle="A3L_EMTMain_Bottom";
+			vehicle="Land_InfoStand_V1_F";
 			skill=0.60000002;
 		};
 		class Item57
