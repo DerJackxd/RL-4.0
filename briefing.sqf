@@ -4,6 +4,7 @@ if(player diarySubjectExists "rules")exitwith{};
 player createDiarySubject ["rlcommunity","RLRPG Community "];
 player createDiarySubject ["serverrules","Regeln"];
 player createDiarySubject ["controls","RealLifeRPG Steuerung"];
+player createDiarySubject ["info","Informationen"];
 player createDiarySubject ["thanks","Credits"];
 
 
@@ -69,6 +70,113 @@ player createDiarySubject ["thanks","Credits"];
 			"
 		]
 	];
+
+	// Allgemeine Infos
+		player createDiaryRecord ["info",
+			[
+				"Allgemein",
+				"
+
+				Alle Fehler unter https://github.com/vabene1111/RL-4.0/issues melden!!
+
+				Die wichtigsten Dinge auf einen Blick<br/><br/>
+
+				- Ändert euren ACE Key unter Konfigurieren > Steuerung > Configure Addons da er mit der Windows Taste in Konflikt steht.<br/>
+				- ATM's öffnet man mit Windows/Action 10 Taste <br/>
+
+
+				"
+			]
+		];
+		player createDiaryRecord ["info",
+			[
+				"Level",
+				"
+				Alle Level auf einen Blick<br/><br/>
+				Level 1<br/><br/>
+
+				Fahrzeuge : Quad<br/>
+				Jobs : Birnen,- Kirchen,- Bananen,- farmen<br/>
+				Kleidung : Neue Rucksäcke, Neue Zivilbkleidung<br/>
+				Skillpunkte: 1<br/><br/>
+
+				Level 2<br/><br/>
+
+				Fahrzeuge : Limousine, Rettungsboot<br/>
+				Jobs : Kupfer,Eisen und Holz<br/>
+				Kleidung : Neue Rucksäcke, Neue Zivilbekleidung<br/>
+				Skillpunkte: 1<br/>
+
+				Level 3<br/><br/>
+
+				Fahrzeuge : Geländewagen<br/>
+				Jobs : Sand, Öl, Stein, Jagen,<br/>
+				Gegenstände: Kreditkarte<br/>
+				Legale Waffen: Rook-40, ACP-C2, 4-five, PDW2000<br/>
+				Skillpunkte:1<br/><br/>
+
+				Level 4<br/><br/>
+
+				Fahrzeuge : SUV, Truck Transporter, Truck Box, Tanktruck<br/>
+				Jobs : Silber, Gold, Bier herstellen<br/>
+				Feature: Fahrzeug Versichern, Neue Crafting möglichkeiten<br/>
+				Kleidung : Neue Rucksäcke, Neue Zivilkleidung<br/>
+				Skillpunkte:1<br/><br/>
+
+				Level 5<br/><br/>
+
+				Fahrzeuge : Zamak Transporter, Zamak abgedeckt, Tempest Tanker (klein), MH-9 Hummingbird, M-900<br/>
+				Jobs : Diamanten, Müll, Salz, Whisky<br/>
+				Kleidung : Neue Rebellenkleidung<br/>
+				Skillpunkte:2<br/><br/>
+
+				Level 6<br/><br/>
+
+				Fahrzeuge : HEMTT Transport, HEMTT Tanker, Motorboot, Orca<br/>
+				Jobs : Schwefel, Marijuana, Glühwürmchen<br/>
+				Kleidung :Neue Rebellenkleidung<br/>
+				Waffen: TRG-20, SDAR, Vermin, Zubr.45<br/>
+				Feature: Rebellenausbildung<br/>
+				Skillpunkte: 2<br/><br/>
+
+				Level 7<br/><br/>
+
+				Fahrzeuge : CH-49 Mohawk, Tempest Transport, Tempest Tanker, Tempest abgedeckt<br/>
+				Jobs : LSD, Heroin<br/>
+				Kleidung : Neue Rebellenkleidung<br/>
+				Waffen: MX SW, Katiba, Sprengladung<br/>
+				Skillpunkte: 2<br/><br/>
+
+				Level 8<br/><br/>
+
+				Fahrzeuge :HEMTT Box, Ifrit, Taru<br/>
+				Jobs : Uran, Meth<br/>
+				Kleidung : Neue Rebellenkleidung<br/>
+				Waffen: MK18, MK14, MK-1 EMR, Alamut<br/>
+				Feature: Neue Crafting Möglichkeiten<br/>
+				Skillpunkte: 2<br/><br/>
+
+				Level 9<br/><br/>
+
+				Fahrzeuge : Tempest Gerät, Orca<br/>
+				Jobs : Kokain, Antiquitäten, Moonshine<br/>
+				Feature: Bombenweste, Unterwassersprengladung<br/>
+				Skillpunkte:2<br/><br/>
+
+				Level 10<br/><br/>
+				Talente: Sonderfahrzeuge, Häusersloterweiterung<br/>
+				Fahrzeuge: Geländewagen<br/>
+				Feature: Neue Crafting Möglichkeit, 1,5 Mio. Auszahlung<br/>
+				Skillpunkte: 2<br/><br/>
+
+				Level 11 - 15<br/><br/>
+
+				Skillpunkte: 2<br/>
+
+				"
+			]
+		];
+
 
 // Allgemeine Regeln
 	player createDiaryRecord ["serverrules",

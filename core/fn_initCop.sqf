@@ -39,3 +39,4 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 [] call life_fnc_updateClothing;
 [] execVM "scripts\autoTexture.sqf";
 [] spawn life_fnc_placeablesInit;
+tf_no_auto_long_range_radio = true; // TaskforceRadio ohne Rucksack spawnen

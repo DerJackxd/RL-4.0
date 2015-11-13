@@ -9,7 +9,7 @@ IL_Veh_Array = [];
 
 sleep (random 30);
 
-cutText [Format ["IgiLoad init Player: %1", Player],"PLAIN",2];
+//cutText [Format ["IgiLoad init Player: %1", Player],"PLAIN",2];
 
 _null = [Player] execVM "IgiLoad\IgiLoad.sqf";
 waitUntil {scriptDone _null};

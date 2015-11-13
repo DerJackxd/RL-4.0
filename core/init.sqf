@@ -155,3 +155,76 @@ diag_log "::King Client:: initialized";
 CONSTVAR(life_paycheck); //Make the paycheck static.
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
 [[getPlayerUID player,player getVariable["realname",name player]],"life_fnc_wantedProfUpdate",false,false] spawn life_fnc_MP;
+
+_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+
+if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitwith {
+	999999 cutText ["Task Force Radio is not running on your computer. Please re-sync and retry","BLACK FADED"];
+	999999 cutFadeOut 99999999;
+};
+
+if (!(_TFenabled)) then {
+	while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do {
+		titleText ["Du benötigst Tast Force Radio für mehr Infos sind die Supporter im Teamspeak unter TS.Realliferpg.de zu erreichen! || TS3 -> Settings -> Plugins", "BLACK"];
+		sleep 2;
+	};
+};
+
+RL_TFEnabled = true;
+RL_onTsServer = "Reallife RPG Community TeamSpeak" == (call TFAR_fnc_getTeamSpeakServerName);
+RL_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+titleText ["Task Force Radio erfolgreich geladen!","BLACK IN"];
+
+
+
+[] spawn {
+
+	while {true} do {
+
+				_isadmin = false;
+				if (!(isNil "life_adminlevel")) then {
+					_adminlvl = life_adminlevel call BIS_fnc_parseNumber;
+
+					if (_adminlvl > 0) then {
+						_isadmin = true;
+					};
+				};
+
+				if (!(_isadmin)) then {
+					_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+					if ((!(_TFenabled)) && (RL_TFEnabled)) then {
+						titleText ["Bitte Aktiviere das Teamspeak 3 TFAR Plugin! || TS3 -> Settings -> Plugins", "BLACK"];
+						RL_TFEnabled = false;
+					};
+
+					_onTsServer = "Reallife RPG Community TeamSpeak" == (call TFAR_fnc_getTeamSpeakServerName);
+					if (!(_onTsServer)) then {
+						titleText ["Bitte tritt unserem Teamspeak 3 Server bei! TS.RealLifeRPG.de", "BLACK"];
+						RL_onTsServer = false;
+					} else {
+						if (!(RL_onTsServer)) then {
+							titleText ["TS server check Fertig. Willkommen!","BLACK IN"];
+							RL_onTsServer = true;
+						};
+					};
+					
+					_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+					if (!(_onChannel)) then {
+						titleText ["Du bist nicht nicht im richtigen Channel! Bitte lade das TFAR Plugin neu! || Settings -> Plugins -> Reload All", "BLACK"];
+						RL_onChannel = false;
+					} else {
+						if (!(RL_onChannel)) then {
+							titleText ["TS channel check Fertig. Willkommen!","BLACK IN"];
+							RL_onChannel = true;
+						};
+					};
+
+					if ((_TFenabled) && (!(RL_TFEnabled))) then {
+						titleText ["Plugin aktiviert, Willkommen!","BLACK IN"];
+						RL_TFEnabled = true;
+					};
+				};
+
+				sleep 2;
+			};
+};

@@ -120,23 +120,29 @@ if(CASH >= _basePrice) then
 		createVehicleCrew _vehicle;
 	};
 
+	_vehicle setVariable ["tf_range", 200000, true];
+
 	//Side Specific actions.
 	switch(playerSide) do {
 		case west: {
+			_vehicle setVariable ["tf_side", west, true];
 			[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 		};
 
 		case civilian: {
+			_vehicle setVariable ["tf_side", civilian, true];
 			if(EQUAL(SEL(life_veh_shop,2),"civ") && {_className == "B_Heli_Light_01_F"}) then {
 				[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 			};
 		};
 
 		case independent: {
+			_vehicle setVariable ["tf_side", west, true];
 			[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 		};
 
 		case east: {
+			_vehicle setVariable ["tf_side", west, true];
 			[_vehicle,"adac_offroad",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
@@ -231,6 +237,7 @@ else
 				_vehicle setVariable["fuelkill_no_warning",true,true];
 				_vehicle setVariable["fuelkill_warning",false,true];
 				_vehicle setVariable["adacCheck",false,true];
+
 			};
 
 			_veh = typeOf _vehicle;
@@ -245,23 +252,29 @@ else
 				createVehicleCrew _vehicle;
 			};
 
+			_vehicle setVariable ["tf_range", 200000, true];
+
 			//Side Specific actions.
 			switch(playerSide) do {
 				case west: {
+					_vehicle setVariable ["tf_side", west, true];
 					[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 				};
 
 				case civilian: {
+					_vehicle setVariable ["tf_side", civilian, true];
 					if(EQUAL(SEL(life_veh_shop,2),"civ") && {_className == "B_Heli_Light_01_F"}) then {
 						[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 					};
 				};
 
 				case independent: {
+					_vehicle setVariable ["tf_side", west, true];
 					[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 				};
 
 				case east: {
+					_vehicle setVariable ["tf_side", west, true];
 					[_vehicle,"adac_offroad",true] spawn life_fnc_vehicleAnimate;
 				};
 			};

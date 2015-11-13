@@ -1,6 +1,6 @@
 /*
 	File: welcomecredits.sqf
-	
+
 	Creates an intro on the bottom-right hand corner of the screen and add camera effect to spawn.
 */
 
@@ -21,19 +21,19 @@ playsound "ADACIntro";
 
 _camera = "camera" camCreate [(position player select 0)+_randCamX, (position player select 1)+_randCamY,(position player select 2)+_camDistance];
 _camera cameraEffect ["internal","back"];
- 
+
 _camera camSetFOV 2.000;
 _camera camCommit 0;
 waitUntil {camCommitted _camera};
- 
+
 _camera camSetTarget vehicle player;
 _camera camSetRelPos [0,0,2];
 _camera camCommit _camTime;
- 
+
 cutText [_welcomeMessage, "PLAIN DOWN"];
- 
+
 waitUntil {camCommitted _camera};
- 
+
 _camera cameraEffect ["terminate","back"];
 camDestroy _camera;
 sleep 1;*/
@@ -41,19 +41,19 @@ sleep 1;*/
 _onScreenTime = 15;
 
 sleep 5; //Wait in seconds before the credits start after player is in-game
- 
+
 _role1 = "Herzlich willkommen auf dem";
 _role1names = ["RealLifeRPG","Australia Server"];
 _role2 = "Admins";
-_role2names = ["Toshi","Memphis"];
-_role4 = "Scripter";
-_role4names = ["vaBene","Memphis"];
-_role5 = "Mapper";
-_role5names = ["Moonwalker","Ryu Wolfsblut"];
-_role6 = "Teamspeak:";
-_role6names = ["ts.realliferpg.de"];
-_role7 = "Webseite:";
-_role7names = ["www.realliferpg.de"];
+_role2names = ["Toshi","Memphis","vaBene"];
+_role3 = "Scripter";
+_role3names = ["vaBene","Memphis","Greeny"];
+_role4 = "Mapper";
+_role4names = ["Moonwalker","Ryu Wolfsblut"];
+_role5 = "Teamspeak:";
+_role5names = ["ts.realliferpg.de"];
+_role6 = "Webseite:";
+_role6names = ["www.realliferpg.de"];
 
 {
 sleep 2;

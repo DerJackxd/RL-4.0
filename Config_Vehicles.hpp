@@ -1601,9 +1601,9 @@ class CfgVehicles {
 	};
 
 	class I_Truck_02_fuel_F {
-        vItemSpace = 58;
+        vItemSpace = 580;
         storageFee[] = { 8600, 0, 0, 0 };
-		garageSell[] = { 669000, 0, 0, 0 };
+				garageSell[] = { 669000, 0, 0, 0 };
         insurance = 1445000;
         chopShop = 669000;
         textures[] = { };
@@ -4915,7 +4915,7 @@ class CfgVehicles {
     };
 
 	class B_Truck_01_fuel_F : Default {
-        vItemSpace = 75;
+        vItemSpace = 750;
         storageFee[] = { 9800, 0, 0, 0 };
 		garageSell[] = { 980000, 0, 0, 0 };
         insurance = 2040000;
@@ -4933,7 +4933,7 @@ class CfgVehicles {
     };
 
 	class O_G_Van_01_fuel_F : Default {
-        vItemSpace = 45;
+        vItemSpace = 450;
         storageFee[] = { 9500, 0, 0, 0 };
 		garageSell[] = { 39850, 0, 0, 0 };
         insurance = 49250;
@@ -5273,7 +5273,7 @@ class CfgVehicles {
     };
 
 	class O_Truck_03_fuel_F : Default {
-        vItemSpace = 65;
+        vItemSpace = 650;
         storageFee[] = { 9500, 0, 0, 0 };
 		garageSell[] = { 840000, 0, 0, 0 };
         insurance = 1940000;

@@ -2,7 +2,7 @@
 /*
 	File: fn_initCiv.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Initializes the civilian.
 */
@@ -45,3 +45,5 @@ player addRating 9999999;
 [] call life_fnc_updateClothing;
 [] execVM "scripts\autoTexture.sqf";
 //[] execVM "core\civilian\fn_airSoftWeaponRemove.sqf";
+tf_no_auto_long_range_radio = true; // TaskforceRadio ohne Rucksack spawnen
+//player setVariable ["tf_sendingDistanceMultiplicator", 0.35];
