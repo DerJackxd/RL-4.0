@@ -106,6 +106,7 @@ switch (_code) do {
 		};
 	};
 
+/*
 	case _blinkerLinks:{ // Q  Left
 		if(alive vehicle player && vehicle player != player && ((driver vehicle player) == player) ) then {
 			[vehicle player,"left"] call life_fnc_BlinkerInit;
@@ -121,6 +122,8 @@ switch (_code) do {
 			[vehicle player,"warning"] call life_fnc_BlinkerInit;
 		};
 	};
+*/
+
 
 	//Holster / recall weapon.
 	case 35: {

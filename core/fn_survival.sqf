@@ -95,7 +95,7 @@ while {true} do {
 		};
 	};
 
-	ace_nametags_showPlayerNames = 0 //ACE fix
+	ace_nametags_showPlayerNames = 0; //ACE fix
 
 	/*  */
 	if(player getVariable "ACE_isUnconscious" && !life_unconscious) then {

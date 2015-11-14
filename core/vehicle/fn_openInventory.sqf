@@ -24,7 +24,7 @@ if(((_vehicle isKindOf "House_F") OR (_vehicle isKindOf "House"))) then {
 } else {
 	ctrlShow[3509,true];
 	if(serverTime - (_vehicle getVariable["lastSync",-99999]) < 900) then {ctrlEnable[3509,false];};
-	
+
 	ctrlSetText[3501,format[(localize "STR_MISC_VehStorage")+ " - %1",getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")]];
 };
 
@@ -41,7 +41,7 @@ if (((_vehicle isKindOf "House_F") OR (_vehicle isKindOf "House"))) then {
 
 if(((_vehicle isKindOf "House_F") OR (_vehicle isKindOf "House"))) then {
 	private["_mWeight"];
-	if((typeOf _vehicle) in ["Land_Cargo_House_V3_F"]) then 
+	if((typeOf _vehicle) in ["Land_Cargo_House_V3_F"]) then
 	{
 		_mWeight =_vehicle getVariable "slot";
 		_veh_data = [_mWeight,(_vehicle getVariable["Trunk",[[],0]]) select 1];
@@ -61,13 +61,13 @@ ctrlSetText[3504,format[(localize "STR_MISC_Weight")+ " %1/%2",_veh_data select 
 life_trunk_vehicle = _vehicle;
 
 _vehicle spawn
-{							   
+{
 	waitUntil {isNull (findDisplay 3500)};
 	["trunk_open"] call life_fnc_globalSound;
 	_this SVAR ["trunk_in_use",false,true];
 	["trunk_close"] call life_fnc_globalSound;
 	if((_this isKindOf "House_F") OR (_this isKindOf "House")) then {
-		if((typeOf _this) in ["Land_Cargo_House_V3_F"]) then 
+		if((typeOf _this) in ["Land_Cargo_House_V3_F"]) then
 		{
 			[[_this],"TON_fnc_updateBaseTrunk",false,false] call life_fnc_MP;
 		}else{
@@ -75,8 +75,8 @@ _vehicle spawn
 		};
 	}else{
 		hintSilent "Hinweis: Illegale Sachen werden nicht gespeichert, wenn du dein Fahrzeug in der Garage parkst.";
-		
-		[[_this],"TON_fnc_updateVehInventory",false,false] call life_fnc_MP;
+
+		//[[_this],"TON_fnc_updateVehInventory",false,false] call life_fnc_MP;
 	};
 	[] call SOCK_fnc_updateRequest;
 };

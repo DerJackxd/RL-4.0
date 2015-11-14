@@ -16775,7 +16775,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setdir 180;this setposATL [36428.507813,13066.323242,4.01846];this setVectorUp [0,0,1];this enableSimulation false;this setdir 180;this setposATL [5619.34668,18606.373047,4.35366];this setVectorUp [0,0,1]; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
+			init="this enableSimulation false;this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
 		};
 		class Item1115
 		{
@@ -16827,7 +16827,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setdir 270;this setposATL [31467.818359,9781.886719,4.17007];this setVectorUp [0,0,1];this enableSimulation false;this setdir 180;this setposATL [5619.34668,18606.373047,4.35366];this setVectorUp [0,0,1]; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
+			init="this enableSimulation false; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
 		};
 		class Item1120
 		{
@@ -16880,7 +16880,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setdir 180;this setposATL [25153.683594,12753.513672,4.17091];this setVectorUp [0,0,1]; this enableSimulation false;this setdir 180;this setposATL [5619.34668,18606.373047,4.35366];this setVectorUp [0,0,1]; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
+			init="this enableSimulation false;this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
 		};
 		class Item1125
 		{
@@ -16935,7 +16935,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setdir 90;this setposATL [35374.75,8386.410156,4.18774];this setVectorUp [0,0,1];this enableSimulation false;this setdir 180;this setposATL [5619.34668,18606.373047,4.35366];this setVectorUp [0,0,1]; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
+			init="this enableSimulation false; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
 		};
 		class Item1130
 		{
@@ -17034,7 +17034,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setdir 350;this setposATL [32106.501953,29928.720703,4.16688];this setVectorUp [0,0,1];this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];  ";
+			init="this enableSimulation false;this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];  ";
 		};
 		class Item1139
 		{
@@ -17121,7 +17121,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setdir 0;this setposATL [22299.941406,25568.550781,4.17259];this setVectorUp [0,0,1];this enableSimulation false;this setdir 180;this setposATL [5619.34668,18606.373047,4.35366];this setVectorUp [0,0,1]; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
+			init="this enableSimulation false; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
 		};
 		class Item1147
 		{
@@ -17174,7 +17174,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this enableSimulation false;this setdir 180;this setposATL [5619.34668,18606.373047,4.35366];this setVectorUp [0,0,1];this enableSimulation false;this setdir 180;this setposATL [5619.34668,18606.373047,4.35366];this setVectorUp [0,0,1]; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
+			init="this enableSimulation false; this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];;this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];";
 		};
 		class Item1152
 		{
@@ -17238,7 +17238,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this addAction[""Kleidung"",life_fnc_clothingMenu,""cop""];this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];  this addAction[""Kantine"",life_fnc_virt_menu,""cop"",0,false,false,"""",' playerSide == west '];  this addAction[""Medizinische Ausrüstung"",life_fnc_weaponShopMenu,""medical_cop""]; this addaction [""Hundezwinger"",{[(_this select 1)] execVM ""dogFunctions.sqf""}]; this setVariable[""realname"",""Polizei-Kantine""]; this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];  ";
+			init="this addAction[""Kleidung"",life_fnc_clothingMenu,""cop""];this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];  this addAction[""Kantine"",life_fnc_virt_menu,""cop"",0,false,false,"""",' playerSide == west '];  this addAction[""Medizinische Ausrüstung"",life_fnc_weaponShopMenu,""medical_cop""]; this setVariable[""realname"",""Polizei-Kantine""]; this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];  ";
 		};
 		class Item1158
 		{
@@ -17258,7 +17258,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Infostand_1_EP1";
 			skill=0.60000002;
-			init="this addAction[""Kleidung"",life_fnc_clothingMenu,""cop""];this setVariable[""realname"",""Polizei-Ausrüstung""];  this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];  this addAction[""Kantine"",life_fnc_virt_menu,""cop"",0,false,false,"""",' playerSide == west '];  this addAction[""Medizinische Ausrüstung"",life_fnc_weaponShopMenu,""medical_cop""]; this addaction [""Hundezwinger"",{[(_this select 1)] execVM ""dogFunctions.sqf""}]; this setVariable[""realname"",""Polizei-Kantine""]; this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];  ";
+			init="this addAction[""Kleidung"",life_fnc_clothingMenu,""cop""];this setVariable[""realname"",""Polizei-Ausrüstung""];  this addAction[""Virtual Cop Items"",life_fnc_virt_menu,""cop_gear"",0,false,false,"""",' playerSide == west '];  this addAction[""Standard-Ausrüstung"",life_fnc_weaponShopMenu,""cop_basic""];this addAction[""Polizei-Ausrüstung"",life_fnc_weaponShopMenu,""cop_patrol""];this addAction[""Lizenz-Shop"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west ']; this setVariable[""realname"",""Polizei-Waffenwart""];  this addAction[""Kantine"",life_fnc_virt_menu,""cop"",0,false,false,"""",' playerSide == west '];  this addAction[""Medizinische Ausrüstung"",life_fnc_weaponShopMenu,""medical_cop""]; this setVariable[""realname"",""Polizei-Kantine""]; this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Geldautomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];  ";
 		};
 		class Item1160
 		{
@@ -40711,9 +40711,8 @@ class Mission
 		};
 		class Item3349
 		{
-			position[]={5629.2573,12.858223,18690.176};
+			position[]={5632.1152,12.849743,18690.063};
 			azimut=449.11499;
-			offsetY=-0.40000001;
 			id=3588;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V1_F";
@@ -54472,7 +54471,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={31040.896,4.4092822,10678.863};
+			position[]={31042.451,4.4242673,10679.215};
 			name="civ_car_1";
 			type="Empty";
 			angle=180.55795;
@@ -54784,10 +54783,10 @@ class Mission
 		};
 		class Item61
 		{
-			position[]={31157.602,4.5209084,10608.392};
+			position[]={31159.625,4.523345,10620.313};
 			name="car_g_1";
 			type="Empty";
-			angle=175.61534;
+			angle=80.482162;
 		};
 		class Item62
 		{
@@ -54888,9 +54887,10 @@ class Mission
 		};
 		class Item74
 		{
-			position[]={31014.248,2.8192575,10525.139};
+			position[]={31159.699,4.5234332,10620.303};
 			name="safezone_kavalla";
 			type="Empty";
+			angle=88.770546;
 		};
 		class Item75
 		{
@@ -58364,7 +58364,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=11;
+		items=9;
 		class Item0
 		{
 			position[]={29997.139,27.331648,17436.689};
@@ -58501,39 +58501,6 @@ class Mission
 			type="SWITCH";
 			age="UNKNOWN";
 			expActiv="ziel_erreicht = true;";
-			class Effects
-			{
-			};
-		};
-		class Item9
-		{
-			position[]={31015.211,1.0607648,10513.956};
-			a=1;
-			b=1;
-			rectangular=1;
-			activationBy="ANY";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			name="info";
-			expActiv="titleText [""Drücke nun die Windows Taste um den ATM zu Aktivieren"", ""PLAIN""];";
-			class Effects
-			{
-			};
-		};
-		class Item10
-		{
-			position[]={31015.117,1.5686712,10515.702};
-			a=5;
-			b=5;
-			rectangular=1;
-			activationBy="ANY";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			name="info_1";
-			expActiv="hint ""Der ATM wird nun per Windows Taste Aktiviert und nicht mehr über das Scrollmenü."";";
-			expDesactiv="hint ""Der ATM wird nun per Windows Taste Aktiviert und nicht mehr über das Scrollmenü."";";
 			class Effects
 			{
 			};

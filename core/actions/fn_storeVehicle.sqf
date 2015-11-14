@@ -1,7 +1,7 @@
 /*
 	File: fn_storeVehicle.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Stores the vehicle in the garage.
 */
@@ -32,6 +32,7 @@ if(vehicle player != player) then
 
 if(isNil "_vehicle") exitWith {hint localize "STR_Garage_NoNPC"};
 if(isNull _vehicle) exitWith {};
+[[_vehicle],"TON_fnc_updateVehInventory",false,false] call life_fnc_MP;
 [[_vehicle,false,(_this select 1)],"TON_fnc_vehicleStore",false,false] call life_fnc_MP;
 hint localize "STR_Garage_Store_Server";
 life_garage_store = true;
